@@ -174,3 +174,12 @@ a {
 a:hover, a:focus, a:active {
   color: #023143;
 }
+
+#skills .skills-list {
+  text-align: center;
+  width: 75%;
+}
+
+#skills .skills-list i {
+  font-size: 15vh;
+}

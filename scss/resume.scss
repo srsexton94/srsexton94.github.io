@@ -4,3 +4,13 @@
 @import "nav.scss";
 @import "resume-item.scss";
 @import "bootstrap-overrides.scss";
+
+#skills{
+  .skills-list {
+    text-align: center;
+    width: 75%;
+    i {
+      font-size: 15vh;
+    }
+  }
+}
