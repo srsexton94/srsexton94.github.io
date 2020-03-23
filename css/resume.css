@@ -190,8 +190,8 @@ a:hover, a:focus, a:active {
 }
 
 .pdf {
-  height: 75vw;
-  width: 50vw;
+  height: 700px;
+  width: 500px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
