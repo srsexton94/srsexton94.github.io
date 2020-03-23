@@ -1,4 +1,6 @@
 # Samantha R. Sexton - Full Stack Web Developer Portfolio
+This is the repo for my personal site - detailing my work and experience as a
+full stack developer.
 
 ## To Include:
 * About Me
@@ -26,9 +28,3 @@
 * As a non-technical HR manager, I want to quickly evaluate whether this candidate has the skills and experience to fill an open position at my company.
 * As a mid-level engineer, I want to evaluate a junior developer’s coding skills by reviewing their projects and reading their code.
 * As a friend of the person who built this portfolio, I want to understand what they do as a developer and what they have created.
-### Advanced Usage
-
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-#### Bugs and Issues?
-[Open a new issue](https://github.com/BlackrockDigital/startbootstrap-resume/issues) or [leave a comment](http://startbootstrap.com/template-overviews/resume/).
