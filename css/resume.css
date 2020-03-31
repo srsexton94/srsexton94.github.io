@@ -181,8 +181,9 @@ a:hover, a:focus, a:active {
 }
 
 #skills .skills-list {
+  margin: auto;
   text-align: center;
-  width: 75%;
+  width: 85%;
 }
 
 #skills .skills-list i {
