@@ -191,8 +191,8 @@ a:hover, a:focus, a:active {
 }
 
 .pdf {
-  height: 700px;
-  width: 500px;
+  height: 1100px;
+  width: 850px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -236,11 +236,17 @@ a:hover, a:focus, a:active {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
+  border: 5px solid #023143;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
+  border: 5px solid #023143;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
   padding-top: 15px;
   background-color: #bbb;
   color: white;
