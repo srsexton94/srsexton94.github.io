@@ -252,3 +252,19 @@ a:hover, a:focus, a:active {
   color: white;
   transform: rotateY(180deg);
 }
+
+.navbar {
+  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
+}
+
+.navbar img {
+  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
+}
+
+h1, h2, h3, h4, h5, i {
+  text-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
+}
+
+i:hover, i:focus {
+  color: #05668d;
+}
