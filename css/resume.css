@@ -190,6 +190,10 @@ a:hover, a:focus, a:active {
   font-size: 15vh;
 }
 
+#skills .skills-list i:hover, #skills .skills-list i:focus {
+  color: #05668d;
+}
+
 .pdf {
   height: 1100px;
   width: 850px;
@@ -265,15 +269,11 @@ h1, h2, h3, h4, h5, i {
   text-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
 }
 
-i:hover, i:focus {
-  color: #05668d;
-}
-
 .techphil {
   float: left;
 }
 
-.techphil li:hover, .techphil li:focus {
+li:hover, li:focus {
   color: #05668d;
   font-weight: bold;
 }

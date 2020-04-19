@@ -18,6 +18,9 @@
     i {
       font-size: 15vh;
     }
+    i:hover, i:focus {
+      color: #05668d;
+    }
   }
 }
 
@@ -95,17 +98,13 @@ h1, h2, h3, h4, h5, i {
   text-shadow: 0 3px 5px rgba(60, 65, 75, .5);
 }
 
-i:hover, i:focus {
-  color: #05668d;
-}
-
 .techphil {
   float: left;
+}
 
-  li:hover, li:focus {
-    color: #05668d;
-    font-weight: bold;
-  }
+li:hover, li:focus {
+  color: #05668d;
+  font-weight: bold;
 }
 
 .highfive {
