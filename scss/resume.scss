@@ -5,6 +5,13 @@
 @import "resume-item.scss";
 @import "bootstrap-overrides.scss";
 
+.mode-toggle {
+  color: $primary;
+  font-size: .75em;
+  font-style: italic;
+  float: right;
+}
+
 .card-img {
   height: 100%;
   width: 100%;
@@ -19,7 +26,7 @@
       font-size: 15vh;
     }
     i:hover, i:focus {
-      color: #05668d;
+      color: $primary;
     }
   }
 }
@@ -29,7 +36,6 @@
   width: 850px;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -68,34 +74,33 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  border: 5px solid #023143;
+  background-color: $gray-500;
+  border: 5px solid $shade;
   border-radius: 10px;
-  box-shadow: 0 3px 5px rgba(60, 65, 75, .5);
-  color: black;
+  box-shadow: 0 3px 5px $shadow;
+  color: $black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  border: 5px solid #023143;
+  border: 5px solid $shade;
   border-radius: 10px;
-  box-shadow: 0 3px 5px rgba(60, 65, 75, .5);
+  box-shadow: 0 3px 5px $shadow;
   padding-top: 15px;
-  background-color: #bbb;
-  color: white;
+  background-color: $gray-500;
+  color: $white;
   transform: rotateY(180deg);
 }
 
 .navbar {
-  box-shadow: 0 3px 5px rgba(60, 65, 75, .5);
-
+  box-shadow: 0 3px 5px $shadow;
   img {
-    box-shadow: 0 3px 5px rgba(60, 65, 75, .5);
+    box-shadow: 0 3px 5px $shadow;
   }
 }
 
 h1, h2, h3, h4, h5, i {
-  text-shadow: 0 3px 5px rgba(60, 65, 75, .5);
+  text-shadow: 0 3px 5px $shadow;
 }
 
 .techphil {
@@ -103,7 +108,7 @@ h1, h2, h3, h4, h5, i {
 }
 
 li:hover, li:focus {
-  color: #05668d;
+  color: $primary;
   font-weight: bold;
 }
 
@@ -133,5 +138,13 @@ li:hover, li:focus {
     a {
       width: 20vw;
     }
+  }
+}
+
+.dark-mode {
+  background-color: $dark-base;
+
+  #sideNav {
+    background-color: $dark-elevate;
   }
 }

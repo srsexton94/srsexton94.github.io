@@ -26,3 +26,12 @@
   });
 
 })(jQuery); // End of use strict
+
+$('.mode-toggle').on('click', function(event) {
+  $('body').toggleClass('dark-mode')
+  if (event.target.text === 'Dark Mode') {
+    $('.mode-toggle').text('Light Mode')
+  } else {
+    $('.mode-toggle').text('Dark Mode')
+  }
+})

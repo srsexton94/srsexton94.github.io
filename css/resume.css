@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
+/* Bootstrap Variables */
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
@@ -175,6 +176,13 @@ a:hover, a:focus, a:active {
   color: #023143;
 }
 
+.mode-toggle {
+  color: #05668D;
+  font-size: .75em;
+  font-style: italic;
+  float: right;
+}
+
 .card-img {
   height: 100%;
   width: 100%;
@@ -191,7 +199,7 @@ a:hover, a:focus, a:active {
 }
 
 #skills .skills-list i:hover, #skills .skills-list i:focus {
-  color: #05668d;
+  color: #05668D;
 }
 
 .pdf {
@@ -199,7 +207,6 @@ a:hover, a:focus, a:active {
   width: 850px;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -239,11 +246,11 @@ a:hover, a:focus, a:active {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #adb5bd;
   border: 5px solid #023143;
   border-radius: 10px;
   box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
-  color: black;
+  color: #000;
 }
 
 /* Style the back side */
@@ -252,8 +259,8 @@ a:hover, a:focus, a:active {
   border-radius: 10px;
   box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
   padding-top: 15px;
-  background-color: #bbb;
-  color: white;
+  background-color: #adb5bd;
+  color: #fff;
   transform: rotateY(180deg);
 }
 
@@ -274,7 +281,7 @@ h1, h2, h3, h4, h5, i {
 }
 
 li:hover, li:focus {
-  color: #05668d;
+  color: #05668D;
   font-weight: bold;
 }
 
@@ -308,4 +315,12 @@ li:hover, li:focus {
   .social-icons a {
     width: 20vw;
   }
+}
+
+.dark-mode {
+  background-color: #121212;
+}
+
+.dark-mode #sideNav {
+  background-color: #272727;
 }
