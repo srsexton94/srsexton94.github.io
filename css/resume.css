@@ -202,9 +202,18 @@ a:hover, a:focus, a:active {
   color: #05668D;
 }
 
-.pdf {
-  height: 1100px;
-  width: 850px;
+#resume img {
+  border: 1px solid #ababab;
+  border-radius: 3px;
+  box-shadow: -5px 10px 15px 3px rgba(0, 0, 0, 0.75);
+  display: block;
+  height: 95vh;
+  margin: 0 auto;
+  width: 65vh;
+}
+
+#resume .download {
+  float: right;
 }
 
 .flip-card {
