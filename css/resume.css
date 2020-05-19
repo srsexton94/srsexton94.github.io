@@ -216,8 +216,7 @@ body {
   box-shadow: -3px 5px 8px 1px rgba(170, 170, 170, 0.75);
   display: block;
   height: 75vh;
-  margin: auto;
-  margin-top: -2em;
+  margin: 0 auto;
   width: 50vh;
 }
 
@@ -281,7 +280,7 @@ body {
   background-color: #adb5bd;
   border: 1px dotted #adb5bd;
   border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px #adb5bd;
+  box-shadow: -3px 2px 3px 2px #ced4da;
   color: #000;
 }
 
@@ -289,7 +288,7 @@ body {
 .flip-card-back {
   border: 1px dotted #868e96;
   border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px #adb5bd;
+  box-shadow: -3px 2px 3px 2px #ced4da;
   padding-top: 15px;
   background-color: #adb5bd;
   color: #fff;
@@ -362,4 +361,13 @@ li:hover, li:focus {
 
 .dark-mode #sideNav {
   background-color: #272727;
+}
+
+.interest-card {
+  box-shadow: -2px 1px 2px 1px #dee2e6;
+  width: 23vw;
+}
+
+.interest-card img {
+  height: 45vh;
 }

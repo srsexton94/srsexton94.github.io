@@ -46,8 +46,7 @@ body {
     box-shadow: -3px 5px 8px 1px rgba(170, 170, 170, .75);
     display: block;
     height: 75vh;
-    margin: auto;
-    margin-top: -2em;
+    margin: 0 auto;
     width: 50vh;
   }
 
@@ -110,7 +109,7 @@ body {
   background-color: $gray-500;
   border: 1px dotted $gray-500;
   border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px $gray-500;
+  box-shadow: -3px 2px 3px 2px $gray-400;
   color: $black;
 }
 
@@ -118,7 +117,7 @@ body {
 .flip-card-back {
   border: 1px dotted $gray-600;
   border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px $gray-500;
+  box-shadow: -3px 2px 3px 2px $gray-400;
   padding-top: 15px;
   background-color: $gray-500;
   color: $white;
@@ -185,5 +184,14 @@ li:hover, li:focus {
 
   #sideNav {
     background-color: $dark-elevate;
+  }
+}
+
+.interest-card {
+  box-shadow: -2px 1px 2px 1px $gray-300;
+  width: 23vw;
+
+  img {
+    height: 45vh;
   }
 }
