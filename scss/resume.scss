@@ -194,6 +194,20 @@ li:hover, li:focus {
   img {
     height: 45vh;
   }
+
+  a,
+  button {
+    background-color: $gray-100 !important;
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+
+  a:hover,
+  button:hover {
+    background-color: $primary !important;
+    border-color: $gray-100 !important;
+    color: $gray-100 !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -214,4 +228,8 @@ li:hover, li:focus {
     font-size: .85em;
     margin-top: 1em;
   }
+}
+
+.modal-body {
+  text-align: center;
 }

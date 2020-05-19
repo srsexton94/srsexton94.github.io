@@ -113,7 +113,7 @@
           <!-- Page Heading -->
           <h1 class="my-4">Project Portfolio</h1>
           <p class="my-4">Here are a few of my recent projects, highlighting a
-            number of my skills in web development. <br>
+            number of my skills in web development. <em>Click or hover the image to learn more!</em><br>
             Some of these projects feature a user authentication flow - I
             recommend signing in with the guest account: <br>
             &nbsp;&nbsp;&nbsp;&nbsp;**<u>Email:</u> guest@email.com, <u>Password:</u> guest
@@ -410,6 +410,7 @@
         <div>
           <div class="card-columns">
             <div class="card interest-card">
+
               <img class="card-img-top" src="img/juniko.jpg" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">MMA Fighter (Jiujiteira!)</h4>
@@ -418,9 +419,12 @@
                   more than I can say from my practice, and I aspire to my own
                   cage fight one day. 🥊🥋‍
                 </p>
-                <!-- <a href="#" class="btn btn-primary">See me fight!</a> -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bjj-modal">
+                  See me fight!
+                </button>
               </div>
             </div>
+
             <div class="card interest-card">
               <img class="card-img-top" src="img/ballroom.png" alt="Card image">
               <div class="card-body">
@@ -428,9 +432,12 @@
                 <p class="card-text">A life-long love of dance had lead me to a
                   fulfilling career as a competitive ballroom dancer and an
                   avid salsera/bachatera. I teach & perform professionally.</p>
-                <!-- <a href="#" class="btn btn-primary">See me dance!</a> -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ballroom-modal">
+                    See me dance!
+                  </button>
               </div>
             </div>
+
             <div class="card interest-card">
               <img class="card-img-top" src="img/china.jpeg" alt="Card image">
               <div class="card-body">
@@ -439,44 +446,44 @@
                   language.  I'm fluent Spanish-English, and work as a Community
                   Interpreter. I also study Portuguese, Russian, A.S.L., and
                   (newly) Chinese!</p>
-                <!-- <a href="#" class="btn btn-primary">давай! - 聊聊吧! - ¡charlemos!</a> -->
+                <a href="https://www.italki.com/user/3964310" target="_blank" class="btn btn-primary">давай! - 聊聊吧! - ¡charlemos!</a>
               </div>
             </div>
-            <!-- <div class="card">
-              <img class="card-img-top" src="img/tbd.jpg" alt="Card image">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text.</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
+
+            <div class="modal fade" id="bjj-modal" tabindex="-1" role="dialog" aria-labelledby="bjjModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Bjj Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/udp-dydFmYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="img/tbd.jpg" alt="Card image">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text.</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
+
+            <div class="modal fade" id="ballroom-modal" tabindex="-1" role="dialog" aria-labelledby="ballroomModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Balroom Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3MHCFOIGLEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="img/tbd.jpg" alt="Card image">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text.</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div> -->
+
             </div>
           </div>
-
-
-        <!-- <p>If I'm not behind my screen coding, you're likely to find me
-          <a href="https://youtu.be/m035yS91HP8" target="_blank">training
-          Brazilian Jiu Jitsu</a> and Muay Thai at my gym!  You might also find
-          me <a href="https://youtu.be/LjDdogVU9pM" target="_blank">dancing</a>
-           - a lifelong love had lead me to a fulfilling career as a competitive
-           <a href="https://youtu.be/3MHCFOIGLEg" target="_blank">ballroom dancer</a>
-          and an avid salsera/bachatera.  Otherwise, some of my personal nerd-isms include
-          <a href="https://www.italki.com/user/3964310" target="_blank">language learning</a>, world history, and moral philosophy!</p> -->
       </div>
     </section>
 

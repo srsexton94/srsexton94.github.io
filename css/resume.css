@@ -372,6 +372,20 @@ li:hover, li:focus {
   height: 45vh;
 }
 
+.interest-card a,
+.interest-card button {
+  background-color: #f8f9fa !important;
+  border-color: #05668D !important;
+  color: #05668D !important;
+}
+
+.interest-card a:hover,
+.interest-card button:hover {
+  background-color: #05668D !important;
+  border-color: #f8f9fa !important;
+  color: #f8f9fa !important;
+}
+
 @media only screen and (max-width: 600px) {
   .interest-card {
     margin: auto;
@@ -390,4 +404,8 @@ li:hover, li:focus {
 .contact-icons p {
   font-size: .85em;
   margin-top: 1em;
+}
+
+.modal-body {
+  text-align: center;
 }
