@@ -5,6 +5,14 @@
 @import "resume-item.scss";
 @import "bootstrap-overrides.scss";
 
+body {
+  color: $gray-700;
+}
+
+.img-profile {
+  width: 9rem;
+}
+
 .mode-toggle {
   color: $primary;
   font-size: .75em;
@@ -33,17 +41,31 @@
 
 #resume {
   img {
-    border: 1px solid #ababab;
+    border: 1px solid #dedede;
     border-radius: 3px;
-    box-shadow: -5px 10px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: -3px 5px 8px 1px rgba(170, 170, 170, .75);
     display: block;
-    height: 95vh;
-    margin: 0 auto;
-    width: 65vh;
+    height: 75vh;
+    margin: auto;
+    margin-top: -2em;
+    width: 50vh;
   }
 
   .download {
     float: right;
+  }
+
+  p {
+    color: $gray-900;
+    font-size: .8em;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: .75em;
+    text-align: center;
+  }
+
+  a img:hover {
+    filter: opacity(.9) brightness(25%);
   }
 }
 
@@ -86,17 +108,17 @@
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: $gray-500;
-  border: 5px solid $shade;
+  border: 1px dotted $gray-500;
   border-radius: 10px;
-  box-shadow: 0 3px 5px $shadow;
+  box-shadow: -3px 2px 3px 2px $gray-500;
   color: $black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  border: 5px solid $shade;
+  border: 1px dotted $gray-600;
   border-radius: 10px;
-  box-shadow: 0 3px 5px $shadow;
+  box-shadow: -3px 2px 3px 2px $gray-500;
   padding-top: 15px;
   background-color: $gray-500;
   color: $white;
@@ -108,9 +130,15 @@
   img {
     box-shadow: 0 3px 5px $shadow;
   }
+  .name-sub {
+    color: $gray-100;
+    margin-top: -6vh;
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 
-h1, h2, h3, h4, h5, i {
+h1, h2, h3, h4, i {
   text-shadow: 0 3px 5px $shadow;
 }
 

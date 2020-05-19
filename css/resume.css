@@ -176,6 +176,14 @@ a:hover, a:focus, a:active {
   color: #023143;
 }
 
+body {
+  color: #495057;
+}
+
+.img-profile {
+  width: 9rem;
+}
+
 .mode-toggle {
   color: #05668D;
   font-size: .75em;
@@ -203,17 +211,32 @@ a:hover, a:focus, a:active {
 }
 
 #resume img {
-  border: 1px solid #ababab;
+  border: 1px solid #dedede;
   border-radius: 3px;
-  box-shadow: -5px 10px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px 5px 8px 1px rgba(170, 170, 170, 0.75);
   display: block;
-  height: 95vh;
-  margin: 0 auto;
-  width: 65vh;
+  height: 75vh;
+  margin: auto;
+  margin-top: -2em;
+  width: 50vh;
 }
 
 #resume .download {
   float: right;
+}
+
+#resume p {
+  color: #212529;
+  font-size: .8em;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: .75em;
+  text-align: center;
+}
+
+#resume a img:hover {
+  -webkit-filter: opacity(0.9) brightness(25%);
+  filter: opacity(0.9) brightness(25%);
 }
 
 .flip-card {
@@ -256,17 +279,17 @@ a:hover, a:focus, a:active {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #adb5bd;
-  border: 5px solid #023143;
+  border: 1px dotted #adb5bd;
   border-radius: 10px;
-  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
+  box-shadow: -3px 2px 3px 2px #adb5bd;
   color: #000;
 }
 
 /* Style the back side */
 .flip-card-back {
-  border: 5px solid #023143;
+  border: 1px dotted #868e96;
   border-radius: 10px;
-  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
+  box-shadow: -3px 2px 3px 2px #adb5bd;
   padding-top: 15px;
   background-color: #adb5bd;
   color: #fff;
@@ -281,7 +304,14 @@ a:hover, a:focus, a:active {
   box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
 }
 
-h1, h2, h3, h4, h5, i {
+.navbar .name-sub {
+  color: #f8f9fa;
+  margin-top: -6vh;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, i {
   text-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
 }
 
