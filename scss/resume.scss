@@ -64,7 +64,7 @@ body {
   }
 
   a img:hover {
-    filter: opacity(.9) brightness(25%);
+    filter: opacity(.9) brightness(30%);
   }
 }
 
@@ -162,6 +162,13 @@ li:hover, li:focus {
   img:hover, img:focus {
     filter: grayscale(0%);
   }
+  a {
+    p {
+      font-size: .65em;
+      color: $gray-700;
+      margin-left: 3.5vw;
+    }
+  }
 }
 
 /* style for phone screen sizes */
@@ -232,4 +239,10 @@ li:hover, li:focus {
 
 .modal-body {
   text-align: center;
+}
+
+.map {
+  height: 450;
+  margin: auto;
+  width: 600px;
 }

@@ -234,8 +234,8 @@ body {
 }
 
 #resume a img:hover {
-  -webkit-filter: opacity(0.9) brightness(25%);
-  filter: opacity(0.9) brightness(25%);
+  -webkit-filter: opacity(0.9) brightness(30%);
+  filter: opacity(0.9) brightness(30%);
 }
 
 .flip-card {
@@ -341,6 +341,12 @@ li:hover, li:focus {
   filter: grayscale(0%);
 }
 
+.highfive a p {
+  font-size: .65em;
+  color: #495057;
+  margin-left: 3.5vw;
+}
+
 /* style for phone screen sizes */
 @media only screen and (max-width: 750px) {
   .highfive {
@@ -408,4 +414,10 @@ li:hover, li:focus {
 
 .modal-body {
   text-align: center;
+}
+
+.map {
+  height: 450;
+  margin: auto;
+  width: 600px;
 }
