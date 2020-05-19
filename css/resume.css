@@ -371,3 +371,23 @@ li:hover, li:focus {
 .interest-card img {
   height: 45vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .interest-card {
+    margin: auto;
+    width: 75vw;
+  }
+}
+
+.contact-icons {
+  text-align: center;
+}
+
+.contact-icons i {
+  font-size: 8em;
+}
+
+.contact-icons p {
+  font-size: .85em;
+  margin-top: 1em;
+}
