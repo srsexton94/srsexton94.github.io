@@ -304,8 +304,9 @@ body {
 }
 
 .navbar .name-sub {
-  color: #f8f9fa;
+  color: #212529;
   margin-top: -6vh;
+  font-size: 1.25em;
   font-weight: bold;
   font-style: italic;
 }

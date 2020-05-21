@@ -130,8 +130,9 @@ body {
     box-shadow: 0 3px 5px $shadow;
   }
   .name-sub {
-    color: $gray-100;
+    color: $gray-900;
     margin-top: -6vh;
+    font-size: 1.25em;
     font-weight: bold;
     font-style: italic;
   }
