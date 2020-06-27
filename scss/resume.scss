@@ -9,7 +9,7 @@ body {
   color: $gray-700;
 }
 
-h1, h2, h3, h4, i {
+h1, h2, i {
   text-shadow: 0 3px 5px $shadow;
 }
 
@@ -106,12 +106,17 @@ li:hover, li:focus {
 }
 
 #skills{
+  h3 {
+    font-size: 2rem;
+  }
+
   .skills-list {
     margin: auto;
     text-align: center;
     width: 85%;
+
     i {
-      font-size: 15vh;
+      font-size: 12vh;
     }
     i:hover, i:focus {
       color: $primary;
@@ -120,6 +125,7 @@ li:hover, li:focus {
 
   .techphil {
     float: left;
+    font-size: 1.1rem;
   }
 
   .highfive {
@@ -167,8 +173,17 @@ li:hover, li:focus {
       color: $gray-100 !important;
     }
   }
+
+  .hidden {
+    display: none;
+  }
+
   .modal-body {
     text-align: center;
+
+    .video {
+      max-width: 90vw;
+    }
   }
 }
 
@@ -212,8 +227,7 @@ li:hover, li:focus {
 
 @media only screen and (max-width: 750px) {
   .highfive {
-    float: left;
-    margin-top: 15px;
+    margin-top: 2rem;
   }
 
   .social-icons {
@@ -222,6 +236,11 @@ li:hover, li:focus {
 
   #about .parag {
     width: 90vw;
+  }
+
+  #interests .interest-card {
+    margin: auto;
+    width: 45vw;
   }
 }
 

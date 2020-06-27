@@ -180,7 +180,7 @@ body {
   color: #495057;
 }
 
-h1, h2, h3, h4, i {
+h1, h2, i {
   text-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
 }
 
@@ -275,6 +275,10 @@ li:hover, li:focus {
   transform: rotateY(180deg);
 }
 
+#skills h3 {
+  font-size: 2rem;
+}
+
 #skills .skills-list {
   margin: auto;
   text-align: center;
@@ -282,7 +286,7 @@ li:hover, li:focus {
 }
 
 #skills .skills-list i {
-  font-size: 15vh;
+  font-size: 12vh;
 }
 
 #skills .skills-list i:hover, #skills .skills-list i:focus {
@@ -291,6 +295,7 @@ li:hover, li:focus {
 
 #skills .techphil {
   float: left;
+  font-size: 1.1rem;
 }
 
 #skills .highfive {
@@ -340,8 +345,16 @@ li:hover, li:focus {
   color: #f8f9fa !important;
 }
 
+#interests .hidden {
+  display: none;
+}
+
 #interests .modal-body {
   text-align: center;
+}
+
+#interests .modal-body .video {
+  max-width: 90vw;
 }
 
 #contact .contact-icons {
@@ -383,14 +396,17 @@ li:hover, li:focus {
 
 @media only screen and (max-width: 750px) {
   .highfive {
-    float: left;
-    margin-top: 15px;
+    margin-top: 2rem;
   }
   .social-icons {
     text-align: center;
   }
   #about .parag {
     width: 90vw;
+  }
+  #interests .interest-card {
+    margin: auto;
+    width: 45vw;
   }
 }
 
