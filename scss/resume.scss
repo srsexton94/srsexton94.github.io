@@ -9,29 +9,100 @@ body {
   color: $gray-700;
 }
 
-h1 {
-  font-size: 7rem;
+h1, h2, h3, h4, i {
+  text-shadow: 0 3px 5px $shadow;
 }
 
-.img-profile {
-  width: 9rem;
-}
-
-.mode-toggle {
+li:hover, li:focus {
   color: $primary;
-  font-size: .75em;
-  font-style: italic;
-  float: right;
+  font-weight: bold;
 }
 
-.card-img {
-  height: 100%;
-  width: 100%;
+#sideNav {
+  .img-profile {
+    width: 9rem;
+  }
+
+  box-shadow: 0 3px 5px $shadow;
+  img {
+    box-shadow: 0 3px 5px $shadow;
+  }
+  .name-sub {
+    color: $gray-900;
+    margin-top: -6vh;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 
-#parag {
-  font-size: 1.25rem;
-  width: 55vw;
+#about {
+  h1 {
+    font-size: 7.5rem;
+  }
+
+  .parag {
+    font-size: 1.25rem;
+    width: 60vw;
+  }
+}
+
+#portfolio {
+  .card-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 1vh auto;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: $gray-500;
+    border: 1px dotted $gray-500;
+    border-radius: 10px;
+    box-shadow: -3px 2px 3px 2px $gray-400;
+    color: $black;
+  }
+
+  .flip-card-back {
+    border: 1px dotted $gray-600;
+    border-radius: 10px;
+    box-shadow: -3px 2px 3px 2px $gray-400;
+    padding-top: 15px;
+    background-color: $gray-500;
+    color: $white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 #skills{
@@ -46,9 +117,75 @@ h1 {
       color: $primary;
     }
   }
+
+  .techphil {
+    float: left;
+  }
+
+  .highfive {
+    float: right;
+    img {
+      filter: grayscale(100%);
+      height: 150px;
+      margin: 0 50px 0 0;
+      padding-top: 0;
+      width: 225px;
+    }
+    img:hover, img:focus {
+      filter: grayscale(0%);
+    }
+    a {
+      p {
+        font-size: .65em;
+        color: $gray-700;
+        margin-left: 3.5vw;
+      }
+    }
+  }
 }
 
-#resume {
+#interests {
+  .interest-card {
+    box-shadow: -2px 1px 2px 1px $gray-300;
+    width: 23vw;
+
+    img {
+      height: 45vh;
+    }
+
+    a,
+    button {
+      background-color: #fff !important;
+      border-color: $primary !important;
+      color: $primary !important;
+    }
+
+    a:hover,
+    button:hover {
+      background-color: $primary !important;
+      border-color: $gray-100 !important;
+      color: $gray-100 !important;
+    }
+  }
+  .modal-body {
+    text-align: center;
+  }
+}
+
+#contact {
+  .contact-icons {
+    text-align: center;
+
+    i {
+      font-size: 4rem;
+      margin: auto;
+    }
+
+    p {
+      font-size: .85rem;
+    }
+  }
+
   img {
     border: 1px solid #dedede;
     border-radius: 3px;
@@ -57,10 +194,6 @@ h1 {
     height: 75vh;
     margin: 0 auto;
     width: 50vh;
-  }
-
-  .download {
-    float: right;
   }
 
   p {
@@ -77,111 +210,6 @@ h1 {
   }
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  margin: 1vh auto;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card:focus .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: $gray-500;
-  border: 1px dotted $gray-500;
-  border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px $gray-400;
-  color: $black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  border: 1px dotted $gray-600;
-  border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px $gray-400;
-  padding-top: 15px;
-  background-color: $gray-500;
-  color: $white;
-  transform: rotateY(180deg);
-}
-
-.navbar {
-  box-shadow: 0 3px 5px $shadow;
-  img {
-    box-shadow: 0 3px 5px $shadow;
-  }
-  .name-sub {
-    color: $gray-900;
-    margin-top: -6vh;
-    font-size: 1.25em;
-    font-weight: bold;
-    font-style: italic;
-  }
-}
-
-h1, h2, h3, h4, i {
-  text-shadow: 0 3px 5px $shadow;
-}
-
-.techphil {
-  float: left;
-}
-
-li:hover, li:focus {
-  color: $primary;
-  font-weight: bold;
-}
-
-.highfive {
-  float: right;
-  img {
-    filter: grayscale(100%);
-    height: 150px;
-    margin: 0 50px 0 0;
-    padding-top: 0;
-    width: 225px;
-  }
-  img:hover, img:focus {
-    filter: grayscale(0%);
-  }
-  a {
-    p {
-      font-size: .65em;
-      color: $gray-700;
-      margin-left: 3.5vw;
-    }
-  }
-}
-
-/* style for phone screen sizes */
 @media only screen and (max-width: 750px) {
   .highfive {
     float: left;
@@ -191,65 +219,15 @@ li:hover, li:focus {
   .social-icons {
     text-align: center;
   }
-}
 
-.dark-mode {
-  background-color: $dark-base;
-
-  #sideNav {
-    background-color: $dark-elevate;
-  }
-}
-
-.interest-card {
-  box-shadow: -2px 1px 2px 1px $gray-300;
-  width: 23vw;
-
-  img {
-    height: 45vh;
-  }
-
-  a,
-  button {
-    background-color: #fff !important;
-    border-color: $primary !important;
-    color: $primary !important;
-  }
-
-  a:hover,
-  button:hover {
-    background-color: $primary !important;
-    border-color: $gray-100 !important;
-    color: $gray-100 !important;
+  #about .parag {
+    width: 90vw;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .interest-card {
+  #interests .interest-card {
     margin: auto;
     width: 75vw;
   }
-}
-
-.contact-icons {
-  text-align: center;
-
-  i {
-    font-size: 8em;
-  }
-
-  p {
-    font-size: .85em;
-    margin-top: 1em;
-  }
-}
-
-.modal-body {
-  text-align: center;
-}
-
-.map {
-  height: 450;
-  margin: auto;
-  width: 600px;
 }

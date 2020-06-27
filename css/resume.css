@@ -180,29 +180,99 @@ body {
   color: #495057;
 }
 
-h1 {
-  font-size: 7rem;
+h1, h2, h3, h4, i {
+  text-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
 }
 
-.img-profile {
+li:hover, li:focus {
+  color: #05668D;
+  font-weight: bold;
+}
+
+#sideNav {
+  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
+}
+
+#sideNav .img-profile {
   width: 9rem;
 }
 
-.mode-toggle {
-  color: #05668D;
-  font-size: .75em;
-  font-style: italic;
-  float: right;
+#sideNav img {
+  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
 }
 
-.card-img {
+#sideNav .name-sub {
+  color: #212529;
+  margin-top: -6vh;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#about h1 {
+  font-size: 7.5rem;
+}
+
+#about .parag {
+  font-size: 1.25rem;
+  width: 60vw;
+}
+
+#portfolio .card-img {
   height: 100%;
   width: 100%;
 }
 
-#parag {
-  font-size: 1.25rem;
-  width: 55vw;
+#portfolio .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 1vh auto;
+}
+
+#portfolio .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#portfolio .flip-card-front, #portfolio .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+#portfolio .flip-card-front {
+  background-color: #adb5bd;
+  border: 1px dotted #adb5bd;
+  border-radius: 10px;
+  box-shadow: -3px 2px 3px 2px #ced4da;
+  color: #000;
+}
+
+#portfolio .flip-card-back {
+  border: 1px dotted #868e96;
+  border-radius: 10px;
+  box-shadow: -3px 2px 3px 2px #ced4da;
+  padding-top: 15px;
+  background-color: #adb5bd;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+#portfolio .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+#portfolio .flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
 #skills .skills-list {
@@ -219,7 +289,75 @@ h1 {
   color: #05668D;
 }
 
-#resume img {
+#skills .techphil {
+  float: left;
+}
+
+#skills .highfive {
+  float: right;
+}
+
+#skills .highfive img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: 150px;
+  margin: 0 50px 0 0;
+  padding-top: 0;
+  width: 225px;
+}
+
+#skills .highfive img:hover, #skills .highfive img:focus {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#skills .highfive a p {
+  font-size: .65em;
+  color: #495057;
+  margin-left: 3.5vw;
+}
+
+#interests .interest-card {
+  box-shadow: -2px 1px 2px 1px #dee2e6;
+  width: 23vw;
+}
+
+#interests .interest-card img {
+  height: 45vh;
+}
+
+#interests .interest-card a,
+#interests .interest-card button {
+  background-color: #fff !important;
+  border-color: #05668D !important;
+  color: #05668D !important;
+}
+
+#interests .interest-card a:hover,
+#interests .interest-card button:hover {
+  background-color: #05668D !important;
+  border-color: #f8f9fa !important;
+  color: #f8f9fa !important;
+}
+
+#interests .modal-body {
+  text-align: center;
+}
+
+#contact .contact-icons {
+  text-align: center;
+}
+
+#contact .contact-icons i {
+  font-size: 4rem;
+  margin: auto;
+}
+
+#contact .contact-icons p {
+  font-size: .85rem;
+}
+
+#contact img {
   border: 1px solid #dedede;
   border-radius: 3px;
   box-shadow: -3px 5px 8px 1px rgba(170, 170, 170, 0.75);
@@ -229,11 +367,7 @@ h1 {
   width: 50vh;
 }
 
-#resume .download {
-  float: right;
-}
-
-#resume p {
+#contact p {
   color: #212529;
   font-size: .8em;
   font-style: italic;
@@ -242,122 +376,11 @@ h1 {
   text-align: center;
 }
 
-#resume a img:hover {
+#contact a img:hover {
   -webkit-filter: opacity(0.9) brightness(30%);
   filter: opacity(0.9) brightness(30%);
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  margin: 1vh auto;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card:focus .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #adb5bd;
-  border: 1px dotted #adb5bd;
-  border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px #ced4da;
-  color: #000;
-}
-
-/* Style the back side */
-.flip-card-back {
-  border: 1px dotted #868e96;
-  border-radius: 10px;
-  box-shadow: -3px 2px 3px 2px #ced4da;
-  padding-top: 15px;
-  background-color: #adb5bd;
-  color: #fff;
-  transform: rotateY(180deg);
-}
-
-.navbar {
-  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
-}
-
-.navbar img {
-  box-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
-}
-
-.navbar .name-sub {
-  color: #212529;
-  margin-top: -6vh;
-  font-size: 1.25em;
-  font-weight: bold;
-  font-style: italic;
-}
-
-h1, h2, h3, h4, i {
-  text-shadow: 0 3px 5px rgba(60, 65, 75, 0.5);
-}
-
-.techphil {
-  float: left;
-}
-
-li:hover, li:focus {
-  color: #05668D;
-  font-weight: bold;
-}
-
-.highfive {
-  float: right;
-}
-
-.highfive img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  height: 150px;
-  margin: 0 50px 0 0;
-  padding-top: 0;
-  width: 225px;
-}
-
-.highfive img:hover, .highfive img:focus {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.highfive a p {
-  font-size: .65em;
-  color: #495057;
-  margin-left: 3.5vw;
-}
-
-/* style for phone screen sizes */
 @media only screen and (max-width: 750px) {
   .highfive {
     float: left;
@@ -366,65 +389,14 @@ li:hover, li:focus {
   .social-icons {
     text-align: center;
   }
-}
-
-.dark-mode {
-  background-color: #121212;
-}
-
-.dark-mode #sideNav {
-  background-color: #272727;
-}
-
-.interest-card {
-  box-shadow: -2px 1px 2px 1px #dee2e6;
-  width: 23vw;
-}
-
-.interest-card img {
-  height: 45vh;
-}
-
-.interest-card a,
-.interest-card button {
-  background-color: #fff !important;
-  border-color: #05668D !important;
-  color: #05668D !important;
-}
-
-.interest-card a:hover,
-.interest-card button:hover {
-  background-color: #05668D !important;
-  border-color: #f8f9fa !important;
-  color: #f8f9fa !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .interest-card {
-    margin: auto;
-    width: 75vw;
+  #about .parag {
+    width: 90vw;
   }
 }
 
-.contact-icons {
-  text-align: center;
-}
-
-.contact-icons i {
-  font-size: 8em;
-}
-
-.contact-icons p {
-  font-size: .85em;
-  margin-top: 1em;
-}
-
-.modal-body {
-  text-align: center;
-}
-
-.map {
-  height: 450;
-  margin: auto;
-  width: 600px;
+@media only screen and (max-width: 600px) {
+  #interests .interest-card {
+    margin: auto;
+    width: 75vw;
+  }
 }
