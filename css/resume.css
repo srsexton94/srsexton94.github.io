@@ -180,6 +180,10 @@ body {
   color: #495057;
 }
 
+h1 {
+  font-size: 7rem;
+}
+
 .img-profile {
   width: 9rem;
 }
@@ -194,6 +198,11 @@ body {
 .card-img {
   height: 100%;
   width: 100%;
+}
+
+#parag {
+  font-size: 1.25rem;
+  width: 55vw;
 }
 
 #skills .skills-list {
@@ -356,9 +365,6 @@ li:hover, li:focus {
   }
   .social-icons {
     text-align: center;
-  }
-  .social-icons a {
-    width: 20vw;
   }
 }
 
