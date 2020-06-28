@@ -275,6 +275,11 @@ li:hover, li:focus {
   transform: rotateY(180deg);
 }
 
+#portfolio #see-more {
+  display: none;
+  margin: auto;
+}
+
 #skills h3 {
   font-size: 2rem;
 }
@@ -345,10 +350,6 @@ li:hover, li:focus {
   color: #f8f9fa !important;
 }
 
-#interests .hidden {
-  display: none;
-}
-
 #interests .modal-body {
   text-align: center;
 }
@@ -362,12 +363,11 @@ li:hover, li:focus {
 }
 
 #contact .contact-icons i {
-  font-size: 4rem;
-  margin: auto;
+  font-size: 3rem;
 }
 
 #contact .contact-icons p {
-  font-size: .85rem;
+  font-size: .75rem;
 }
 
 #contact img {
@@ -414,5 +414,11 @@ li:hover, li:focus {
   #interests .interest-card {
     margin: auto;
     width: 75vw;
+  }
+  #portfolio .hidden {
+    display: none;
+  }
+  #portfolio #see-more {
+    display: block;
   }
 }

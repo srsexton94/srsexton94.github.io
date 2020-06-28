@@ -103,6 +103,11 @@ li:hover, li:focus {
   .flip-card:focus .flip-card-inner {
     transform: rotateY(180deg);
   }
+
+  #see-more {
+    display: none;
+    margin: auto;
+  }
 }
 
 #skills{
@@ -174,10 +179,6 @@ li:hover, li:focus {
     }
   }
 
-  .hidden {
-    display: none;
-  }
-
   .modal-body {
     text-align: center;
 
@@ -192,12 +193,11 @@ li:hover, li:focus {
     text-align: center;
 
     i {
-      font-size: 4rem;
-      margin: auto;
+      font-size: 3rem;
     }
 
     p {
-      font-size: .85rem;
+      font-size: .75rem;
     }
   }
 
@@ -248,5 +248,15 @@ li:hover, li:focus {
   #interests .interest-card {
     margin: auto;
     width: 75vw;
+  }
+
+  #portfolio {
+    .hidden {
+      display: none;
+    }
+
+    #see-more {
+      display: block;
+    }
   }
 }

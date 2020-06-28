@@ -27,11 +27,12 @@
 
 })(jQuery); // End of use strict
 
-$('.mode-toggle').on('click', function(event) {
-  $('body').toggleClass('dark-mode')
-  if (event.target.text === 'Dark Mode') {
-    $('.mode-toggle').text('Light Mode')
+$('#see-more').on('click', function(event) {
+  const btn = `#${event.target.id}`
+  if ($(btn).text() === 'See More') {
+    $(btn).text('See Less')
   } else {
-    $('.mode-toggle').text('Dark Mode')
+    $(btn).text('See More')
   }
+  $('.secondary').toggleClass('hidden')
 })
