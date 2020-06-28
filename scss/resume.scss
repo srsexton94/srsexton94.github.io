@@ -7,15 +7,15 @@
 
 body {
   color: $gray-700;
-}
 
-h1, h2, i {
-  text-shadow: 0 3px 5px $shadow;
-}
+  h1, h2, i {
+    text-shadow: 0 3px 5px $shadow;
+  }
 
-li:hover, li:focus {
-  color: $primary;
-  font-weight: bold;
+  li:hover, li:focus {
+    color: $primary;
+    font-weight: bold;
+  }
 }
 
 #sideNav {
@@ -152,6 +152,111 @@ li:hover, li:focus {
         margin-left: 3.5vw;
       }
     }
+  }
+}
+
+#community {
+  h2 {
+    font-size: 5rem;
+  }
+  .card {
+    height: 13vw;
+    width: 50vw;
+    margin: auto;
+
+    a, .card-title {
+      color: $gray-100 !important;
+    }
+
+    .card-title {
+      margin-top: 3.5vw;
+    }
+
+    .dxh {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/dxh.jpg) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .cwc {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/cwc.gif) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .swc {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/swc.jpg) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .cfb {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 4)
+      ), url(../img/community/cfb.jpeg) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .asc {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/asc.png) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .shaha {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/shaha.jpg) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .esl {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/esl.jpg) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .prab {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/prab.jpg) no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .infra {
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 6)
+      ), url(../img/community/infra.jpg) no-repeat center center;
+      background-size: 100% 100%;
+    }
+  }
+
+  .control {
+    background-color: $shade;
   }
 }
 
