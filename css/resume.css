@@ -328,11 +328,11 @@ body li:hover, body li:focus {
 }
 
 #community h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 #community .card {
-  height: 13vw;
+  height: 28vh;
   width: 50vw;
   margin: auto;
 }
@@ -342,7 +342,11 @@ body li:hover, body li:focus {
 }
 
 #community .card .card-title {
-  margin-top: 3.5vw;
+  margin-top: 10vh;
+}
+
+#community .card .control {
+  width: 0vw !important;
 }
 
 #community .card .dxh {
@@ -461,6 +465,13 @@ body li:hover, body li:focus {
   filter: opacity(0.9) brightness(30%);
 }
 
+@media only screen and (max-width: 1000px) {
+  #community .card {
+    height: 34vh;
+    width: 70vw;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .highfive {
     margin-top: 2rem;
@@ -481,6 +492,10 @@ body li:hover, body li:focus {
   #interests .interest-card {
     margin: auto;
     width: 75vw;
+  }
+  #community .card {
+    height: 38vh;
+    width: 70vw;
   }
   #portfolio .hidden {
     display: none;

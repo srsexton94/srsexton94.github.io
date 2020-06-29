@@ -25,14 +25,14 @@
     target: '#sideNav'
   });
 
-})(jQuery); // End of use strict
+  $('#see-more').on('click', function(event) {
+    const btn = `#${event.target.id}`
+    if ($(btn).text() === 'See More') {
+      $(btn).text('See Less')
+    } else {
+      $(btn).text('See More')
+    }
+    $('.secondary').toggleClass('hidden')
+  })
 
-$('#see-more').on('click', function(event) {
-  const btn = `#${event.target.id}`
-  if ($(btn).text() === 'See More') {
-    $(btn).text('See Less')
-  } else {
-    $(btn).text('See More')
-  }
-  $('.secondary').toggleClass('hidden')
-})
+})(jQuery); // End of use strict
