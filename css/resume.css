@@ -210,12 +210,18 @@ body li:hover, body li:focus {
 }
 
 #about h1 {
-  font-size: 7.5rem;
+  font-size: 8rem;
+}
+
+#about h2 {
+  color: #868e96;
+  font-size: 3rem;
+  text-shadow: none;
 }
 
 #about .parag {
   font-size: 1.25rem;
-  width: 60vw;
+  width: 75vw;
 }
 
 #portfolio .card-img {
@@ -475,9 +481,6 @@ body li:hover, body li:focus {
 @media only screen and (max-width: 750px) {
   .highfive {
     margin-top: 2rem;
-  }
-  .social-icons {
-    text-align: center;
   }
   #about .parag {
     width: 90vw;
