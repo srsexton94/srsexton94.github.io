@@ -224,6 +224,11 @@ body li:hover, body li:focus {
   width: 75vw;
 }
 
+#about .hover-descrip {
+  color: #05668D;
+  font-style: italic;
+}
+
 #portfolio .card-img {
   height: 100%;
   width: 100%;

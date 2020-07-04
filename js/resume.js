@@ -35,4 +35,12 @@
     $('.secondary').toggleClass('hidden')
   })
 
+  $('#about a').on('mouseenter', function(event) {
+    $('#about .hover-descrip').text(event.target.id)
+  })
+
+  $('#about a').on('mouseleave', function(event) {
+    $('#about .hover-descrip').text('')
+  })
+
 })(jQuery); // End of use strict
