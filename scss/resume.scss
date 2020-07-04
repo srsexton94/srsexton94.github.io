@@ -38,12 +38,18 @@ body {
 
 #about {
   h1 {
-    font-size: 7.5rem;
+    font-size: 8rem;
+  }
+
+  h2 {
+    color: $gray-600;
+    font-size: 3rem;
+    text-shadow: none;
   }
 
   .parag {
     font-size: 1.25rem;
-    width: 60vw;
+    width: 75vw;
   }
 }
 
@@ -345,10 +351,6 @@ body {
 @media only screen and (max-width: 750px) {
   .highfive {
     margin-top: 2rem;
-  }
-
-  .social-icons {
-    text-align: center;
   }
 
   #about .parag {
