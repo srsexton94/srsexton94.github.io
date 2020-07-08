@@ -226,6 +226,7 @@ body li:hover, body li:focus {
 
 #about .hover-descrip {
   color: #05668D;
+  height: 1.5rem;
   font-style: italic;
 }
 
