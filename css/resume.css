@@ -504,15 +504,19 @@ body li:hover, body li:focus {
 }
 
 @media only screen and (max-width: 750px) {
-  .highfive {
-    margin-top: 2rem;
-  }
   #about .parag {
     width: 90vw;
+  }
+  #skills .highfive {
+    margin-top: 2rem;
   }
   #interests .interest-card {
     margin: auto;
     width: 45vw;
+  }
+  #contact .contact-icons a {
+    width: 20vw;
+    margin: auto;
   }
 }
 
