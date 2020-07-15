@@ -343,71 +343,88 @@ body li:hover, body li:focus {
   font-size: 4rem;
 }
 
-#community .card {
-  height: 28vh;
-  width: 50vw;
+#community .carousel {
+  width: 58rem;
+  max-width: 85vw;
   margin: auto;
 }
 
-#community .card a, #community .card .card-title {
+#community .carousel .control {
+  background-color: #023143;
+  border-radius: 10px;
+  width: 6rem;
+  max-width: 8vw;
+  box-shadow: -2px 1px 2px 1px #adb5bd;
+}
+
+#community .carousel .card {
+  height: 13rem;
+  width: 45rem;
+  max-width: 68vw;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: -2px 1px 2px 1px #adb5bd;
+}
+
+#community .carousel .card a, #community .carousel .card .card-title {
   color: #f8f9fa !important;
 }
 
-#community .card .card-title {
+#community .carousel .card .card-title {
   margin-top: 10vh;
 }
 
-#community .card .control {
+#community .carousel .card .card-body {
+  border-radius: 10px;
+}
+
+#community .carousel .card .control {
   width: 0vw !important;
 }
 
-#community .card .dxh {
+#community .carousel .card .dxh {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/dxh.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .cwc {
+#community .carousel .card .cwc {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/cwc.gif) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .swc {
+#community .carousel .card .swc {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/swc.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .cfb {
+#community .carousel .card .cfb {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/cfb.jpeg) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .asc {
+#community .carousel .card .asc {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/asc.png) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .shaha {
+#community .carousel .card .shaha {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/shaha.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .esl {
+#community .carousel .card .esl {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/esl.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .prab {
+#community .carousel .card .prab {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/prab.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
 
-#community .card .infra {
+#community .carousel .card .infra {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url(../img/community/infra.jpg) no-repeat center center;
   background-size: 100% 100%;
-}
-
-#community .control {
-  background-color: #023143;
 }
 
 #interests .interest-card {
@@ -478,9 +495,11 @@ body li:hover, body li:focus {
 }
 
 @media only screen and (max-width: 1000px) {
-  #community .card {
-    height: 34vh;
-    width: 70vw;
+  #community .carousel {
+    height: 43rem;
+  }
+  #community .carousel .card {
+    height: 14rem;
   }
 }
 
@@ -497,14 +516,16 @@ body li:hover, body li:focus {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #interests .interest-card {
     margin: auto;
     width: 75vw;
   }
-  #community .card {
-    height: 38vh;
-    width: 70vw;
+  #community .carousel {
+    height: 47rem;
+  }
+  #community .carousel .card {
+    height: 15rem;
   }
   #portfolio .hidden {
     display: none;

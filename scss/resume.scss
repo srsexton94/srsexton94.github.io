@@ -172,108 +172,126 @@ body {
     font-size: 4rem;
   }
 
-  .card {
-    height: 28vh;
-    width: 50vw;
+  .carousel {
+    width: 58rem;
+    max-width: 85vw;
     margin: auto;
 
-    a, .card-title {
-      color: $gray-100 !important;
-    }
-
-    .card-title {
-      margin-top: 10vh;
-    }
-
     .control {
-      width: 0vw !important;
+      background-color: $shade;
+      border-radius: 10px;
+      width: 6rem;
+      max-width: 8vw;
+      box-shadow: -2px 1px 2px 1px $gray-500;
     }
 
-    .dxh {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/dxh.jpg) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .cwc {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/cwc.gif) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .swc {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/swc.jpg) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .cfb {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 4)
-      ), url(../img/community/cfb.jpeg) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .asc {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/asc.png) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .shaha {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/shaha.jpg) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .esl {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/esl.jpg) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .prab {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/prab.jpg) no-repeat center center;
-      background-size: 100% 100%;
-    }
-    .infra {
-      background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 6)
-      ), url(../img/community/infra.jpg) no-repeat center center;
-      background-size: 100% 100%;
-    }
-  }
+    .card {
+      height: 13rem;
+      width: 45rem;
+      max-width: 68vw;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: -2px 1px 2px 1px $gray-500;
 
-  .control {
-    background-color: $shade;
+      a, .card-title {
+        color: $gray-100 !important;
+      }
+
+      .card-title {
+        margin-top: 10vh;
+      }
+
+      .card-body {
+        border-radius: 10px;
+      }
+
+      .control {
+        width: 0vw !important;
+      }
+
+      .dxh {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/dxh.jpg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .cwc {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/cwc.gif) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .swc {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/swc.jpg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .cfb {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 4)
+        ), url(../img/community/cfb.jpeg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .asc {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/asc.png) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .shaha {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/shaha.jpg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .esl {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/esl.jpg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .prab {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/prab.jpg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .infra {
+        background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 6)
+        ), url(../img/community/infra.jpg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+    }
+
   }
 }
 
@@ -348,9 +366,11 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-  #community .card {
-    height: 34vh;
-    width: 70vw;
+  #community .carousel {
+    height: 43rem;
+    .card {
+      height: 14rem;
+    }
   }
 }
 
@@ -369,15 +389,17 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #interests .interest-card {
     margin: auto;
     width: 75vw;
   }
 
-  #community .card {
-    height: 38vh;
-    width: 70vw;
+  #community .carousel {
+    height: 47rem;
+    .card {
+      height: 15rem;
+    }
   }
 
   #portfolio {
