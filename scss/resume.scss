@@ -296,28 +296,31 @@ body {
 }
 
 #interests {
-  .interest-card {
-    box-shadow: -2px 1px 2px 1px $gray-300;
-    width: 23vw;
-
-    img {
-      height: 45vh;
-    }
-
-    a,
-    button {
-      background-color: #fff !important;
-      border-color: $primary !important;
-      color: $primary !important;
-    }
-
-    a:hover,
-    button:hover {
-      background-color: $primary !important;
-      border-color: $gray-100 !important;
-      color: $gray-100 !important;
-    }
+  .interest img.interest-img {
+    border: 5px solid orange;
   }
+  // .interest {
+  //   box-shadow: -2px 1px 2px 1px $gray-300;
+  //   width: 23vw;
+
+  //   img {
+  //     height: 45vh;
+  //   }
+
+  //   a,
+  //   button {
+  //     background-color: #fff !important;
+  //     border-color: $primary !important;
+  //     color: $primary !important;
+  //   }
+
+  //   a:hover,
+  //   button:hover {
+  //     background-color: $primary !important;
+  //     border-color: $gray-100 !important;
+  //     color: $gray-100 !important;
+  //   }
+  // }
 
   .modal-body {
     text-align: center;
