@@ -1,0 +1,28 @@
+@use '../../assets/scss/colors' as *;
+
+.under-construction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $constructionBackground;
+
+  h2, p, li {
+    margin: .75rem;
+    text-align: center;
+  }
+
+  img {
+    max-width: 30rem;
+  }
+
+  a {
+    color: navy;
+  }
+
+  .newtab, .pdf {
+    font-size: small;
+  }
+}
