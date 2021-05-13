@@ -1,0 +1,11 @@
+$buttonSize: 2.5rem;
+
+.button {
+  display: inline-block;
+  background-color: grey;
+  color: white;
+  height: $buttonSize;
+  width: $buttonSize;
+  line-height: $buttonSize;
+  border-radius: 50%;
+}

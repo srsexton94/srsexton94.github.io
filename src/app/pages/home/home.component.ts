@@ -12,16 +12,16 @@ import { Component } from '@angular/core'
         </p>
         <ul class="socials">
           <li class="social-button">
-            <social-link linkType="linkedin"></social-link>
+            <social-link addClasses="button" linkType="linkedin"></social-link>
           </li>
           <li class="social-button">
-            <social-link linkType="github"></social-link>
+            <social-link addClasses="button" linkType="github"></social-link>
           </li>
           <li class="social-button">
-            <social-link linkType="email"></social-link>
+            <social-link addClasses="button" linkType="email"></social-link>
           </li>
           <li class="social-button">
-            <social-link linkType="resume"></social-link>
+            <social-link addClasses="button" linkType="resume"></social-link>
           </li>
         </ul>
       </div>

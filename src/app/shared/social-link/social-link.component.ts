@@ -6,8 +6,10 @@ import { ProjectPaths, SocialPaths } from '../../../models/paths'
 
 @Component({
   selector: 'social-link',
+  styleUrls: ['social-link.component.scss'],
   template: `
     <a 
+      class="social-link"
       target="_blank" 
       rel="noopener noreferer" 
       [href]="srcPath"
@@ -18,6 +20,7 @@ import { ProjectPaths, SocialPaths } from '../../../models/paths'
   `
 })
 export class SocialLinkComponent {
+  @Input() addClasses?: string
   @Input() iconType?: string
   @Input() linkText?: string
   @Input() linkType: string = 'linkedin'
@@ -35,7 +38,7 @@ export class SocialLinkComponent {
   }
 
   get iconClass(): string {
-    return `icon ${this.iconSelector}`
+    return `icon ${this.iconSelector} ${this.addClasses}`
   }
 
   get iconSelector(): string {
