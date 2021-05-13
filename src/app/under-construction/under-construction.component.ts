@@ -21,36 +21,21 @@ import { PATHS } from '../../models/paths'
       <ul>
         <li>
           Check out
-          <a target="_blank" rel="noopener noreferer" [href]="githubPath">
-            my code on Github
-            <fa-icon class="icon newtab" aria-label="opens new tab" [icon]="newTabIcon"></fa-icon>
-          </a>
+          <social-link linkText="my code on Github" linkType="github" iconType="newtab"></social-link>
         </li>
         <li>
           Connect with me on
-          <a target="_blank" rel="noopener noreferer" [href]="linkedInPath">
-            LinkedIn
-            <fa-icon class="icon newtab" aria-label="opens new tab" [icon]="newTabIcon"></fa-icon>
-          </a>
+          <social-link linkText="LinkedIn" linkType="linkedin" iconType="newtab"></social-link>
         </li>
         <li>
           Review
-          <a target="_blank" rel="noopener noreferer" [href]="resumePath">
-            my Resume
-            <fa-icon class="icon pdf" aria-label="opens pdf on new tab" [icon]="pdfIcon"></fa-icon>
-          </a>
+          <social-link linkText="my Resume" linkType="resume"></social-link>
         </li>
         <li>
           Check out my favorite past projects:<br>
-          <a target="_blank" rel="noopener noreferer" [href]="surViralSitePath">
-            SurViral
-            <fa-icon class="icon newtab" aria-label="opens new tab" [icon]="newTabIcon"></fa-icon>
-          </a>
+          <social-link linkText="SurViral" linkType="surViralSite" iconType="newtab"></social-link>
           and
-          <a target="_blank" rel="noopener noreferer" [href]="moodTrackerSitePath">
-            MoodTracker
-            <fa-icon class="icon newtab" aria-label="opens new tab" [icon]="newTabIcon"></fa-icon>
-          </a>
+          <social-link linkText="MoodTracker" linkType="moodTrackerSite" iconType="newtab"></social-link>
         </li>
         <li>
           Email me at <a [href]="emailPath">srsexton94@gmail.com</a>
@@ -63,13 +48,6 @@ import { PATHS } from '../../models/paths'
 export class UnderConstructionComponent {
   blushImage: string = PATHS.blushImg
   emailPath: string = PATHS.email
-  githubPath: string = PATHS.github
-  linkedInPath: string = PATHS.linkedin
-  moodTrackerSitePath: string = PATHS.moodTrackerSite
-  newTabIcon: IconProp = faExternalLinkAlt
   paintIcon: IconProp = faPaintRoller
-  pdfIcon: IconProp = faFilePdf
-  resumePath: string = PATHS.resume
-  surViralSitePath: string = PATHS.surViralSite
   toolsIcon: IconProp = faTools
 }

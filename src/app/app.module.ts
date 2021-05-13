@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser'
-import { NgModule } from '@angular/core'
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core'
 
 import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { NavbarComponent } from './navbar/navbar.component'
+import { SocialLinkComponent } from './shared/index'
 import {
   AboutComponent,
   EngineeringComponent,
@@ -16,13 +17,14 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    EngineeringComponent,
-    DesignComponent,
     AboutComponent,
+    AppComponent,
+    DesignComponent,
+    EngineeringComponent,
+    HomeComponent,
+    NavbarComponent,
     PageContainerComponent,
+    SocialLinkComponent,
     UnderConstructionComponent
   ],
   imports: [
@@ -31,6 +33,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     FontAwesomeModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
