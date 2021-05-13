@@ -12,7 +12,7 @@ import { ProjectPaths, SocialPaths } from '../../../models/paths'
       rel="noopener noreferer" 
       [href]="srcPath"
     >
-      <span *ngIf="linkText">{{ linkText }}</span>
+      <span *ngIf="linkText">{{ linkText }} </span>
       <fa-icon aria-label="opens new tab" [class]="iconClass" [icon]="icon"></fa-icon>
     </a>
   `
