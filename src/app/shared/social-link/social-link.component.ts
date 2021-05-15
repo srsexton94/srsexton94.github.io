@@ -14,7 +14,7 @@ import { ProjectPaths, SocialPaths } from '../../../models/paths'
       rel="noopener noreferer" 
       [href]="srcPath"
     >
-      <span *ngIf="linkText">{{ linkText }} </span>
+      <ng-content></ng-content>
       <fa-icon aria-label="opens new tab" [class]="iconClass" [icon]="icon"></fa-icon>
     </a>
   `
@@ -22,7 +22,6 @@ import { ProjectPaths, SocialPaths } from '../../../models/paths'
 export class SocialLinkComponent {
   @Input() addClasses?: string
   @Input() iconType?: string
-  @Input() linkText?: string
   @Input() linkType: string = 'linkedin'
 
   iconTypes: { [key: string]: IconProp } = {

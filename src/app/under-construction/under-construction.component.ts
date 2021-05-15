@@ -22,21 +22,21 @@ import { ImagePaths, SocialPaths } from '../../models/paths'
       <ul>
         <li>
           Check out
-          <social-link linkText="my code on Github" linkType="github" iconType="newtab"></social-link>
+          <social-link linkType="github" iconType="newtab">my code on GitHub</social-link>
         </li>
         <li>
           Connect with me on
-          <social-link linkText="LinkedIn" linkType="linkedin" iconType="newtab"></social-link>
+          <social-link linkType="linkedin" iconType="newtab">LinkedIn</social-link>
         </li>
         <li>
-          Review
-          <social-link linkText="my Resume" linkType="resume"></social-link>
+          Review 
+          <social-link linkType="resume">my Resume</social-link>
         </li>
         <li>
           Check out my favorite past projects:<br>
-          <social-link linkText="SurViral" linkType="surViralSite" iconType="newtab"></social-link>
+          <social-link linkType="surViralSite" iconType="newtab">SurViral</social-link>
           and
-          <social-link linkText="MoodTracker" linkType="moodTrackerSite" iconType="newtab"></social-link>
+          <social-link linkType="moodTrackerSite" iconType="newtab">MoodTracker</social-link>
         </li>
         <li>
           Email me at <a class="email-link" [href]="emailPath">srsexton94@gmail.com</a>
