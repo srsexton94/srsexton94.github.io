@@ -42,7 +42,11 @@ import { ImagePaths, SocialPaths } from '../../models/paths'
           Email me at <a class="email-link" [href]="emailPath">srsexton94@gmail.com</a>
         </li>
       </ul>
-      <img alt="cartoon person working on laptop in kitchen" [src]="blushImage">
+      <img 
+        title="Blush: The Little Things Kitchen by Susana Salas"
+        alt="cartoon person working on laptop in kitchen"
+        [src]="blushImage"
+      />
     </section>
   `
 })
