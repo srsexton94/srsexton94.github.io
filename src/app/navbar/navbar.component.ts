@@ -43,7 +43,7 @@ export class NavbarComponent {
   }
 
   get homeLinkText(): string {
-    return this.scrolled > 500 ? 'Samantha Sexton' : 'SRS'
+    return this.scrolled > 500 ? 'Samantha Rose Sexton' : 'SRS'
   }
 
   handleMenuClick(isButton?: boolean): void {
