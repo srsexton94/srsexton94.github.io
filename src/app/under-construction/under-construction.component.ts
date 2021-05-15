@@ -1,7 +1,8 @@
 import { Component } from '@angular/core'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import { faExternalLinkAlt, faPaintRoller, faFilePdf, faTools } from '@fortawesome/free-solid-svg-icons'
-import { PATHS } from '../../models/paths'
+import { faPaintRoller, faTools } from '@fortawesome/free-solid-svg-icons'
+import { ImagePaths, SocialPaths } from '../../models/paths'
+
 @Component({
   selector: 'under-construction',
   styleUrls: ['./under-construction.component.scss'],
@@ -46,8 +47,8 @@ import { PATHS } from '../../models/paths'
   `
 })
 export class UnderConstructionComponent {
-  blushImage: string = PATHS.blushImg
-  emailPath: string = PATHS.email
+  blushImage: string = ImagePaths.blushImg
+  emailPath: string = SocialPaths.email
   paintIcon: IconProp = faPaintRoller
   toolsIcon: IconProp = faTools
 }
