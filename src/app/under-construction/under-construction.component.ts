@@ -39,7 +39,7 @@ import { ImagePaths, SocialPaths } from '../../models/paths'
           <social-link linkText="MoodTracker" linkType="moodTrackerSite" iconType="newtab"></social-link>
         </li>
         <li>
-          Email me at <a [href]="emailPath">srsexton94@gmail.com</a>
+          Email me at <a class="email-link" [href]="emailPath">srsexton94@gmail.com</a>
         </li>
       </ul>
       <img alt="cartoon person working on laptop in kitchen" [src]="blushImage">
