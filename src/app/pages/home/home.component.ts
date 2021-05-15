@@ -1,4 +1,6 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
+import { timer } from 'rxjs'
+import { DevTitleList } from '../../../models/titles'
 
 @Component({
   selector: 'home-page',
@@ -28,6 +30,27 @@ import { Component } from '@angular/core'
     </section>
   `
 })
-export class HomeComponent {
-  typewriterCopy: string = 'Full-stack Software Engineer.'
+export class HomeComponent implements OnInit {
+  typewriterCount: number = 0
+  typewriterIndex: number = 0
+
+  get typewriterCopy(): string {
+    return DevTitleList[this.typewriterIndex]
+  }
+
+  ngOnInit(): void {
+    this.timerSubscription()
+  }
+
+  private timerSubscription(): void {
+    timer(5000, 3000).subscribe(() => {
+      this.setTypewriterIndex()
+    })
+  }
+
+  private setTypewriterIndex(): void {
+    this.typewriterIndex === DevTitleList.length - 1 
+      ? this.typewriterIndex = 0
+      : this.typewriterIndex++
+  }
 }
