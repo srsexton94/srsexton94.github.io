@@ -6,10 +6,12 @@ interface ISocialPaths {
   [key: string]: string;
 }
 
-interface IImagePaths {
-  aboutMe: string,
+interface IMediaPaths {
+  aboutMeImg: string,
+  bjjVideo: string,
   blushImg: string,
   blushImgEditor: string,
+  danceVideo: string,
   pronounBadge: string,
   resume: string,
   [key: string]: string;
@@ -28,10 +30,12 @@ export const SocialPaths: ISocialPaths = {
   email: 'mailto:srsexton94@gmail.com'
 }
 
-export const ImagePaths: IImagePaths = {
-  aboutMe: '../assets/images/about-me.jpeg',
+export const MediaPaths: IMediaPaths = {
+  aboutMeImg: '../assets/images/about-me.jpeg',
+  bjjVideo: 'https://www.youtube.com/embed/udp-dydFmYk',
   blushImg: 'https://blush.design/api/download?shareUri=THKY6D0pRbyCdz2x&c=Hair_0%7Ee7b460-0.8%7E372310_Skin_0%7E673a18-0.8%7Ef4d4b8&bg=59eeff&w=800&h=800&fm=png',
   blushImgEditor: 'https://blush.design/collections/little-things/scenes-kitchen/THKY6D0pRbyCdz2x?c=Hair_0%7Ee7b460-0.8%7E372310_Skin_0%7E673a18-0.8%7Ef4d4b8&bg=59eeff',
+  danceVideo: 'https://www.youtube.com/embed/3MHCFOIGLEg',
   pronounBadge: '../assets/images/pronouns.png',
   resume: '../assets/images/resume.png' // TODO: figure out why this is rotated
 }
