@@ -15,7 +15,7 @@ import { ProjectPaths, SocialPaths } from '../../../models/index'
       [href]="srcPath"
     >
       <ng-content></ng-content>
-      <fa-icon aria-label="opens new tab" [class]="iconClass" [icon]="icon"></fa-icon>
+      <fa-icon *ngIf="!excludeIcon" aria-label="opens new tab" [class]="iconClass" [icon]="icon"></fa-icon>
     </a>
   `
 })
@@ -23,6 +23,7 @@ export class SocialLinkComponent {
   @Input() addClasses?: string
   @Input() iconType?: string
   @Input() linkType: string = 'linkedin'
+  @Input() excludeIcon?: boolean 
 
   iconTypes: { [key: string]: IconProp } = {
     email: faAt,

@@ -12,6 +12,9 @@ import { MediaPaths } from '../../../../src/models/index'
         <p>
           Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
         </p>
+        <social-link linkType="resume" [excludeIcon]="true">
+          <img class="resume-preview" [src]="resumeSrc"/>
+        </social-link>
         <img class="pronoun-badge" [src]="pronounSrc"/>
         <button (click)="toggleModal('BJJ')">Open BJJ modal</button>
         <button (click)="toggleModal('DANCE')">Open Dance modal</button>
@@ -24,6 +27,8 @@ import { MediaPaths } from '../../../../src/models/index'
 export class AboutComponent {
   selfieSrc: string = MediaPaths.aboutMeImg
   pronounSrc: string = MediaPaths.pronounBadge
+  resumeSrc: string = MediaPaths.resumeImg
+
   isModalOpen: { [key: string]: boolean } = {
     BJJ: false,
     DANCE: false

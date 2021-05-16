@@ -5,7 +5,7 @@ interface IMediaPaths {
   blushImgEditor: string,
   danceVideo: string,
   pronounBadge: string,
-  resume: string,
+  resumeImg: string,
   [key: string]: string;
 }
 
@@ -16,5 +16,5 @@ export const MediaPaths: IMediaPaths = {
   blushImgEditor: 'https://blush.design/collections/little-things/scenes-kitchen/THKY6D0pRbyCdz2x?c=Hair_0%7Ee7b460-0.8%7E372310_Skin_0%7E673a18-0.8%7Ef4d4b8&bg=59eeff',
   danceVideo: '../../assets/videos/bolero-finals.mp4',
   pronounBadge: '../../assets/images/pronouns.png',
-  resume: '../../assets/images/resume.png' // TODO: figure out why this is rotated
+  resumeImg: '../../assets/images/resume.png'
 }
