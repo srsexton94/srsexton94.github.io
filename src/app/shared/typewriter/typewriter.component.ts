@@ -1,12 +1,27 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { faPause } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'typewriter',
   styleUrls: ['./typewriter.component.scss'],
   template: `
-    <p class="typewriter">
-      {{ displayText }}
-    </p>
+    <ng-container>
+      <p 
+        *ngIf="!isPaused"
+        class="typewriter-text" 
+        tabindex="0"
+        [attr.aria-label]="currentTypewriterText"
+      >
+        {{ displayText }}
+      </p>
+      <p *ngIf="isPaused" class="typewriter-text">
+        {{ compositeDisplayText }}
+      </p>
+      <button (click)="toggleAnimationPause()">
+        {{ animationToggleText }}
+      </button>
+    </ng-container>
   `
 })
 export class TypewriterComponent implements OnInit {
@@ -15,11 +30,28 @@ export class TypewriterComponent implements OnInit {
 
   displayText: string = ''
   isBackspacing: boolean = false
+  isPaused: boolean = false
   textIndex: number = 0
   typingIndex: number = 0
 
+  get animationToggleText(): string {
+    return `${ this.isPaused ? 'Resume' : 'Pause'} typing`
+  }
+
+  get compositeDisplayText(): string {
+    return this.typewriterTexts.join(' | ')
+  }
+
+  get currentTypewriterText(): string {
+    return this.typewriterTexts[this.textIndex]
+  }
+
   ngOnInit(): void {
     this.typewriter()
+  }
+
+  toggleAnimationPause(): void {
+    this.isPaused = !this.isPaused
   }
 
   private typewriter(): void {
@@ -27,7 +59,7 @@ export class TypewriterComponent implements OnInit {
   }
 
   private typeCopy(): void {
-    const isStillTyping: boolean = this.typingIndex < this.typewriterTexts[this.textIndex].length
+    const isStillTyping: boolean = this.typingIndex < this.currentTypewriterText.length
 
     isStillTyping ? this.typeNextLetter() : this.startBackspacing()
   }
@@ -37,7 +69,7 @@ export class TypewriterComponent implements OnInit {
   }
 
   private typeNextLetter(): void {
-    this.displayText += this.typewriterTexts[this.textIndex][this.typingIndex]
+    this.displayText += this.currentTypewriterText[this.typingIndex]
     this.typingIndex++
     setTimeout(() => this.typewriter(), this.typingSpeed * 2)
   }
