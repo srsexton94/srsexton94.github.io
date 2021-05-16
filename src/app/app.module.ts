@@ -5,14 +5,14 @@ import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { NavbarComponent } from './navbar/navbar.component'
-import { SocialLinkComponent } from './shared/index'
+import { SocialLinkComponent, TypewriterComponent } from './shared/index'
 import {
   AboutComponent,
   EngineeringComponent,
   DesignComponent,
   HomeComponent,
   PageContainerComponent
-} from './pages/index';
+} from './pages/index'
 import { UnderConstructionComponent } from './under-construction/under-construction.component'
 
 @NgModule({
@@ -25,6 +25,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     NavbarComponent,
     PageContainerComponent,
     SocialLinkComponent,
+    TypewriterComponent,
     UnderConstructionComponent
   ],
   imports: [
