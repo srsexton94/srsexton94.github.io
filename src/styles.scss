@@ -14,3 +14,10 @@
   padding-top: $navbarHeight + 1;
   padding-left: 1rem;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible { 
+  display: inline-block;
+  outline: 1px dashed black;
+}
