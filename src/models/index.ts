@@ -1,2 +1,4 @@
-export * from './paths'
-export * from './titles'
+export * from './content/titles'
+export * from './paths/media'
+export * from './paths/projects'
+export * from './paths/social'
