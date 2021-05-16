@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MediaPaths } from '../../../../src/models/paths'
+import { MediaPaths } from '../../../../src/models/index'
 
 @Component({
   selector: 'about-page',
@@ -15,10 +15,10 @@ import { MediaPaths } from '../../../../src/models/paths'
         <img class="pronoun-badge" [src]="pronounSrc"/>
         <button (click)="toggleModal('BJJ')">Open BJJ modal</button>
         <button (click)="toggleModal('DANCE')">Open Dance modal</button>
-        <modal *ngIf="isModalOpen.BJJ" modalName="BJJ" (close)="toggleModal('BJJ')"></modal>
-        <modal *ngIf="isModalOpen.DANCE" modalName="Dance" (close)="toggleModal('DANCE')"></modal>
       </div>
     </section>
+    <modal *ngIf="isModalOpen.BJJ" modalName="BJJ" (close)="toggleModal('BJJ')"></modal>
+    <modal *ngIf="isModalOpen.DANCE" modalName="DANCE" (close)="toggleModal('DANCE')"></modal>
   `
 })
 export class AboutComponent {

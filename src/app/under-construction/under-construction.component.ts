@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faPaintRoller, faTools } from '@fortawesome/free-solid-svg-icons'
-import { MediaPaths, SocialPaths } from '../../models/paths'
+import { MediaPaths, SocialPaths } from '../../models/index'
 
 @Component({
   selector: 'under-construction',

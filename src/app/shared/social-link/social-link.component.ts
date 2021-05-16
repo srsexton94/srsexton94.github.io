@@ -1,8 +1,8 @@
-import { Component, Input } from '@angular/core';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt, faAt, faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import { ProjectPaths, SocialPaths } from '../../../models/paths'
+import { Component, Input } from '@angular/core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faExternalLinkAlt, faAt, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { ProjectPaths, SocialPaths } from '../../../models/index'
 
 @Component({
   selector: 'social-link',

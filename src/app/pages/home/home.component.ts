@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { DevTitleList } from '../../../models/titles'
+import { DevTitleList } from '../../../models/index'
 
 @Component({
   selector: 'home-page',
