@@ -5,13 +5,10 @@ import { Component } from '@angular/core'
   styleUrls: ['./app.component.scss'],
   template: `
     <under-construction *ngIf="isUnderConstruction"></under-construction>
-    <ng-container *ngIf="!isUnderConstruction">
-      <navbar></navbar>
-      <page-container></page-container>
-    </ng-container>
+    <main-content *ngIf="!isUnderConstruction"></main-content>
     <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
-  isUnderConstruction: boolean = true
+  isUnderConstruction: boolean = false //true
 }

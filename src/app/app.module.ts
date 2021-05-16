@@ -5,15 +5,16 @@ import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { NavbarComponent } from './navbar/navbar.component'
+import { PageContainerComponent } from './page-container/page-container.component'
 import { SocialLinkComponent, TypewriterComponent } from './shared/index'
 import {
   AboutComponent,
   EngineeringComponent,
   DesignComponent,
-  HomeComponent,
-  PageContainerComponent
+  HomeComponent
 } from './pages/index'
-import { UnderConstructionComponent } from './under-construction/under-construction.component'
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { MainContentComponent } from './main-content/main-content.component'
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     DesignComponent,
     EngineeringComponent,
     HomeComponent,
+    MainContentComponent,
     NavbarComponent,
     PageContainerComponent,
     SocialLinkComponent,

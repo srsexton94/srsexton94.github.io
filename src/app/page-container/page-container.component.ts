@@ -4,10 +4,12 @@ import { Component } from '@angular/core';
   selector: 'page-container',
   styleUrls: ['./page-container.component.scss'],
   template: `
-    <home-page></home-page>
-    <engineering-page></engineering-page>
-    <design-page></design-page>
-    <about-page></about-page>
+    <ng-container>
+      <home-page></home-page>
+      <engineering-page></engineering-page>
+      <design-page></design-page>
+      <about-page></about-page>
+    </ng-container>
   `
 })
 export class PageContainerComponent {}
