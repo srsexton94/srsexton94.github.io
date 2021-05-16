@@ -1,3 +1,4 @@
 export * from './modal/modal.component'
+export * from './project-tile/project-tile.component'
 export * from './social-link/social-link.component'
 export * from './typewriter/typewriter.component'

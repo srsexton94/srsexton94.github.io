@@ -16,6 +16,7 @@ import {
 } from './pages/index'
 import { 
   ModalComponent, 
+  ProjectTileComponent,
   SocialLinkComponent, 
   TypewriterComponent 
 } from './shared/index'
@@ -32,6 +33,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     ModalComponent,
     NavbarComponent,
     PageContainerComponent,
+    ProjectTileComponent,
     SocialLinkComponent,
     TypewriterComponent,
     UnderConstructionComponent

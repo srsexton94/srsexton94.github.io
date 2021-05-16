@@ -1,0 +1,12 @@
+#engineering-section {
+  text-align: center;
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 50vh;
+    width: 85vw;
+    margin: auto;
+  }
+}
