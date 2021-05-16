@@ -7,8 +7,11 @@ interface ISocialPaths {
 }
 
 interface IImagePaths {
+  aboutMe: string,
   blushImg: string,
   blushImgEditor: string,
+  pronounBadge: string,
+  resume: string,
   [key: string]: string;
 }
 
@@ -26,8 +29,11 @@ export const SocialPaths: ISocialPaths = {
 }
 
 export const ImagePaths: IImagePaths = {
+  aboutMe: '../assets/images/about-me.jpeg',
   blushImg: 'https://blush.design/api/download?shareUri=THKY6D0pRbyCdz2x&c=Hair_0%7Ee7b460-0.8%7E372310_Skin_0%7E673a18-0.8%7Ef4d4b8&bg=59eeff&w=800&h=800&fm=png',
-  blushImgEditor: 'https://blush.design/collections/little-things/scenes-kitchen/THKY6D0pRbyCdz2x?c=Hair_0%7Ee7b460-0.8%7E372310_Skin_0%7E673a18-0.8%7Ef4d4b8&bg=59eeff'
+  blushImgEditor: 'https://blush.design/collections/little-things/scenes-kitchen/THKY6D0pRbyCdz2x?c=Hair_0%7Ee7b460-0.8%7E372310_Skin_0%7E673a18-0.8%7Ef4d4b8&bg=59eeff',
+  pronounBadge: '../assets/images/pronouns.png',
+  resume: '../assets/images/resume.png' // TODO: figure out why this is rotated
 }
 
 export const ProjectPaths: IProjectPaths = {
