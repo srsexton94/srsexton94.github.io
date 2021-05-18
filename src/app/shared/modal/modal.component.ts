@@ -28,7 +28,6 @@ export class ModalComponent {
   }
 
   get videoSrc(): string {
-    console.log(MediaPaths[this.videoSelectors[this.modalName]])
     return MediaPaths[this.videoSelectors[this.modalName]]
   }
 }

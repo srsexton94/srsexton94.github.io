@@ -17,7 +17,10 @@
 
 a:focus-visible,
 button:focus-visible,
-input:focus-visible { 
-  display: inline-block;
-  outline: 1px dashed black;
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 1.5px dashed black;
+  outline-offset: .5rem;
 }
