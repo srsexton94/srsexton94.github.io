@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { ProjectTypes } from '../../../models/index'
 
 @Component({
   selector: 'engineering-page',
@@ -8,16 +9,18 @@ import { Component } from '@angular/core';
       <h2>Engineering projects</h2>
       <p>Hover or click the button to see more about each project</p>
       <div class="project-container">
-        <project-tile></project-tile>
-        <project-tile></project-tile>
-        <project-tile></project-tile>
-        <project-tile></project-tile>
-        <project-tile></project-tile>
-        <project-tile></project-tile>
-        <project-tile></project-tile>
-        <project-tile></project-tile>
+        <project-tile [projectName]="projects.SURVIRAL"></project-tile>
+        <project-tile [projectName]="projects.MOODTRACKER"></project-tile>
+        <project-tile [projectName]="projects.RUSSIAN"></project-tile>
+        <project-tile [projectName]="projects.RAIN"></project-tile>
+        <project-tile [projectName]="projects.BUDGET"></project-tile>
+        <project-tile [projectName]="projects.CALCULATOR"></project-tile>
+        <project-tile [projectName]="projects.POMODORO"></project-tile>
+        <project-tile [projectName]="projects.TODONE"></project-tile>
       </div>
     </section>
   `
 })
-export class EngineeringComponent {}
+export class EngineeringComponent {
+  projects: { [key: string]: ProjectTypes } = ProjectTypes
+}

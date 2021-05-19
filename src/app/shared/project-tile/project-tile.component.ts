@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { ProjectPaths, ProjectTypes, SocialLinkTypes } from '../../../models/index'
+import { ProjectPaths, ProjectTypes } from '../../../models/index'
 
 @Component({
   selector: 'project-tile',
@@ -13,24 +13,16 @@ import { ProjectPaths, ProjectTypes, SocialLinkTypes } from '../../../models/ind
         <div id="project-description" class="face back">
           <h2>{{ projectName }}</h2>
           <p>Here's where I'll tell you about what this cool project does weeeee</p>
-          <social-link
-            [iconType]="linkTypes.NEWTAB"
-            [linkType]="linkTypes.GITHUB"
-            [ngClass]="{ 'hidden': !isFlipped }"
-          >
-            Live Site
-          </social-link>
-          <social-link
-            [iconType]="linkTypes.NEWTAB"
-            [linkType]="linkTypes.GITHUB"
-            [ngClass]="{ 'hidden': !isFlipped }"
-          >
-            Codebase
-          </social-link>
+          <a [attr.tabindex]="tabIndex" [href]="siteSrc">Live Site</a>
+          <a [attr.tabindex]="tabIndex" [href]="codeSrc">Codebase</a>
         </div>
       </div>
     </div>
-    <button aria-describedby="project-description" (click)="flipCard()">
+    <button 
+      aria-label="Reveal project description" 
+      aria-describedby="project-description" 
+      (click)="flipCard()"
+    >
       Flip Card
     </button>
   `
@@ -39,10 +31,21 @@ export class ProjectTileComponent {
   @Input() projectName: ProjectTypes = ProjectTypes.TBD
 
   isFlipped: boolean = false
-  linkTypes: { [key: string]: SocialLinkTypes } = SocialLinkTypes
   
+  get codeSrc(): string {
+    return ProjectPaths[this.projectName].code
+  }
+
   get imgSrc(): string {
     return ProjectPaths[this.projectName].image
+  }
+
+  get siteSrc(): string {
+    return ProjectPaths[this.projectName].site
+  }
+
+  get tabIndex(): number {
+    return this.isFlipped ? 0 : -1
   }
 
   flipCard(): void {
