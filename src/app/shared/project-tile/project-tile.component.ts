@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { ProjectImagePaths } from '../../../models/index'
+import { ProjectPaths, ProjectTypes, SocialLinkTypes } from '../../../models/index'
 
 @Component({
   selector: 'project-tile',
@@ -13,16 +13,16 @@ import { ProjectImagePaths } from '../../../models/index'
         <div id="project-description" class="face back">
           <h2>{{ projectName }}</h2>
           <p>Here's where I'll tell you about what this cool project does weeeee</p>
-          <social-link 
-            linkType="github" 
-            iconType="newtab" 
+          <social-link
+            [iconType]="linkTypes.NEWTAB"
+            [linkType]="linkTypes.GITHUB"
             [ngClass]="{ 'hidden': !isFlipped }"
           >
             Live Site
           </social-link>
-          <social-link 
-            linkType="github" 
-            iconType="newtab" 
+          <social-link
+            [iconType]="linkTypes.NEWTAB"
+            [linkType]="linkTypes.GITHUB"
             [ngClass]="{ 'hidden': !isFlipped }"
           >
             Codebase
@@ -36,12 +36,13 @@ import { ProjectImagePaths } from '../../../models/index'
   `
 })
 export class ProjectTileComponent {
-  @Input() projectName: string = 'TBD'
+  @Input() projectName: ProjectTypes = ProjectTypes.TBD
 
   isFlipped: boolean = false
+  linkTypes: { [key: string]: SocialLinkTypes } = SocialLinkTypes
   
   get imgSrc(): string {
-    return ProjectImagePaths[this.projectName]
+    return ProjectPaths[this.projectName].image
   }
 
   flipCard(): void {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MediaPaths } from '../../../../src/models/index'
+import { MediaPaths, SocialLinkTypes } from '../../../../src/models/index'
 
 @Component({
   selector: 'about-page',
@@ -12,7 +12,7 @@ import { MediaPaths } from '../../../../src/models/index'
         <p>
           Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
         </p>
-        <social-link linkType="resume" [excludeIcon]="true">
+        <social-link [linkType]="linkType" [excludeIcon]="true">
           <img class="resume-preview" [src]="resumeSrc"/>
         </social-link>
         <img class="pronoun-badge" [src]="pronounSrc"/>
@@ -25,6 +25,7 @@ import { MediaPaths } from '../../../../src/models/index'
   `
 })
 export class AboutComponent {
+  linkType: SocialLinkTypes = SocialLinkTypes.RESUME
   selfieSrc: string = MediaPaths.aboutMeImg
   pronounSrc: string = MediaPaths.pronounBadge
   resumeSrc: string = MediaPaths.resumeImg

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faPaintRoller, faTools } from '@fortawesome/free-solid-svg-icons'
-import { MediaPaths, SocialPaths } from '../../models/index'
+import { MediaPaths, SocialLinkTypes, SocialPaths } from '../../models/index'
 
 @Component({
   selector: 'under-construction',
@@ -22,21 +22,15 @@ import { MediaPaths, SocialPaths } from '../../models/index'
       <ul>
         <li>
           Check out
-          <social-link linkType="github" iconType="newtab">my code on GitHub</social-link>
+          <social-link [iconType]="linkTypes.NEWTAB" [linkType]="linkTypes.GITHUB">my code on GitHub</social-link>
         </li>
         <li>
           Connect with me on
-          <social-link linkType="linkedin" iconType="newtab">LinkedIn</social-link>
+          <social-link [iconType]="linkTypes.NEWTAB" [linkType]="linkTypes.LINKEDIN">LinkedIn</social-link>
         </li>
         <li>
           Review 
-          <social-link linkType="resume">my Resume</social-link>
-        </li>
-        <li>
-          Check out my favorite past projects:<br>
-          <social-link linkType="surViralSite" iconType="newtab">SurViral</social-link>
-          and
-          <social-link linkType="moodTrackerSite" iconType="newtab">MoodTracker</social-link>
+          <social-link [linkType]="linkTypes.RESUME">my Resume</social-link>
         </li>
         <li>
           Email me at <a class="email-link" [href]="emailPath">srsexton94@gmail.com</a>
@@ -53,6 +47,7 @@ import { MediaPaths, SocialPaths } from '../../models/index'
 export class UnderConstructionComponent {
   blushImage: string = MediaPaths.blushImg
   emailPath: string = SocialPaths.email
+  linkTypes: { [key: string]: SocialLinkTypes } = SocialLinkTypes
   paintIcon: IconProp = faPaintRoller
   toolsIcon: IconProp = faTools
 }

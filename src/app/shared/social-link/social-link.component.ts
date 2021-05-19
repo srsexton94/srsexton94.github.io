@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt, faAt, faFilePdf } from '@fortawesome/free-solid-svg-icons'
-import { ProjectPaths, SocialPaths } from '../../../models/index'
+import { ProjectPaths, ProjectTypes, SocialLinkTypes, SocialPaths } from '../../../models/index'
 
 @Component({
   selector: 'social-link',
@@ -23,7 +23,7 @@ export class SocialLinkComponent {
   @Input() addClasses?: string
   @Input() excludeIcon?: boolean
   @Input() iconType?: string
-  @Input() linkType: string = 'linkedin'
+  @Input() linkType: SocialLinkTypes = SocialLinkTypes.LINKEDIN
 
   iconTypes: { [key: string]: IconProp } = {
     email: faAt,
@@ -46,6 +46,6 @@ export class SocialLinkComponent {
   }
 
   get srcPath(): string {
-    return SocialPaths[this.linkType] || ProjectPaths[this.linkType]
+    return SocialPaths[this.linkType]
   }
 }

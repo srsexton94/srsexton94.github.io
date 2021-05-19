@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { DevTitleList } from '../../../models/index'
+import { DevTitleList, SocialLinkTypes } from '../../../models/index'
 
 @Component({
   selector: 'home-page',
@@ -11,16 +11,16 @@ import { DevTitleList } from '../../../models/index'
         <typewriter [typewriterTexts]="typewriterTexts"></typewriter>
         <ul class="socials">
           <li class="social-button">
-            <social-link addClasses="button" linkType="linkedin"></social-link>
+            <social-link addClasses="button" [linkType]="linkTypes.LINKEDIN"></social-link>
           </li>
           <li class="social-button">
-            <social-link addClasses="button" linkType="github"></social-link>
+            <social-link addClasses="button" [linkType]="linkTypes.GITHUB"></social-link>
           </li>
           <li class="social-button">
-            <social-link addClasses="button" linkType="email"></social-link>
+            <social-link addClasses="button" [linkType]="linkTypes.EMAIL"></social-link>
           </li>
           <li class="social-button">
-            <social-link addClasses="button" linkType="resume"></social-link>
+            <social-link addClasses="button" [linkType]="linkTypes.RESUME"></social-link>
           </li>
         </ul>
       </div>
@@ -28,5 +28,6 @@ import { DevTitleList } from '../../../models/index'
   `
 })
 export class HomeComponent {
+  linkTypes: { [key: string]: SocialLinkTypes } = SocialLinkTypes
   typewriterTexts: string[] = DevTitleList
 }

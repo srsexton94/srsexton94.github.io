@@ -1,10 +1,13 @@
-interface ISocialPaths {
-  github: string,
-  linkedin: string,
-  resume: string,
-  email: string
-  [key: string]: string;
+import { ProjectTypes } from './projects'
+
+export enum SocialLinkTypes {
+  LINKEDIN = 'linkedin',
+  GITHUB = 'github',
+  RESUME = 'resume',
+  EMAIL = 'email',
 }
+
+type ISocialPaths = { [key in SocialLinkTypes]: string }
 
 export const SocialPaths: ISocialPaths = {
   github: 'https://github.com/srsexton94',
