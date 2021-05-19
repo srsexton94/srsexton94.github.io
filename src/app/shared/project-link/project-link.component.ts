@@ -7,6 +7,7 @@ import { IProject, ProjectPaths, ProjectTypes } from 'src/models';
   template: `
     <a 
       *ngIf="linkSrc"
+      class="project-link"
       target="_blank" 
       rel="noopener noreferer"
       [attr.tabindex]="tabIndex" 

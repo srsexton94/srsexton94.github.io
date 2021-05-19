@@ -13,16 +13,18 @@ import { IProject, ProjectPaths, ProjectTypes } from '../../../models/index'
         <div id="project-info" class="face back">
           <h2>{{ project.displayName }}</h2>
           <p>{{ project.description  }}</p>
-          <project-link 
-            linkType="site" 
-            [project]="project" 
-            [tabIndex]="tabIndex"
-          ></project-link>
-          <project-link 
-            linkType="code" 
-            [project]="project" 
-            [tabIndex]="tabIndex"
-          ></project-link>
+          <div class="btn-container">
+            <project-link 
+              linkType="site" 
+              [project]="project" 
+              [tabIndex]="tabIndex"
+            ></project-link>
+            <project-link 
+              linkType="code" 
+              [project]="project" 
+              [tabIndex]="tabIndex"
+            ></project-link>
+          </div>
         </div>
       </div>
     </div>

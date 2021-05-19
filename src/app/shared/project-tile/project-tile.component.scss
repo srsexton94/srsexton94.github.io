@@ -20,9 +20,25 @@
       transition: all 1s ease;
 
       &.back {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        padding: 1rem;
         transform: rotateY(180deg);
         border: 1px solid black;
         border-radius: 15px;
+
+        .btn-container {
+
+          project-link {
+            display: inline-block;
+            background-color: grey;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: .5rem;
+            margin: .5rem;
+          }
+        }
       }
     }
 
