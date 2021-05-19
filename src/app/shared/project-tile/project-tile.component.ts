@@ -10,35 +10,25 @@ import { IProject, ProjectPaths, ProjectTypes } from '../../../models/index'
         <div class="face front">
           <img [src]="project.image" />
         </div>
-        <div id="project-description" class="face back">
+        <div id="project-info" class="face back">
           <h2>{{ project.displayName }}</h2>
-          <p>{{ project.description }}</p>
-          <a 
-            *ngIf="project.site"
-            target="_blank" 
-            rel="noopener noreferer" 
-            aria-label="Open live site in new tab" 
-            [attr.tabindex]="tabIndex" 
-            [href]="project.site"
-          >
-            Live Site
-          </a>
-          <a 
-            *ngIf="project.code"
-            target="_blank" 
-            rel="noopener noreferer" 
-            aria-label="Open codebase in new tab" 
-            [attr.tabindex]="tabIndex" 
-            [href]="project.code"
-          >
-            Codebase
-          </a>
+          <p>{{ project.description  }}</p>
+          <project-link 
+            linkType="site" 
+            [project]="project" 
+            [tabIndex]="tabIndex"
+          ></project-link>
+          <project-link 
+            linkType="code" 
+            [project]="project" 
+            [tabIndex]="tabIndex"
+          ></project-link>
         </div>
       </div>
     </div>
     <button 
-      aria-label="Reveal project description" 
-      aria-describedby="project-description" 
+      aria-label="Reveal project information" 
+      aria-describedby="project-info" 
       (click)="flipCard()"
     >
       Flip Card

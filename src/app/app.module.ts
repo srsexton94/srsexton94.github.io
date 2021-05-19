@@ -16,6 +16,7 @@ import {
 } from './pages/index'
 import { 
   ModalComponent, 
+  ProjectLinkComponent,
   ProjectTileComponent,
   SocialLinkComponent, 
   TypewriterComponent 
@@ -36,7 +37,8 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     ProjectTileComponent,
     SocialLinkComponent,
     TypewriterComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    ProjectLinkComponent
   ],
   imports: [
     AppRoutingModule,
