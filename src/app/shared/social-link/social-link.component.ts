@@ -21,9 +21,9 @@ import { ProjectPaths, SocialPaths } from '../../../models/index'
 })
 export class SocialLinkComponent {
   @Input() addClasses?: string
+  @Input() excludeIcon?: boolean
   @Input() iconType?: string
   @Input() linkType: string = 'linkedin'
-  @Input() excludeIcon?: boolean 
 
   iconTypes: { [key: string]: IconProp } = {
     email: faAt,

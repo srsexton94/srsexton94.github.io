@@ -13,8 +13,20 @@ import { ProjectImagePaths } from '../../../models/index'
         <div id="project-description" class="face back">
           <h2>{{ projectName }}</h2>
           <p>Here's where I'll tell you about what this cool project does weeeee</p>
-          <social-link linkType="github" iconType="newtab">Live Site</social-link>
-          <social-link linkType="github" iconType="newtab">Codebase</social-link>
+          <social-link 
+            linkType="github" 
+            iconType="newtab" 
+            [ngClass]="{ 'hidden': !isFlipped }"
+          >
+            Live Site
+          </social-link>
+          <social-link 
+            linkType="github" 
+            iconType="newtab" 
+            [ngClass]="{ 'hidden': !isFlipped }"
+          >
+            Codebase
+          </social-link>
         </div>
       </div>
     </div>
