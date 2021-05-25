@@ -7,9 +7,14 @@ import { faEllipsisH, faLaptopHouse, faTimes } from '@fortawesome/free-solid-svg
   styleUrls: ['./navbar.component.scss'],
   template: `
     <nav class="navbar" [ngClass]="{ 'menu-open': isMenuOpen }">
-      <a class="home-link" href="#" >
-        {{ homeLinkText }}
-      </a>
+      <div class="nav-header">
+        <a class="home-link" href="#" >
+          {{ homeLinkText }}
+        </a>
+        <button class="menu-btn" (click)="handleMenuClick(true)">
+          <fa-icon class="icon menu" [icon]="menuIcon"></fa-icon>
+        </button>
+      </div>
       <ul class="menu-list" [ngClass]="{ 'collapsed': !isMenuOpen }">
         <li class="menu-item">
           <a class="menu-link" href="#engineering-section" (click)="handleMenuClick()">
@@ -27,9 +32,6 @@ import { faEllipsisH, faLaptopHouse, faTimes } from '@fortawesome/free-solid-svg
           </a>
         </li>
       </ul>
-      <button class="menu-btn" (click)="handleMenuClick(true)">
-        <fa-icon class="icon menu" [icon]="menuIcon"></fa-icon>
-      </button>
     </nav>
   `
 })

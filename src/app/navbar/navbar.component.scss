@@ -4,39 +4,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: gray;
+  background-color: grey;
   height: $navbarHeight;
   width: 100vw;
-  padding: $navbarHeight / 3;
+  padding: $navbarHeight / 4;
   position: fixed;
   z-index: 99;
 
-  &.menu-open {
-    align-items: flex-start;
-    height: 60vh;
-
-    .menu-list {
-      margin-top: $navbarHeight;
+  .nav-header {
+    .home-link {
+      color: black;
+      min-width: $navbarHeight / 2;
+      height: $navbarHeight / 2;
+      text-align: center;
+      padding-top: .5rem;
+      font-size: 24px;
+      text-decoration: none;
+    }
+  
+    .menu-btn {
+      border: none;
+      background: transparent;
+      float: right;
+      height: $navbarHeight / 3;
+      width: $navbarHeight / 3;
     }
   }
 
-  .home-link {
-    color: black;
-    min-width: $navbarHeight / 2;
-    height: $navbarHeight / 2;
-    text-align: center;
-    padding-top: .5rem;
-    font-size: 24px;
-    text-decoration: none;
-  }
-
-  .menu-btn {
-    border: none;
-    background: transparent;
-    float: right;
-    height: $navbarHeight / 3;
-    width: $navbarHeight / 3;
-  }
 
   .menu-list {
     .menu-link {
@@ -56,8 +50,39 @@
 }
 
 @media #{$mobileScreen} {
-  .collapsed .menu-item {
-    display: none;
+  .navbar {
+    display: block;
+
+    &.menu-open {
+      align-items: flex-start;
+      height: $navbarHeight * 3;
+    }
+
+    .collapsed .menu-item {
+      display: none;
+    }
+
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    .menu-list {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      height: $navbarHeight * 2;
+
+      .menu-link {
+        height: $navbarHeight / 2;
+  
+        &:hover {
+          background-color: grey;
+        }
+      }
+    }
   }
 }
 
