@@ -2,20 +2,20 @@ import { Component, Input } from '@angular/core'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt, faAt, faFilePdf } from '@fortawesome/free-solid-svg-icons'
-import { ProjectPaths, ProjectTypes, SocialLinkTypes, SocialPaths } from '../../../models/index'
+import { SocialLinkTypes, SocialPaths } from '../../../models/index'
 
 @Component({
   selector: 'social-link',
   styleUrls: ['social-link.component.scss'],
   template: `
     <a 
-      class="social-link"
       target="_blank" 
       rel="noopener noreferer" 
+      [class]="iconClass"
       [href]="srcPath"
     >
       <ng-content></ng-content>
-      <fa-icon *ngIf="!excludeIcon" aria-label="opens new tab" [class]="iconClass" [icon]="icon"></fa-icon>
+      <fa-icon *ngIf="!excludeIcon" aria-label="opens new tab" [icon]="icon"></fa-icon>
     </a>
   `
 })
@@ -38,7 +38,7 @@ export class SocialLinkComponent {
   }
 
   get iconClass(): string {
-    return `icon ${this.iconSelector} ${this.addClasses}`
+    return `social-link ${this.iconSelector} ${this.addClasses}`
   }
 
   get iconSelector(): string {

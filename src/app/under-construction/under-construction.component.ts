@@ -22,11 +22,11 @@ import { MediaPaths, SocialLinkTypes, SocialPaths } from '../../models/index'
       <ul>
         <li>
           Check out
-          <social-link [iconType]="linkTypes.NEWTAB" [linkType]="linkTypes.GITHUB">my code on GitHub</social-link>
+          <social-link [linkType]="linkTypes.GITHUB">my code on GitHub</social-link>
         </li>
         <li>
           Connect with me on
-          <social-link [iconType]="linkTypes.NEWTAB" [linkType]="linkTypes.LINKEDIN">LinkedIn</social-link>
+          <social-link [linkType]="linkTypes.LINKEDIN">LinkedIn</social-link>
         </li>
         <li>
           Review 

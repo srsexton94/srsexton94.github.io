@@ -1,15 +1,51 @@
+@use '../../../assets/scss/colors' as *;
 $buttonSize: 2.5rem;
 
-.button {
-  display: inline-block;
-  background-color: grey;
-  color: white;
-  height: $buttonSize;
-  width: $buttonSize;
-  line-height: $buttonSize;
-  border-radius: 50%;
-}
 
 .social-link, .social-link:visited {
-  color: navy
+  color: navy;
+
+  &.button {
+    fa-icon {
+      display: inline-block;
+      background-color: grey;
+      color: white;
+      height: $buttonSize;
+      width: $buttonSize;
+      line-height: $buttonSize;
+      border-radius: 50%;
+    }
+  }
+  
+  &.google-btn {
+    display: inline-block;
+    position: relative;
+    color: white;
+    background-color: $googleColor;
+    border-radius: 5px;
+    margin: 0 .5rem;
+    padding: .85rem;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+  
+    &::before {
+      position: absolute;
+      border: 5px solid lighten($googleColor, 5%);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: .5s;
+    }
+    &:hover, &:focus {
+      box-shadow: 
+        7px 7px darken($googleColor, 20%), 
+        -7px -7px lighten($googleColor, 20%);
+
+      &::before {
+        border: 0;
+      }
+    }
+  }
 }
