@@ -11,16 +11,16 @@ import { DevTitleList, SocialLinkTypes } from '../../../models/index'
         <typewriter [typewriterTexts]="typewriterTexts"></typewriter>
         <ul class="socials">
           <li class="social-button">
-            <social-link addClasses="button" [linkType]="linkTypes.LINKEDIN"></social-link>
+            <social-link addClasses="social-btn" [linkType]="linkTypes.LINKEDIN"></social-link>
           </li>
           <li class="social-button">
-            <social-link addClasses="button" [linkType]="linkTypes.GITHUB"></social-link>
+            <social-link addClasses="social-btn" [linkType]="linkTypes.GITHUB"></social-link>
           </li>
           <li class="social-button">
-            <social-link addClasses="button" [linkType]="linkTypes.EMAIL"></social-link>
+            <social-link addClasses="social-btn" [linkType]="linkTypes.EMAIL"></social-link>
           </li>
           <li class="social-button">
-            <social-link addClasses="button" [linkType]="linkTypes.RESUME"></social-link>
+            <social-link addClasses="social-btn" [linkType]="linkTypes.RESUME"></social-link>
           </li>
         </ul>
       </div>
