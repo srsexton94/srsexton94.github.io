@@ -19,7 +19,7 @@
 
   .nav-header {
     .home-link {
-      color: black;
+      color: $baseFontColor;
       min-width: $navbarHeight / 2;
       height: $navbarHeight / 2;
       text-align: center;
@@ -42,7 +42,7 @@
     .menu-link {
       height: $navbarHeight;
       padding: $navbarHeight / 8;
-      color: black;
+      color: $baseFontColor;
       text-decoration: none;
 
       &:hover, &:focus {
@@ -92,10 +92,6 @@
         align-items: center;
         justify-content: center;
         height: $navbarHeight / 2;
-  
-        &:hover {
-          background-color: grey;
-        }
       }
     }
   }

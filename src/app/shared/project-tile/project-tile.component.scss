@@ -1,3 +1,5 @@
+@use '../../../assets/scss/colors' as *;
+
 .project-tile {
   height: 15rem;
   width: 15rem;
@@ -25,7 +27,7 @@
         justify-content: space-around;
         padding: 1rem;
         transform: rotateY(180deg);
-        border: 1px solid black;
+        border: 1px solid $baseFontColor;
         border-radius: 15px;
 
         .btn-container {
@@ -33,7 +35,7 @@
           project-link {
             display: inline-block;
             background-color: grey;
-            border: 1px solid black;
+            border: 1px solid $baseFontColor;
             border-radius: 5px;
             padding: .5rem;
             margin: .5rem;

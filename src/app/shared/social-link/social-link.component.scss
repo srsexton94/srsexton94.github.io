@@ -7,12 +7,21 @@
   &.social-btn {
     fa-icon {
       display: inline-block;
-      background-color: grey;
-      color: white;
+      color: $baseFontColor;
+      font-size: $socialButtonSize / 2;
       height: $socialButtonSize;
       width: $socialButtonSize;
       line-height: $socialButtonSize;
+      border: 2px solid $baseFontColor;
       border-radius: 50%;
+      transition: .3s ease;
+    }
+
+    &:hover, &:focus {
+      fa-icon {
+        background: $baseFontColor;
+        color: $baseAppBackground;
+      }
     }
   }
   

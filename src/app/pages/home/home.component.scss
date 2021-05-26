@@ -12,10 +12,13 @@
   }
 
   .socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    margin: auto;
     overflow: hidden;
 
     .social-button {
-      display: inline;
       padding: 1rem;
     }
   }
