@@ -9,8 +9,7 @@ import { faPause } from '@fortawesome/free-solid-svg-icons'
     <ng-container>
       <p 
         *ngIf="!isPaused"
-        class="typewriter-text" 
-        tabindex="0"
+        class="typewriter-text"
         [attr.aria-label]="currentTypewriterText"
       >
         {{ displayText }}
@@ -18,7 +17,7 @@ import { faPause } from '@fortawesome/free-solid-svg-icons'
       <p *ngIf="isPaused" class="typewriter-text">
         {{ compositeDisplayText }}
       </p>
-      <button (click)="toggleAnimationPause()">
+      <button class="toggle-btn" (click)="toggleAnimationPause()">
         {{ animationToggleText }}
       </button>
     </ng-container>

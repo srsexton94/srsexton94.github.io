@@ -1,3 +1,22 @@
 .typewriter-text {
-  height: 2rem;
+  height: 2.5rem;
+  margin: 1rem 1rem 0;
+  font-size: 2rem;
+}
+
+.toggle-btn {
+  border: none;
+  color: grey;
+  background: transparent;
+  text-transform: uppercase;
+  height: 1.5rem;
+  padding: .25rem;
+  font-size: .75rem;
+
+  &:hover, &:focus {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+  }
 }

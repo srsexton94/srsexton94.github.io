@@ -1,6 +1,15 @@
+@use '../../../assets/scss/fonts' as *;
+
 .section-body {
   text-align: center;
-  margin-top: 30vh;
+  margin-top: 18vh;
+
+  .name-display {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 1rem;
+  }
 
   .socials {
     overflow: hidden;
