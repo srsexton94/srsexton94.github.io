@@ -1,11 +1,18 @@
 @use 'assets/scss/variables' as *;
+@use 'assets/scss/fonts' as *;
+@use 'assets/scss/colors' as *;
 
 * { 
   box-sizing: border-box;
+  font-family: $bodyFont;
   margin: 0; 
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: $baseAppBackground;
 }
 
 .page-section {

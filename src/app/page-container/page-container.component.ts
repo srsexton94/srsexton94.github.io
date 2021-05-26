@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'page-container',
-  styleUrls: ['./page-container.component.scss'],
   template: `
     <ng-container>
       <home-page></home-page>

@@ -1,12 +1,12 @@
 import { Component, HostListener } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faEllipsisH, faLaptopHouse, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faLaptopHouse, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'navbar',
   styleUrls: ['./navbar.component.scss'],
   template: `
-    <nav class="navbar" [ngClass]="{ 'menu-open': isMenuOpen }">
+    <nav class="navbar" [ngClass]="{ 'menu-open': isMenuOpen, 'past-breakpoint': isPastBreakpoint }">
       <div class="nav-header">
         <a class="home-link" href="#" >
           {{ homeLinkText }}
@@ -38,14 +38,14 @@ import { faEllipsisH, faLaptopHouse, faTimes } from '@fortawesome/free-solid-svg
 export class NavbarComponent {
   isMenuOpen: boolean = false
   homeIcon: IconProp = faLaptopHouse
-  scrolled: number = 0
+  isPastBreakpoint: boolean = false
 
   get menuIcon(): IconProp {
-    return this.isMenuOpen ? faTimes : faEllipsisH
+    return this.isMenuOpen ? faTimes : faBars
   }
 
   get homeLinkText(): string {
-    return this.scrolled > 500 ? 'Samantha Rose Sexton' : 'SRS'
+    return this.isPastBreakpoint ? 'Samantha Rose Sexton' : 'SRS'
   }
 
   handleMenuClick(isButton?: boolean): void {
@@ -53,6 +53,6 @@ export class NavbarComponent {
   }
 
   @HostListener('window:scroll', ['$event']) onScroll(): void {
-    this.scrolled = window.scrollY
+    this.isPastBreakpoint = window.scrollY > 550
   }
 }
