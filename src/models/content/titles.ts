@@ -3,7 +3,7 @@ enum DevTitles {
   DESIGNER = 'UX Designer',
   ACCESSIBILITY = 'Web Accessibility Specialist',
   COMMUNITY = 'Community Advocate',
-  LINGUIST = 'Linguist'
+  LINGUIST = 'Theoretical Linguist'
 }
 
 export const DevTitleList: string[] = Object.values(DevTitles)
