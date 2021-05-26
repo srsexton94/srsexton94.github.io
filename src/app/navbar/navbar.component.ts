@@ -53,6 +53,6 @@ export class NavbarComponent {
   }
 
   @HostListener('window:scroll', ['$event']) onScroll(): void {
-    this.isPastBreakpoint = window.scrollY > 550
+    this.isPastBreakpoint = window.scrollY > 450
   }
 }
