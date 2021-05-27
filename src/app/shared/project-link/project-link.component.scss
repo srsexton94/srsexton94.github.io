@@ -1,4 +1,9 @@
 .project-link {
-  color: white !important;
+  color: white;
   text-decoration: none;
+  outline-offset: 5rem;
+
+  &:visited {
+    color: white;
+  }
 }

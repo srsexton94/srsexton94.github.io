@@ -6,8 +6,10 @@ import { ProjectTypes } from '../../../models/index'
   styleUrls: ['./engineering.component.scss'],
   template: `
     <section id="engineering-section" class="page-section">
-      <h2>Engineering projects</h2>
-      <p>Hover or click the button to see more about each project</p>
+      <h2 class="eng-title">Engineering Projects</h2>
+      <p class="eng-instructions">
+        [ Hover each card or click its button to learn more about the projects ]
+      </p>
       <div class="project-container">
         <project-tile [projectName]="projects.SURVIRAL"></project-tile>
         <project-tile [projectName]="projects.MOODTRACKER"></project-tile>

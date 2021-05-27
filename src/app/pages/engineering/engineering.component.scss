@@ -1,6 +1,19 @@
 #engineering-section {
   text-align: center;
 
+  .eng-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    font-size: 36px;
+  }
+
+  .eng-instructions {
+    font-style: italic;
+    font-size: 14px;
+    margin: .5rem;
+  }
+
   .project-container {
     display: flex;
     flex-wrap: wrap;
