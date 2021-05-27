@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IProject, ProjectPaths, ProjectTypes } from 'src/models';
+import { IProject, ProjectData, ProjectTypes } from 'src/models';
 
 @Component({
   selector: 'project-link',
@@ -20,7 +20,7 @@ import { IProject, ProjectPaths, ProjectTypes } from 'src/models';
 })
 export class ProjectLinkComponent {
   @Input() linkType: string = ''
-  @Input() project: IProject = ProjectPaths[ProjectTypes.TBD]
+  @Input() project: IProject = ProjectData[ProjectTypes.TBD]
   @Input() tabIndex: number = 0
 
   get linkSrc(): string {
