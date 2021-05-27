@@ -8,21 +8,53 @@ import { ProjectTypes } from '../../../models/index'
     <section id="engineering-section" class="page-section">
       <h2 class="eng-title">Engineering Projects</h2>
       <p class="eng-instructions">
-        [ Hover each card or click its button to learn more about the projects ]
+        [ Hover over the card or click its button to learn more about each project ]
       </p>
       <div class="project-container">
-        <project-tile [projectName]="projects.SURVIRAL"></project-tile>
-        <project-tile [projectName]="projects.MOODTRACKER"></project-tile>
-        <project-tile [projectName]="projects.RUSSIAN"></project-tile>
-        <project-tile [projectName]="projects.RAIN"></project-tile>
-        <project-tile [projectName]="projects.BUDGET"></project-tile>
-        <project-tile [projectName]="projects.CALCULATOR"></project-tile>
-        <project-tile [projectName]="projects.POMODORO"></project-tile>
-        <project-tile [projectName]="projects.TODONE"></project-tile>
+        <project-tile 
+          [projectName]="projects.SURVIRAL"
+        ></project-tile>
+        <project-tile 
+          [projectName]="projects.MOODTRACKER"
+        ></project-tile>
+        <project-tile 
+          [projectName]="projects.RUSSIAN"
+        ></project-tile>
+        <project-tile 
+          [projectName]="projects.RAIN"
+        ></project-tile>
+        <project-tile 
+          [ngClass]="{ 'collapsed': isMobileCollapsed }" 
+          [projectName]="projects.BUDGET"
+        ></project-tile>
+        <project-tile 
+          [ngClass]="{ 'collapsed': isMobileCollapsed }" 
+          [projectName]="projects.CALCULATOR"
+        ></project-tile>
+        <project-tile 
+          [ngClass]="{ 'collapsed': isMobileCollapsed }" 
+          [projectName]="projects.POMODORO"
+        ></project-tile>
+        <project-tile 
+          [ngClass]="{ 'collapsed': isMobileCollapsed }" 
+          [projectName]="projects.TODONE"
+        ></project-tile>
+        <button class="mobile-btn" (click)="handleMobileToggle()">
+          {{ mobileToggleText }}
+        </button>
       </div>
     </section>
   `
 })
 export class EngineeringComponent {
   projects: { [key: string]: ProjectTypes } = ProjectTypes
+  isMobileCollapsed: boolean = true
+
+  get mobileToggleText(): string {
+    return this.isMobileCollapsed ? 'Show more' : 'Show less'
+  }
+
+  handleMobileToggle(): void {
+    this.isMobileCollapsed = !this.isMobileCollapsed
+  }
 }

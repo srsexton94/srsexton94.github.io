@@ -1,3 +1,6 @@
+@use '../../../assets/scss/colors' as *;
+@use '../../../assets/scss/variables' as *;
+
 #engineering-section {
   text-align: center;
 
@@ -21,5 +24,30 @@
     min-height: 50vh;
     width: 85vw;
     margin: auto;
+  }
+}
+
+@media #{$mobileScreen} {
+  .eng-instructions {
+    display: none;
+  }
+  
+  .collapsed {
+    display: none;
+  }
+
+  .mobile-btn {
+    margin: 3rem 1rem 1rem;
+    padding: 1.25rem;
+    font-size: 18px;
+    border: 1px solid $baseFontColor;
+    border-radius: .5rem;
+    background-color: $baseAppBackground;
+  }
+}
+
+@media #{$desktopOrTabletScreen} {
+  .mobile-btn {
+    display: none;
   }
 }
