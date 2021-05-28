@@ -1,10 +1,42 @@
-#about-section {
+#about-section .main-intro {
+  max-width: 90vw;
+  margin: auto;
   display: flex;
+  min-height: 35rem;
+  justify-content: flex-start;
 
-  .selfie {
-    max-height: 60vh;
+  .photo-wrapper {
+    background-color: white;
+    box-shadow: -1px 6px 8px black;
+    width: 22rem;
+    height: 28rem;
+    margin: 1rem 2rem;
+    transform: rotate(-5deg);
+
+    .selfie {
+      width: 18rem;
+      height: 22rem;
+      display: block;
+      margin: 1.5rem auto 0;
+      border: 2px inset lightgrey;
+    }
+
+    .pronoun-badge {
+      position: relative;
+      height: 4.5rem;
+      top: -1rem;
+      left: 14rem;
+      border-radius: 10px;
+      box-shadow: -1px 1px 3px grey;
+      transform: rotate(-12deg);
+    }
   }
 
+  .self-description {
+    border: 1px solid purple;
+    max-width: 50vw;
+    padding: 2rem;
+  }
   .resume-preview {
     max-height: 10rem;
   }

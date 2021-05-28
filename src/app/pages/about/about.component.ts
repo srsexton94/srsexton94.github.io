@@ -6,28 +6,38 @@ import { MediaPaths, SocialLinkTypes } from '../../../../src/models/index'
   styleUrls: ['./about.component.scss'],
   template: `
     <section id="about-section" class="page-section">
-      <img class="selfie" [src]="selfieSrc"/>
-      <div class="self-description">
-        <h2>Hi there! I'm Sam</h2>
-        <p>
-          Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
-        </p>
-        <social-link [linkType]="linkType" [excludeIcon]="true">
-          <img class="resume-preview" [src]="resumeSrc"/>
-        </social-link>
-        <img class="pronoun-badge" [src]="pronounSrc"/>
-        <button (click)="toggleVideo('BJJ')">BJJ video</button>
-        <button (click)="toggleVideo('DANCE')">Dance video</button>
+      <div class="main-intro">
+        <div class="photo-wrapper">
+          <img class="selfie" [src]="selfieSrc"/>
+          <img class="pronoun-badge" [src]="pronounSrc"/>
+        </div>
+        <div class="self-description">
+          <h2>Hi there! I'm Sam</h2>
+          <p>
+            Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
+            Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
+            Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
+          </p>
+          <p>
+            Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
+            Here's a paragraph where I'll tell you about myself and all the cool stuff that I do weeeeee
+          </p>
+          <social-link [linkType]="linkType" [excludeIcon]="true">
+            <img class="resume-preview" [src]="resumeSrc"/>
+          </social-link>
+          <button (click)="toggleVideo('BJJ')">BJJ video</button>
+          <button (click)="toggleVideo('DANCE')">Dance video</button>
+        </div>
+        <video *ngIf="isVideoShown.BJJ" controls>
+          <source type="video/mp4" [src]="getVideoSrc('BJJ')">
+          Your browser does not support the video tag.
+        </video>
+        <video *ngIf="isVideoShown.DANCE" controls>
+          <source type="video/mp4" [src]="getVideoSrc('DANCE')">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
-    <video *ngIf="isVideoShown.BJJ" controls>
-      <source type="video/mp4" [src]="getVideoSrc('BJJ')">
-      Your browser does not support the video tag.
-    </video>
-    <video *ngIf="isVideoShown.DANCE" controls>
-      <source type="video/mp4" [src]="getVideoSrc('DANCE')">
-      Your browser does not support the video tag.
-    </video>
   `
 })
 export class AboutComponent {
