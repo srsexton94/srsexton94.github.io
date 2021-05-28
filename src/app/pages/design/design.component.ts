@@ -7,7 +7,7 @@ import { MediaPaths, SocialLinkTypes } from '../../../../src/models/index'
   template: `
   <section id="design-section" class="page-section">
     <div class="design-description">
-      <h2>UX Design</h2>
+      <h2 class="title">UX Design</h2>
       <p class="description-item">
         Inspired by the pivotal role of UX Designers in Web Accessibility work,
         and dedicated to user-centered, equity-focused design, 
