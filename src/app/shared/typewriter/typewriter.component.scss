@@ -1,4 +1,6 @@
 @use '../../../assets/scss/colors' as *;
+@use '../../../assets/scss/variables' as *;
+
 
 .typewriter-text {
   height: 2.5rem;
@@ -20,5 +22,16 @@
     border-radius: 5px;
     color: $baseFontColor;
     font-weight: bold;
+  }
+}
+
+@media #{$mobileScreen} {
+  .typewriter-text {
+    height: 1.75rem;
+    font-size: 1.25rem;
+
+    &.composite {
+      height: 7rem;
+    }
   }
 }

@@ -14,7 +14,7 @@ import { faPause } from '@fortawesome/free-solid-svg-icons'
       >
         {{ displayText }}
       </p>
-      <p *ngIf="isPaused" class="typewriter-text">
+      <p *ngIf="isPaused" class="typewriter-text composite">
         {{ compositeDisplayText }}
       </p>
       <button class="toggle-btn" (click)="toggleAnimationPause()">

@@ -1,5 +1,6 @@
-@use '../../../assets/scss/fonts' as *;
 @use '../../../assets/scss/colors' as *;
+@use '../../../assets/scss/fonts' as *;
+@use '../../../assets/scss/variables' as *;
 
 .section-body {
   text-align: center;
@@ -21,11 +22,21 @@
     display: flex;
     justify-content: space-evenly;
     width: 35%;
-    margin: auto;
+    margin: 1.5rem auto;
     overflow: hidden;
 
     .social-button {
       padding: 1rem;
+    }
+  }
+}
+
+@media #{$mobileScreen} {
+  .section-body {
+    margin-top: 10vh;
+
+    .socials {
+      width: 90vw;
     }
   }
 }
