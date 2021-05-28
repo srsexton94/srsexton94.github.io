@@ -16,12 +16,18 @@ import { MediaPaths, SocialLinkTypes } from '../../../../src/models/index'
           <img class="resume-preview" [src]="resumeSrc"/>
         </social-link>
         <img class="pronoun-badge" [src]="pronounSrc"/>
-        <button (click)="toggleModal('BJJ')">Open BJJ modal</button>
-        <button (click)="toggleModal('DANCE')">Open Dance modal</button>
+        <button (click)="toggleVideo('BJJ')">BJJ video</button>
+        <button (click)="toggleVideo('DANCE')">Dance video</button>
       </div>
     </section>
-    <modal *ngIf="isModalOpen.BJJ" modalName="BJJ" (close)="toggleModal('BJJ')"></modal>
-    <modal *ngIf="isModalOpen.DANCE" modalName="DANCE" (close)="toggleModal('DANCE')"></modal>
+    <video *ngIf="isVideoShown.BJJ" controls>
+      <source type="video/mp4" [src]="getVideoSrc('BJJ')">
+      Your browser does not support the video tag.
+    </video>
+    <video *ngIf="isVideoShown.DANCE" controls>
+      <source type="video/mp4" [src]="getVideoSrc('DANCE')">
+      Your browser does not support the video tag.
+    </video>
   `
 })
 export class AboutComponent {
@@ -30,12 +36,21 @@ export class AboutComponent {
   pronounSrc: string = MediaPaths.pronounBadge
   resumeSrc: string = MediaPaths.resumeImg
 
-  isModalOpen: { [key: string]: boolean } = {
+  isVideoShown: { [key: string]: boolean } = {
     BJJ: false,
     DANCE: false
   }
+  
+  videoSelectors: { [key: string]: string } = {
+    BJJ: 'bjjVideo',
+    DANCE: 'danceVideo'
+  }
 
-  toggleModal(modalSelector: string): void {
-    this.isModalOpen[modalSelector] = !this.isModalOpen[modalSelector]
+  getVideoSrc(name: string): string {
+    return MediaPaths[this.videoSelectors[name]]
+  }
+
+  toggleVideo(modalSelector: string): void {
+    this.isVideoShown[modalSelector] = !this.isVideoShown[modalSelector]
   }
 }

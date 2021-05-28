@@ -15,7 +15,6 @@ import {
   HomeComponent
 } from './pages/index'
 import { 
-  ModalComponent, 
   ProjectLinkComponent,
   ProjectTileComponent,
   SocialLinkComponent, 
@@ -31,7 +30,6 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     EngineeringComponent,
     HomeComponent,
     MainContentComponent,
-    ModalComponent,
     NavbarComponent,
     PageContainerComponent,
     ProjectTileComponent,
