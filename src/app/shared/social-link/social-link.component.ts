@@ -34,7 +34,7 @@ export class SocialLinkComponent {
   }
   
   get icon(): IconProp {
-    return this.iconTypes[this.iconSelector]
+    return this.iconTypes[this.iconSelector] || this.iconTypes.newtab
   }
 
   get iconClass(): string {
