@@ -15,7 +15,7 @@ export enum SocialLinkTypes {
 type ISocialPaths = { [key in SocialLinkTypes]: string }
 
 export const SocialPaths: ISocialPaths = {
-  cleancode: '',
+  cleancode: '../assets/documents/CleanCode_Infographic.pdf',
   codekata: 'https://www.codewars.com/users/srsexton94/completed_solutions',
   email: 'mailto:srsexton94@gmail.com',
   fidelity: 'https://www.linkedin.com/company/fidelity-investments/about/',

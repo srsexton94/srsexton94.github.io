@@ -4,6 +4,12 @@
 .social-link, .social-link:visited {
   color: navy;
 
+  fa-icon {
+    font-size: 12px;
+    position: relative;
+    top: -.15rem;
+  }
+
   &.social-btn {
     fa-icon {
       display: inline-block;
