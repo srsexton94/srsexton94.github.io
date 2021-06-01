@@ -6,10 +6,7 @@ import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
   styleUrls: ['./main-intro.component.scss'],
   template: `
     <div class="main-intro">
-      <div class="photo-wrapper">
-        <img class="selfie" [src]="selfieSrc"/>
-        <img class="pronoun-badge" [src]="pronounSrc"/>
-      </div>
+      <selfie></selfie>
       <div class="self-description">
         <div class="intro">
           <h2 class="header">Hi there! I'm Sam</h2>
@@ -46,7 +43,5 @@ import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
 })
 export class MainIntroComponent {
   socialLinks: typeof SocialLinkTypes = SocialLinkTypes
-  selfieSrc: string = ImagePaths.aboutMeImg
-  pronounSrc: string = ImagePaths.pronounBadge
   resumeImg: string = ImagePaths.resumeImg
 }
