@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { MediaPaths, SocialLinkTypes } from '../../../../src/models/index'
+import { ImagePaths, SocialLinkTypes } from '../../../../src/models/index'
 
 @Component({
   selector: 'design-page',
@@ -31,6 +31,6 @@ import { MediaPaths, SocialLinkTypes } from '../../../../src/models/index'
   `
 })
 export class DesignComponent {
-  animationSrc: string = MediaPaths.lottieAnimation
+  animationSrc: string = ImagePaths.lottieAnimation
   googleCourseSrc: SocialLinkTypes = SocialLinkTypes.GOOGLE
 }

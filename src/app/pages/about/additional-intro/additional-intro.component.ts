@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { MediaPaths } from '../../../../../src/models/index'
+import { IVideoPaths, VideoPaths } from '../../../../../src/models/index'
 
 
 @Component({
@@ -13,15 +13,15 @@ import { MediaPaths } from '../../../../../src/models/index'
         <button (click)="chooseVideo('LANG')">Language video</button>
       </div>
       <video *ngIf="isVideoShown.BJJ" controls>
-        <source type="video/mp4" [src]="mediaPaths.bjjVideo">
+        <source type="video/mp4" [src]="videoPaths.bjjVideo">
         {{ browserCompatibilityText }}
       </video>
       <video *ngIf="isVideoShown.DANCE" controls>
-        <source type="video/mp4" [src]="mediaPaths.danceVideo">
+        <source type="video/mp4" [src]="videoPaths.danceVideo">
         {{ browserCompatibilityText }}
       </video>
       <video *ngIf="isVideoShown.LANG" controls>
-        <source type="video/mp4" [src]="mediaPaths.bjjVideo">
+        <source type="video/mp4" [src]="videoPaths.langVideo">
         {{ browserCompatibilityText }}
       </video>
     </div>
@@ -30,7 +30,7 @@ import { MediaPaths } from '../../../../../src/models/index'
 export class AdditionalIntroComponent {
   browserCompatibilityText: string = 'Your browser does not support the video tag.'
   isVideoShown: { [key: string]: boolean } = { BJJ: false, DANCE: false, LANG: false }
-  mediaPaths: typeof MediaPaths = MediaPaths
+  videoPaths: IVideoPaths = VideoPaths
 
   chooseVideo(videoType: string): void {
     Object.keys(this.isVideoShown).forEach(key => this.isVideoShown[key] = false)

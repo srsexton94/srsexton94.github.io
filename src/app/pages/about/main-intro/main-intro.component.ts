@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { MediaPaths, SocialLinkTypes } from '../../../../../src/models/index'
+import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
 
 @Component({
   selector: 'main-intro',
@@ -46,7 +46,7 @@ import { MediaPaths, SocialLinkTypes } from '../../../../../src/models/index'
 })
 export class MainIntroComponent {
   socialLinks: typeof SocialLinkTypes = SocialLinkTypes
-  selfieSrc: string = MediaPaths.aboutMeImg
-  pronounSrc: string = MediaPaths.pronounBadge
-  resumeImg: string = MediaPaths.resumeImg
+  selfieSrc: string = ImagePaths.aboutMeImg
+  pronounSrc: string = ImagePaths.pronounBadge
+  resumeImg: string = ImagePaths.resumeImg
 }
