@@ -10,9 +10,10 @@ import { NavbarComponent } from './navbar/navbar.component'
 import { PageContainerComponent } from './page-container/page-container.component'
 import {
   AboutComponent,
-  EngineeringComponent,
   DesignComponent,
-  HomeComponent
+  EngineeringComponent,
+  HomeComponent,
+  MainIntroComponent
 } from './pages/index'
 import { 
   ProjectLinkComponent,
@@ -30,13 +31,14 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     EngineeringComponent,
     HomeComponent,
     MainContentComponent,
+    MainIntroComponent,
     NavbarComponent,
     PageContainerComponent,
+    ProjectLinkComponent,
     ProjectTileComponent,
     SocialLinkComponent,
     TypewriterComponent,
-    UnderConstructionComponent,
-    ProjectLinkComponent
+    UnderConstructionComponent
   ],
   imports: [
     AppRoutingModule,
