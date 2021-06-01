@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component'
 import { PageContainerComponent } from './page-container/page-container.component'
 import {
   AboutComponent,
+  AdditionalIntroComponent,
   DesignComponent,
   EngineeringComponent,
   HomeComponent,
@@ -26,6 +27,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 @NgModule({
   declarations: [
     AboutComponent,
+    AdditionalIntroComponent,
     AppComponent,
     DesignComponent,
     EngineeringComponent,

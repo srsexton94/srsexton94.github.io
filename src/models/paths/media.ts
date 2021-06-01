@@ -1,4 +1,4 @@
-interface IMediaPaths {
+export interface IMediaPaths {
   aboutMeImg: string,
   bjjVideo: string,
   blushImg: string,
