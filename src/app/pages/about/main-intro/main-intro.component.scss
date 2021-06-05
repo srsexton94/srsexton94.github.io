@@ -10,6 +10,8 @@
     padding: .5rem 2rem;
 
     .intro {
+      padding: .5rem;
+
       .header {
         font-size: 32px;
         font-weight: 400;
@@ -20,12 +22,5 @@
         font-size: 16px;
       }
     }
-  }
-
-  .resume-preview {
-    height: 20rem;
-    float: right;
-    margin-top: -1rem;
-    margin-left: 1rem;
   }
 }

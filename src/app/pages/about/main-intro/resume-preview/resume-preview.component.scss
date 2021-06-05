@@ -1,0 +1,28 @@
+$imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow(2px 2px 4px grey);
+
+social-link {
+  float: right;
+  margin-left: 1rem;
+  
+  .resume-img {
+    height: 20rem;
+  }
+
+  #preview-instructions {
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &:hover, &:focus {
+    .resume-img {
+      -webkit-filter: $imageHoverFilter;
+      -o-filter: $imageHoverFilter;
+      filter: $imageHoverFilter;
+    }
+    #preview-instructions {
+      font-size: 12px;
+    }
+  }
+}

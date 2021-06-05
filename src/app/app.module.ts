@@ -15,6 +15,7 @@ import {
   EngineeringComponent,
   HomeComponent,
   MainIntroComponent,
+  ResumePreviewComponent,
   SelfieComponent
 } from './pages/index'
 import { 
@@ -39,6 +40,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     PageContainerComponent,
     ProjectLinkComponent,
     ProjectTileComponent,
+    ResumePreviewComponent,
     SelfieComponent,
     SocialLinkComponent,
     TypewriterComponent,

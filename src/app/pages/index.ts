@@ -1,6 +1,7 @@
 export * from './about/about.component'
 export * from './about/additional-intro/additional-intro.component'
 export * from './about/main-intro/main-intro.component'
+export * from './about/main-intro/resume-preview/resume-preview.component'
 export * from './about/main-intro/selfie/selfie.component'
 export * from './engineering/engineering.component'
 export * from './design/design.component'

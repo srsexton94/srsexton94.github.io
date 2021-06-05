@@ -14,9 +14,7 @@ import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
             I am a software engineer who thrives off of building and designing human-centered digital
             experiences that are equal parts accessible and exceptional.
           </p>
-          <social-link [linkType]="socialLinks.RESUME" [excludeIcon]="true">
-            <img class="resume-preview" aria-hidden="true" [src]="resumeImg"/>  
-          </social-link>
+          <resume-preview></resume-preview>
           <p class="description">
             From studying the intricacies of language at 
             <social-link [linkType]="socialLinks.UMASS">
@@ -36,6 +34,7 @@ import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
             At the heart of those systems, however, is always people. And I am thrilled to play my part
             in the movement towards Equity-centered Design and radical accesibility in tech.
           </p>
+          <a class="learn-more-link" href="#">Learn more about me!</a>
         </div>
       </div>
     </div>
@@ -43,5 +42,4 @@ import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
 })
 export class MainIntroComponent {
   socialLinks: typeof SocialLinkTypes = SocialLinkTypes
-  resumeImg: string = ImagePaths.resumeImg
 }
