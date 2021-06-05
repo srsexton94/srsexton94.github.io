@@ -12,8 +12,8 @@ import { IProject, ProjectData, ProjectTypes } from '../../../models/index'
             <img [src]="project.image" />
           </div>
           <div id="project-info" class="face back">
-            <h2>{{ project.displayName }}</h2>
-            <p>{{ project.description  }}</p>
+            <h2 class="display-name">{{ project.displayName }}</h2>
+            <p class="description">{{ project.description  }}</p>
             <div class="btn-container">
               <project-link 
                 linkType="site" 
