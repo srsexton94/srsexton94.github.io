@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
+import { SocialLinkTypes } from '../../../../../src/models/index'
 
 @Component({
   selector: 'main-intro',
@@ -34,7 +34,10 @@ import { ImagePaths, SocialLinkTypes } from '../../../../../src/models/index'
             At the heart of those systems, however, is always people. And I am thrilled to play my part
             in the movement towards Equity-centered Design and radical accesibility in tech.
           </p>
-          <a class="learn-more-link" href="#">Learn more about me!</a>
+          <a class="learn-more" href="#">
+            Learn more about me!
+            <div class="arrows"></div>
+          </a>
         </div>
       </div>
     </div>

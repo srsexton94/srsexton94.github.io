@@ -11,7 +11,7 @@ import { ImagePaths, SocialLinkTypes } from '../../../../../models/index'
         [linkType]="resumeSrc"
       >
         <img class="resume-img" aria-hidden="true" [src]="resumeImg"/>  
-        <p id="preview-instructions">Click to open Resume in new tab</p>
+        <p id="preview-instructions">Opens Resume in new tab</p>
       </social-link>
   `
 })
