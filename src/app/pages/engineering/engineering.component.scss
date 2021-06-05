@@ -47,6 +47,10 @@
 }
 
 @media #{$desktopOrTabletScreen} {
+  .eng-title {
+    margin-bottom: .5rem;
+  }
+
   .mobile-btn {
     display: none;
   }
