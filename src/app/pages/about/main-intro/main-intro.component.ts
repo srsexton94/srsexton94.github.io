@@ -34,10 +34,7 @@ import { SocialLinkTypes } from '../../../../../src/models/index'
             At the heart of those systems, however, is always people. And I am thrilled to play my part
             in the movement towards Equity-centered Design and radical accesibility in tech.
           </p>
-          <a class="learn-more" href="#">
-            Learn more about me!
-            <div class="arrows"></div>
-          </a>
+          <scroll-link></scroll-link>
         </div>
       </div>
     </div>
