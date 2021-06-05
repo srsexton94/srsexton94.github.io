@@ -1,0 +1,5 @@
+export * from './about.component'
+export * from './additional-intro/additional-intro.component'
+export * from './main-intro/main-intro.component'
+export * from './main-intro/resume-preview/resume-preview.component'
+export * from './main-intro/selfie/selfie.component'
