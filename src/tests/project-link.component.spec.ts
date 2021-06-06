@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectLinkComponent } from '../app/shared/project-link/project-link.component';
+import { ProjectLinkComponent } from '../app/pages/engineering/project-link/project-link.component';
 
 describe('ProjectLinkComponent', () => {
   let component: ProjectLinkComponent;

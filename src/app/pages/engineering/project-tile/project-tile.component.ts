@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { IProject, ProjectData, ProjectTypes } from '../../../models/index'
+import { IProject, ProjectData, ProjectTypes } from '../../../../models/index'
 
 @Component({
   selector: 'project-tile',

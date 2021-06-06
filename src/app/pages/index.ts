@@ -1,5 +1,7 @@
 export * from './about'
 export * from './engineering/engineering.component'
+export * from './engineering/project-link/project-link.component'
+export * from './engineering/project-tile/project-tile.component'
 export * from './design/design.component'
 export * from './home/home.component'
 export * from './home/typewriter/typewriter.component'

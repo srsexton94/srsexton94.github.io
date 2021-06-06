@@ -16,17 +16,15 @@ import {
   EngineeringComponent,
   HomeComponent,
   MainIntroComponent,
+  ProjectLinkComponent,
+  ProjectTileComponent,
   ResumePreviewComponent,
   ScrollLinkComponent,
   SelfieComponent,
   TypewriterComponent,
   VideoContainerComponent
 } from './pages/index'
-import { 
-  ProjectLinkComponent,
-  ProjectTileComponent,
-  SocialLinkComponent
-} from './shared/index'
+import { SocialLinkComponent } from './shared/index'
 import { UnderConstructionComponent } from './under-construction/under-construction.component'
 
 @NgModule({

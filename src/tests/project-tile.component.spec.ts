@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectTileComponent } from '../app/shared/project-tile/project-tile.component';
+import { ProjectTileComponent } from '../app/pages/engineering/project-tile/project-tile.component';
 
 describe('ProjectTileComponent', () => {
   let component: ProjectTileComponent;
