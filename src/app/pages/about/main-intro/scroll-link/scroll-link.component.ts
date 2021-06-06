@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'scroll-link',
   styleUrls: ['./scroll-link.component.scss'],
   template: `
-    <a class="scroll-link" href="#">
+    <a class="scroll-link" href="#more-aboutme">
       Learn more about me!
       <div class="arrows"></div>
     </a>

@@ -1,5 +1,7 @@
 export * from './about.component'
 export * from './additional-intro/additional-intro.component'
+export * from './additional-intro/community-slides/community-slides.component'
+export * from './additional-intro/video-container/video-container.component'
 export * from './main-intro/main-intro.component'
 export * from './main-intro/resume-preview/resume-preview.component'
 export * from './main-intro/scroll-link/scroll-link.component'

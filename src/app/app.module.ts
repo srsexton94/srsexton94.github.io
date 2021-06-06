@@ -11,13 +11,15 @@ import { PageContainerComponent } from './page-container/page-container.componen
 import {
   AboutComponent,
   AdditionalIntroComponent,
+  CommunitySlidesComponent,
   DesignComponent,
   EngineeringComponent,
   HomeComponent,
   MainIntroComponent,
   ResumePreviewComponent,
   ScrollLinkComponent,
-  SelfieComponent
+  SelfieComponent,
+  VideoContainerComponent
 } from './pages/index'
 import { 
   ProjectLinkComponent,
@@ -32,6 +34,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     AboutComponent,
     AdditionalIntroComponent,
     AppComponent,
+    CommunitySlidesComponent,
     DesignComponent,
     EngineeringComponent,
     HomeComponent,
@@ -46,7 +49,8 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     SelfieComponent,
     SocialLinkComponent,
     TypewriterComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    VideoContainerComponent
   ],
   imports: [
     AppRoutingModule,
