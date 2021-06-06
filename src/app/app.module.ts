@@ -19,13 +19,13 @@ import {
   ResumePreviewComponent,
   ScrollLinkComponent,
   SelfieComponent,
+  TypewriterComponent,
   VideoContainerComponent
 } from './pages/index'
 import { 
   ProjectLinkComponent,
   ProjectTileComponent,
-  SocialLinkComponent, 
-  TypewriterComponent 
+  SocialLinkComponent
 } from './shared/index'
 import { UnderConstructionComponent } from './under-construction/under-construction.component'
 
