@@ -98,3 +98,9 @@
     font-weight: bold;
   }
 }
+
+@media #{$mobileScreen} {
+  .flipcard-btn {
+    display: none;
+  }
+}

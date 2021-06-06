@@ -11,12 +11,6 @@
     font-size: 36px;
   }
 
-  .eng-instructions {
-    font-style: italic;
-    font-size: 14px;
-    margin: .5rem;
-  }
-
   .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -27,11 +21,13 @@
   }
 }
 
-@media #{$mobileScreen} {
+@media #{$mobileScreen} {  
   .eng-instructions {
-    display: none;
+    font-style: italic;
+    font-size: 16px;
+    margin: .5rem;
   }
-  
+
   .collapsed {
     display: none;
   }
@@ -52,6 +48,10 @@
   }
 
   .mobile-btn {
+    display: none;
+  }
+
+  .eng-instructions {
     display: none;
   }
 }

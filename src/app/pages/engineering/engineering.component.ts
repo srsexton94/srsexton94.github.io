@@ -7,6 +7,7 @@ import { ProjectTypes } from '../../../models/index'
   template: `
     <section id="engineering-section" class="page-section">
       <h2 class="eng-title">Engineering Projects</h2>
+      <p class="eng-instructions">[ Click each card to learn more ]</p>
       <div class="project-container">
         <project-tile 
           [projectName]="projects.SURVIRAL"
