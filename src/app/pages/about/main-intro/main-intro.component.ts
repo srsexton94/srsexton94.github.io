@@ -23,10 +23,10 @@ import { SocialLinkTypes } from '../../../../../src/models/index'
             to my career in Community Advocacy and Activism,
             to my current obsessions with 
             <social-link [linkType]="socialLinks.CLEAN_CODE">
-              Clean code 
+              clean code 
             </social-link> and
             <social-link [linkType]="socialLinks.CODE_KATA">
-              Code katas 
+              algorithms 
             </social-link> &ndash;
             I have long been fascinated by the nuances of the many complex systems that guide our lives.
           </p>

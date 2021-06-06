@@ -8,24 +8,31 @@ import { AppComponent } from './app.component'
 import { MainContentComponent } from './main-content/main-content.component'
 import { NavbarComponent } from './navbar/navbar.component'
 import { PageContainerComponent } from './page-container/page-container.component'
+import { SocialLinkComponent } from './shared/index'
+import { UnderConstructionComponent } from './under-construction/under-construction.component'
+
 import {
   AboutComponent,
   AdditionalIntroComponent,
   CommunitySlidesComponent,
-  DesignComponent,
-  EngineeringComponent,
-  HomeComponent,
   MainIntroComponent,
-  ProjectLinkComponent,
-  ProjectTileComponent,
   ResumePreviewComponent,
-  ScrollLinkComponent,
+  ScrollLinkComponent, 
   SelfieComponent,
-  TypewriterComponent,
   VideoContainerComponent
-} from './pages/index'
-import { SocialLinkComponent } from './shared/index'
-import { UnderConstructionComponent } from './under-construction/under-construction.component'
+} from './pages/about'
+import { 
+  DesignComponent 
+} from './pages/design'
+import {
+  EngineeringComponent,
+  ProjectLinkComponent,
+  ProjectTileComponent
+} from './pages/engineering'
+import {
+  HomeComponent,
+  TypewriterComponent,
+} from './pages/home'
 
 @NgModule({
   declarations: [
