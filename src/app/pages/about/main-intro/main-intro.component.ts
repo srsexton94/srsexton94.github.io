@@ -15,7 +15,7 @@ import { SocialLinkTypes } from '../../../../../src/models/index'
             I am a software engineer who thrives off of building and designing human-centered digital
             experiences that are equal parts accessible and exceptional.
           </p>
-          <resume-preview></resume-preview>
+          <resume-preview class="desktop-only"></resume-preview>
           <p class="description">
             From studying the intricacies of language at 
             <social-link [linkType]="socialLinks.UMASS">
@@ -32,9 +32,11 @@ import { SocialLinkTypes } from '../../../../../src/models/index'
             I have long been fascinated by the nuances of the many complex systems that guide our lives.
           </p>
           <p class="description">
-            At the heart of those systems, however, is always people. And I am thrilled to play my part
-            in the movement towards Equity-centered Design and radical accesibility in tech.
+            At the heart of those systems, however, is always people &ndash; and it is in
+            people that I find my passion. I am thrilled to play my part in the movements
+            towards Equity-centered Design and radical accesibility in tech.
           </p>
+          <resume-preview class="mobile-only"></resume-preview>
           <scroll-link></scroll-link>
         </div>
       </div>

@@ -32,10 +32,27 @@
     width: 100%;
 
     .self-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       max-width: 100vw;
 
       .intro {
         padding: .25rem;
+
+        .header {
+          font-size: 30px;
+          margin-bottom: 1rem;
+        }
+
+        .description {
+          text-align: center;
+
+          &:first-of-type {
+            margin-top: 2rem;
+          }
+        }
       }
     }
   }
