@@ -4,7 +4,8 @@ import { Component } from '@angular/core'
   selector: 'community-slides',
   styleUrls: ['./community-slides.component.scss'],
   template: `
-    <p>Community slides!</p>
+    <h2>Community Section</h2>
+    <carousel></carousel>
   `
 })
 export class CommunitySlidesComponent {}

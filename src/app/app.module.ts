@@ -8,7 +8,7 @@ import { AppComponent } from './app.component'
 import { MainContentComponent } from './main-content/main-content.component'
 import { NavbarComponent } from './navbar/navbar.component'
 import { PageContainerComponent } from './page-container/page-container.component'
-import { SocialLinkComponent } from './shared/index'
+import { CarouselComponent, SocialLinkComponent } from './shared/index'
 import { UnderConstructionComponent } from './under-construction/under-construction.component'
 
 import {
@@ -39,6 +39,7 @@ import {
     AboutComponent,
     AdditionalIntroComponent,
     AppComponent,
+    CarouselComponent,
     CommunitySlidesComponent,
     DesignComponent,
     EngineeringComponent,
