@@ -6,10 +6,11 @@ import { SocialLinkTypes } from '../../../../../src/models/index'
   styleUrls: ['./main-intro.component.scss'],
   template: `
     <div class="main-intro">
-      <selfie></selfie>
+      <selfie class="desktop-only"></selfie>
       <div class="self-description">
         <div class="intro">
           <h2 class="header">Hi there! I'm Sam</h2>
+          <selfie class="mobile-only"></selfie>
           <p class="description">
             I am a software engineer who thrives off of building and designing human-centered digital
             experiences that are equal parts accessible and exceptional.

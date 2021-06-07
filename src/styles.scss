@@ -33,3 +33,14 @@ textarea:focus-visible,
   outline: 1.5px dashed $baseFontColor;
   outline-offset: .5rem;
 }
+
+@media #{$mobileScreen} {
+  .desktop-only { 
+    display: none;
+  }
+}
+@media #{$desktopOrTabletScreen} {
+  .mobile-only {
+    display: none;
+  }
+}
