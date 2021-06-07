@@ -1,13 +1,39 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { faPauseCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons'
+
 
 @Component({
   selector: 'scroll-link',
   styleUrls: ['./scroll-link.component.scss'],
   template: `
-    <a class="scroll-link" href="#more-aboutme">
-      Learn more about me!
-      <div class="arrows"></div>
-    </a>
+    <div class="scroll-link-container">
+      <a class="scroll-link" href="#more-aboutme">
+        Learn more about me!
+        <div class="arrows" [ngClass]="{ 'animated': shouldAnimateArrows }"></div>
+      </a>
+      <fa-icon 
+        class="pause-icon"
+        tabindex="0"
+        [attr.aria-label]="animationControlAriaLabel"
+        [icon]="animationControlIcon"
+        (click)="onPause()"
+      ></fa-icon>
+    </div>
   `
 })
-export class ScrollLinkComponent {}
+export class ScrollLinkComponent {
+  shouldAnimateArrows: boolean = true
+
+  get animationControlIcon(): IconProp {
+    return this.shouldAnimateArrows ? faPauseCircle : faPlayCircle
+  }
+
+  get animationControlAriaLabel(): string {
+    return `${ this.shouldAnimateArrows ? 'Pause': 'Play'} scroll animation`
+  }
+
+  onPause(): void {
+    this.shouldAnimateArrows = !this.shouldAnimateArrows
+  }
+}

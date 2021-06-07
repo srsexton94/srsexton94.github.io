@@ -1,26 +1,53 @@
 @use '../../../../../assets/scss/variables' as *;
 
-.scroll-link {
+.scroll-link-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  color: navy;
-  font-style: italic;
-  text-decoration: none;
-  margin-top: 4vw;
+  justify-content: flex-start;
+  width: 16rem;
+  margin: 4vw auto;
   overflow: hidden;
 
-  .arrows {
-    height: 1rem;
-    width: 1rem;
-    margin-bottom: .5rem;
-    border-left: 1px solid navy;
-    border-bottom: 1px solid navy;
-    border-radius: 0 0 0 2px;
-    transform: rotate(-45deg);
-    -webkit-animation: fadeMoveDown 2s ease-in-out infinite;
-    -moz-animation: fadeMoveDown 2s ease-in-out infinite;
-    animation: fadeMoveDown 2s ease-in-out infinite;
+  .pause-icon {
+    display: none;
+  }
+
+  .scroll-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: navy;
+    font-style: italic;
+    text-decoration: none;
+    overflow: hidden;
+    width: 90%;
+
+    .arrows {
+      height: 1rem;
+      width: 1rem;
+      margin-bottom: .5rem;
+      border-left: 1px solid navy;
+      border-bottom: 1px solid navy;
+      border-radius: 0 0 0 2px;
+      transform: rotate(-45deg);
+
+      &.animated {
+        -webkit-animation: fadeMoveDown 2s ease-in-out infinite;
+        -moz-animation: fadeMoveDown 2s ease-in-out infinite;
+        animation: fadeMoveDown 2s ease-in-out infinite;
+      }
+    }
+  }
+
+  &:hover, &:focus {
+    .pause-icon {
+      display: inline-block;
+      color: grey;
+      font-size: 1.5rem;
+      height: 2rem;
+      line-height: 1.5rem;
+      cursor: pointer;
+    }
   }
 }
 
@@ -37,7 +64,7 @@
 }
 
 @media #{$mobileScreen} {
-  .scroll-link {
+  .scroll-link-container {
     margin: 4rem auto;
   }
 }
