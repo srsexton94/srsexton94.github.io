@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScrollLinkComponent } from '../app/pages/about/main-intro/scroll-link/scroll-link.component';
+import { ScrollLinkComponent } from '../app/shared/scroll-link/scroll-link.component';
 
 describe('ScrollLinkComponent', () => {
   let component: ScrollLinkComponent;

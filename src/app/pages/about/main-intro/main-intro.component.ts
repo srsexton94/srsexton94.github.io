@@ -37,7 +37,9 @@ import { SocialLinkTypes } from '../../../../../src/models/index'
             towards Equity-centered Design and radical accesibility in tech.
           </p>
           <resume-preview class="mobile-only"></resume-preview>
-          <scroll-link></scroll-link>
+          <scroll-link linkSrc="#more-aboutme">
+            Learn more about me!
+          </scroll-link>
         </div>
       </div>
     </div>

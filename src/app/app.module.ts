@@ -8,16 +8,18 @@ import { AppComponent } from './app.component'
 import { MainContentComponent } from './main-content/main-content.component'
 import { NavbarComponent } from './navbar/navbar.component'
 import { PageContainerComponent } from './page-container/page-container.component'
-import { CarouselComponent, SocialLinkComponent } from './shared/index'
 import { UnderConstructionComponent } from './under-construction/under-construction.component'
-
+import { 
+  CarouselComponent, 
+  ScrollLinkComponent,
+  SocialLinkComponent 
+} from './shared'
 import {
   AboutComponent,
   AdditionalIntroComponent,
   CommunitySlidesComponent,
   MainIntroComponent,
   ResumePreviewComponent,
-  ScrollLinkComponent, 
   SelfieComponent,
   VideoContainerComponent
 } from './pages/about'

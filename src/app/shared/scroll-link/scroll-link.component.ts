@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faPauseCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons'
 
@@ -8,8 +8,8 @@ import { faPauseCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons
   styleUrls: ['./scroll-link.component.scss'],
   template: `
     <div class="scroll-link-container">
-      <a class="scroll-link" href="#more-aboutme">
-        Learn more about me!
+      <a class="scroll-link" [href]="linkSrc">
+        <ng-content></ng-content>
         <div class="arrows" [ngClass]="{ 'animated': shouldAnimateArrows }"></div>
       </a>
       <fa-icon 
@@ -23,6 +23,8 @@ import { faPauseCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons
   `
 })
 export class ScrollLinkComponent {
+  @Input() linkSrc: string = '#'
+  
   shouldAnimateArrows: boolean = true
 
   get animationControlIcon(): IconProp {
