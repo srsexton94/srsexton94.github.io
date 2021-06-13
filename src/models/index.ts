@@ -1,3 +1,4 @@
+export * from './content/slides'
 export * from './content/titles'
 export * from './paths/media'
 export * from './paths/projects'
