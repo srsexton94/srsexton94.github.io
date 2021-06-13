@@ -12,6 +12,7 @@ import { Component } from '@angular/core'
       </p>
     </div>
     <carousel></carousel>
+    <scroll-link linkSrc="#videos">In my free time...</scroll-link>
   `
 })
 export class CommunitySlidesComponent {}
