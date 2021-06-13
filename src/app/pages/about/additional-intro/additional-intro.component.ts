@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
   template: `
     <div id="more-aboutme" class="additional-intro page-section">
       <community-slides></community-slides>
-      <video-container></video-container>
+      <personal-interests></personal-interests>
     </div>
   `
 })

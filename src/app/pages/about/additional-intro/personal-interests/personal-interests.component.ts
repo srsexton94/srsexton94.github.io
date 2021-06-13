@@ -1,11 +1,11 @@
 import { Component } from '@angular/core'
-import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../../src/models'
+import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../models'
 
 @Component({
-  selector: 'video-container',
-  styleUrls: ['./video-container.component.scss'],
+  selector: 'personal-interests',
+  styleUrls: ['./personal-interests.component.scss'],
   template: `
-    <div id="videos" class="video-container page-section">
+    <div id="videos" class="personal-interests page-section">
       <h2>I also...</h2>
       <ul>
         <li>Perform and teach as a Ballroom Dancer</li>
@@ -39,7 +39,7 @@ import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../../src/model
     </div>
   `
 })
-export class VideoContainerComponent {
+export class PersonalInterestsComponent {
   browserCompatibilityText: string = 'Your browser does not support the video tag.'
   isVideoShown: { [key: string]: boolean } = { BJJ: false, DANCE: false, LANG: false }
   nanowrimoPath: string = ImagePaths.nanowrimoImg

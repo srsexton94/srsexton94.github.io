@@ -19,9 +19,9 @@ import {
   AdditionalIntroComponent,
   CommunitySlidesComponent,
   MainIntroComponent,
+  PersonalInterestsComponent,
   ResumePreviewComponent,
-  SelfieComponent,
-  VideoContainerComponent
+  SelfieComponent
 } from './pages/about'
 import { 
   DesignComponent 
@@ -50,6 +50,7 @@ import {
     MainIntroComponent,
     NavbarComponent,
     PageContainerComponent,
+    PersonalInterestsComponent,
     ProjectLinkComponent,
     ProjectTileComponent,
     ResumePreviewComponent,
@@ -57,8 +58,7 @@ import {
     SelfieComponent,
     SocialLinkComponent,
     TypewriterComponent,
-    UnderConstructionComponent,
-    VideoContainerComponent
+    UnderConstructionComponent
   ],
   imports: [
     AppRoutingModule,
