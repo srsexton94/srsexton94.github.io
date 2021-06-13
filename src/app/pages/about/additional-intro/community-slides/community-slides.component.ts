@@ -4,7 +4,13 @@ import { Component } from '@angular/core'
   selector: 'community-slides',
   styleUrls: ['./community-slides.component.scss'],
   template: `
-    <h2>Community Section</h2>
+    <div class="community-intro">
+      <h2 class="heading">Community Advocacy</h2>
+      <p class="description">
+        I&rsquo;m honored to have worked in support of some incredible organizations and causes,
+        here are a few near and dear to me.
+      </p>
+    </div>
     <carousel></carousel>
   `
 })

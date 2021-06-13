@@ -12,8 +12,8 @@ import { ISlide, CommunitySlides } from '../../../../src/models'
             <img [src]="slide.image" alt="{{ slide.altText }}">
             <div class="caption-container">
               <div class="caption">
-                <h3 *ngIf="slide.heading">{{ slide.heading }}</h3>
-                <p *ngIf="slide.body">{{ slide.body }}</p>
+                <h3>{{ slide.heading }}</h3>
+                <p>{{ slide.body }}</p>
               </div>
             </div>
           </div>
