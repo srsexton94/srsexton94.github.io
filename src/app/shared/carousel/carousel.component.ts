@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { ISlide, CommunitySlides } from '../../../../src/models'
 @Component({
   selector: 'carousel',
@@ -34,13 +34,17 @@ import { ISlide, CommunitySlides } from '../../../../src/models'
     </div>
   `
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit {
   slides: ISlide[] = CommunitySlides
 
   get currentSlideIndex(): number {
     const currentSlide: ISlide = this.slides.filter(slide => slide.isActive)[0]
 
     return this.slides.indexOf(currentSlide)
+  }
+
+  ngOnInit(): void {
+    setInterval(() => { this.progressSlide(1) }, 8000)
   }
 
   progressSlide(change: number): void {
