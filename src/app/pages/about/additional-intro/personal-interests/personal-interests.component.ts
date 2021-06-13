@@ -12,18 +12,9 @@ import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../models'
         <li>Train and compete as a Jiujiteira</li>
         <li>Try my darndest to learn every langauge!</li>
       </ul>
-      <video *ngIf="isVideoShown.BJJ" controls>
-        <source type="video/mp4" [src]="videoPaths.BJJ">
-        {{ browserCompatibilityText }}
-      </video>
-      <video *ngIf="isVideoShown.DANCE" controls>
-        <source type="video/mp4" [src]="videoPaths.DANCE">
-        {{ browserCompatibilityText }}
-      </video>
-      <video *ngIf="isVideoShown.LANG" controls>
-        <source type="video/mp4" [src]="videoPaths.LANG">
-        {{ browserCompatibilityText }}
-      </video>
+      <video-player *ngIf="isVideoShown.BJJ" type="BJJ"></video-player>
+      <video-player *ngIf="isVideoShown.DANCE" type="DANCE"></video-player>
+      <video-player *ngIf="isVideoShown.LANG" type="LANG"></video-player>
       <div class="btn-container">
         <button (click)="chooseVideo('DANCE')">Watch me dance!</button>
         <button (click)="chooseVideo('BJJ')">Watch me fight!</button>
@@ -34,16 +25,15 @@ import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../models'
           I&rsquo;m also a writer! I completed a draft of my first novel during
           "National Novel Writing Month" this past year
         </p>
-        <img class="nanowrimo" [src]="nanowrimoPath" alt="National Novel Writing Month 2020 certificate of completion">
+        <img class="nano" [src]="nanoPath" alt="{{ nanoAlt }}">
       </div>
     </div>
   `
 })
 export class PersonalInterestsComponent {
-  browserCompatibilityText: string = 'Your browser does not support the video tag.'
   isVideoShown: { [key: string]: boolean } = { BJJ: false, DANCE: false, LANG: false }
-  nanowrimoPath: string = ImagePaths.nanowrimoImg
-  videoPaths: IVideoPaths = VideoPaths
+  nanoAlt: string = 'National Novel Writing Month 2020 certificate of completion'
+  nanoPath: string = ImagePaths.nanowrimoImg
 
   chooseVideo(videoType: string): void {
     Object.keys(this.isVideoShown).forEach(key => this.isVideoShown[key] = false)

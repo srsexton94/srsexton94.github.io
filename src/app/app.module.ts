@@ -21,7 +21,8 @@ import {
   MainIntroComponent,
   PersonalInterestsComponent,
   ResumePreviewComponent,
-  SelfieComponent
+  SelfieComponent,
+  VideoPlayerComponent
 } from './pages/about'
 import { 
   DesignComponent 
@@ -58,7 +59,8 @@ import {
     SelfieComponent,
     SocialLinkComponent,
     TypewriterComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    VideoPlayerComponent
   ],
   imports: [
     AppRoutingModule,
