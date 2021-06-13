@@ -52,7 +52,7 @@ export const CommunitySlides: ISlide[] = [
   },
   {
     image: '../../assets/images/slides/center-women-community.jpeg',
-    altText: 'A red couch with rainbow pillows sits in front of a bookshelf full of LGBTQ+ titles',
+    altText: 'A black trifold poster reads "CWC we\'ve got your back" with 5 multicolored silohettes standing on grass',
     heading: 'Center for Women & Community',
     body: 'I served as an Educator Advocate, facilitating professional trainings on Intimate Partner Violence Prevention and supporting survivors',
     isActive: false
@@ -65,23 +65,3 @@ export const CommunitySlides: ISlide[] = [
     isActive: false
   }
 ]
-
-const old = `<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="community">
-
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="mb-2 card bg-dark text-white">
-                <div class="card-body dxh">
-                  <a href="https://www.designxhumanity.com/" target="_blank">
-                    <h4 class="card-title">Design X Humanity</h4>
-                    <p class="card-text">
-                      I worked as an UI/UX Engineer & Instructional Designer on the DEI Committee to help build
-                      educational tech tools for K-12 students on critical anti-racism and social equity.
-                    </p>
-                  </a>
-                </div>
-              </div>
-              </div>
-              </div>
-      </section>`
