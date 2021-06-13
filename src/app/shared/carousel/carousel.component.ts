@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core'
 import { ISlide, CommunitySlides } from '../../../../src/models'
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'carousel',
   styleUrls: ['./carousel.component.scss'],
   template: ` 
     <div class="carousel">
-      <button class="carousel-control left" (click)="progressSlide(-1)">Previous</button>
+      <button class="carousel-control left" aria-label="Previous slide" (click)="progressSlide(-1)">
+        <fa-icon class="icon" [icon]="leftArrow"></fa-icon>
+      </button>
       <div class="inner-carousel">
         <div *ngFor="let slide of slides">
           <div class="slide" [ngClass]="{ 'active': slide.isActive }">
@@ -24,17 +28,22 @@ import { ISlide, CommunitySlides } from '../../../../src/models'
               type="radio"
               name="indicator"
               [id]="'indicator' + i"
+              [attr.aria-label]="'Slide number '+(i+1)"
               [checked]="slide.isActive"
               (change)="changeSlide(i)"
             >
           </ng-container>
         </div>
       </div>
-      <button class="carousel-control right" (click)="progressSlide(1)">Next</button>
+      <button class="carousel-control right" aria-label="Next Slide" (click)="progressSlide(1)">
+        <fa-icon class="icon" [icon]="rightArrow"></fa-icon>
+      </button>
     </div>
   `
 })
 export class CarouselComponent implements OnInit {
+  leftArrow: IconProp = faAngleLeft
+  rightArrow: IconProp = faAngleRight
   slides: ISlide[] = CommunitySlides
 
   get currentSlideIndex(): number {
