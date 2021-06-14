@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import { faPause } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'typewriter',

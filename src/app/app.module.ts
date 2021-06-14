@@ -12,7 +12,8 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 import { 
   CarouselComponent, 
   ScrollLinkComponent,
-  SocialLinkComponent 
+  SocialLinkComponent,
+  TypewriterComponent
 } from './shared'
 import {
   AboutComponent,
@@ -33,8 +34,7 @@ import {
   ProjectTileComponent
 } from './pages/engineering'
 import {
-  HomeComponent,
-  TypewriterComponent,
+  HomeComponent
 } from './pages/home'
 
 @NgModule({

@@ -8,7 +8,7 @@ import { DevTitleList, SocialLinkTypes } from '../../../models/index'
     <section class="page-section">
       <div class="section-body">
         <h1 class="name-display">Samantha <span>Rose</span> Sexton</h1>
-        <typewriter [typewriterTexts]="typewriterTexts"></typewriter>
+        <typewriter [typewriterTexts]="titleTexts"></typewriter>
         <ul class="socials">
           <li class="social-button">
             <social-link addClasses="social-btn" [linkType]="linkTypes.LINKEDIN"></social-link>
@@ -29,5 +29,5 @@ import { DevTitleList, SocialLinkTypes } from '../../../models/index'
 })
 export class HomeComponent {
   linkTypes: { [key: string]: SocialLinkTypes } = SocialLinkTypes
-  typewriterTexts: string[] = DevTitleList
+  titleTexts: string[] = DevTitleList
 }
