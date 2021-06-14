@@ -1,17 +1,15 @@
 import { Component } from '@angular/core'
-import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../models'
+import { ImagePaths, InterestsList } from '../../../../../models'
 
 @Component({
   selector: 'personal-interests',
   styleUrls: ['./personal-interests.component.scss'],
   template: `
     <div id="videos" class="personal-interests page-section">
-      <h2>I also...</h2>
-      <ul>
-        <li>Perform and teach as a Ballroom Dancer</li>
-        <li>Train and compete as a Jiujiteira</li>
-        <li>Try my darndest to learn every langauge!</li>
-      </ul>
+      <h2>
+        I also...
+        <typewriter [typewriterTexts]="interestsList"></typewriter>
+      </h2>
       <video-player *ngIf="isVideoShown.BJJ" type="BJJ" (close)="clearVideo()"></video-player>
       <video-player *ngIf="isVideoShown.DANCE" type="DANCE" (close)="clearVideo()"></video-player>
       <video-player *ngIf="isVideoShown.LANG" type="LANG" (close)="clearVideo()"></video-player>
@@ -31,6 +29,7 @@ import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../models'
   `
 })
 export class PersonalInterestsComponent {
+  interestsList: string[] = InterestsList
   isVideoShown: { [key: string]: boolean } = { BJJ: false, DANCE: false, LANG: false }
   nanoAlt: string = 'National Novel Writing Month 2020 certificate of completion'
   nanoPath: string = ImagePaths.nanowrimoImg
