@@ -12,9 +12,9 @@ import { ImagePaths, IVideoPaths, VideoPaths } from '../../../../../models'
         <li>Train and compete as a Jiujiteira</li>
         <li>Try my darndest to learn every langauge!</li>
       </ul>
-      <video-player *ngIf="isVideoShown.BJJ" type="BJJ"></video-player>
-      <video-player *ngIf="isVideoShown.DANCE" type="DANCE"></video-player>
-      <video-player *ngIf="isVideoShown.LANG" type="LANG"></video-player>
+      <video-player *ngIf="isVideoShown.BJJ" type="BJJ" (close)="clearVideo()"></video-player>
+      <video-player *ngIf="isVideoShown.DANCE" type="DANCE" (close)="clearVideo()"></video-player>
+      <video-player *ngIf="isVideoShown.LANG" type="LANG" (close)="clearVideo()"></video-player>
       <div class="btn-container">
         <button (click)="chooseVideo('DANCE')">Watch me dance!</button>
         <button (click)="chooseVideo('BJJ')">Watch me fight!</button>
@@ -36,7 +36,11 @@ export class PersonalInterestsComponent {
   nanoPath: string = ImagePaths.nanowrimoImg
 
   chooseVideo(videoType: string): void {
-    Object.keys(this.isVideoShown).forEach(key => this.isVideoShown[key] = false)
+    this.clearVideo()
     this.isVideoShown[videoType] = true
+  }
+
+  clearVideo(): void {
+    Object.keys(this.isVideoShown).forEach(key => this.isVideoShown[key] = false)
   }
 }
