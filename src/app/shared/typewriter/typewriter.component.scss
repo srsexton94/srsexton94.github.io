@@ -19,6 +19,7 @@
   height: 1.5rem;
   padding: .25rem;
   font-size: .75rem;
+  cursor: pointer;
 
   &:hover, &:focus {
     border: 1px solid $baseFontColor;

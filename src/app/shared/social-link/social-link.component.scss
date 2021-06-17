@@ -31,23 +31,4 @@
       }
     }
   }
-  
-  &.google-btn {
-    display: inline-block;
-    position: relative;
-    color: white;
-    background-color: $baseHighlightAlert;
-    border-radius: 5px;
-    margin: 0 .5rem;
-    padding: .85rem;
-    text-decoration: none;
-    text-align: center;
-    transition: .5s;
-
-    &:hover, &:focus {
-      box-shadow: 
-        .4rem .4rem darken($baseHighlightAlert, 20%), 
-        -.4rem -.4rem lighten($baseHighlightAlert, 20%);
-    }
-  }
 }

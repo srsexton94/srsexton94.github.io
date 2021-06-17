@@ -13,7 +13,7 @@ import { ImagePaths, SocialLinkTypes } from '../../../../src/models/index'
         and dedicated to user-centered, equity-focused design, 
         I've recently enrolled in the... 
       </p>
-      <social-link addClasses="google-btn" iconType="newtab" [linkType]="googleCourseSrc">
+      <social-link addClasses="expand-btn" iconType="newtab" [linkType]="googleCourseSrc">
         Google UX Design<br/> Professional Certificate
       </social-link>
       <p class="description-item">

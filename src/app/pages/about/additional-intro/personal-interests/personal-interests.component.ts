@@ -14,9 +14,9 @@ import { ImagePaths, InterestsList } from '../../../../../models'
       <video-player *ngIf="isVideoShown.DANCE" type="DANCE" (close)="clearVideo()"></video-player>
       <video-player *ngIf="isVideoShown.LANG" type="LANG" (close)="clearVideo()"></video-player>
       <div class="btn-container">
-        <button (click)="chooseVideo('DANCE')">Watch me dance!</button>
-        <button (click)="chooseVideo('BJJ')">Watch me fight!</button>
-        <button (click)="chooseVideo('LANG')">Watch me... talk?</button>
+        <button class="expand-btn" (click)="chooseVideo('DANCE')">Watch me dance!</button>
+        <button class="expand-btn" (click)="chooseVideo('BJJ')">Watch me fight!</button>
+        <button class="expand-btn" (click)="chooseVideo('LANG')">Watch me... talk?</button>
       </div>
       <div class="writing-section">
         <p>
