@@ -49,6 +49,12 @@ a.social-link, a.social-link:visited, button {
     transition: .5s;
     cursor: pointer;
 
+    &.large {
+      font-size: 24px;
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+
     &:hover, &:focus {
       box-shadow: 
         .4rem .4rem darken($baseHighlightAlert, 20%), 

@@ -6,40 +6,36 @@ import { ImagePaths, InterestsList } from '../../../../../models'
   styleUrls: ['./personal-interests.component.scss'],
   template: `
     <div id="videos" class="personal-interests page-section">
-      <h2>
-        I also...
-        <typewriter [typewriterTexts]="interestsList"></typewriter>
-      </h2>
-      <video-player *ngIf="isVideoShown.BJJ" type="BJJ" (close)="clearVideo()"></video-player>
-      <video-player *ngIf="isVideoShown.DANCE" type="DANCE" (close)="clearVideo()"></video-player>
-      <video-player *ngIf="isVideoShown.LANG" type="LANG" (close)="clearVideo()"></video-player>
+      <h3 class="intro-header">In my free time ...</h3>
       <div class="btn-container">
-        <button class="expand-btn" (click)="chooseVideo('DANCE')">Watch me dance!</button>
-        <button class="expand-btn" (click)="chooseVideo('BJJ')">Watch me fight!</button>
-        <button class="expand-btn" (click)="chooseVideo('LANG')">Watch me... talk?</button>
+        <button class="expand-btn large" (click)="chooseMedia('DANCE')">I dance 🕺</button>
+        <button class="expand-btn large" (click)="chooseMedia('BJJ')">I fight 😏</button>
+        <button class="expand-btn large" (click)="chooseMedia('WRITE')">I write 📝</button>
+        <button class="expand-btn large" (click)="chooseMedia('LANG')">I... talk? 🙊</button>
       </div>
-      <div class="writing-section">
-        <p>
-          I&rsquo;m also a writer! I completed a draft of my first novel during
-          "National Novel Writing Month" this past year
-        </p>
-        <img class="nano" [src]="nanoPath" alt="{{ nanoAlt }}">
+      <div class="display-container">
+        <video-player *ngIf="isMediaShown.BJJ" type="BJJ" (close)="clearMedia()"></video-player>
+        <video-player *ngIf="isMediaShown.DANCE" type="DANCE" (close)="clearMedia()"></video-player>
+        <video-player *ngIf="isMediaShown.LANG" type="LANG" (close)="clearMedia()"></video-player>
+        <img *ngIf="isMediaShown.WRITE" class="nano" alt="{{ nanoAlt }}" [src]="nanoPath">
       </div>
     </div>
   `
 })
 export class PersonalInterestsComponent {
   interestsList: string[] = InterestsList
-  isVideoShown: { [key: string]: boolean } = { BJJ: false, DANCE: false, LANG: false }
-  nanoAlt: string = 'National Novel Writing Month 2020 certificate of completion'
+  isMediaShown: { [key: string]: boolean } = { BJJ: false, DANCE: false, LANG: false, WRITE: false }
+  nanoAlt: string = 'National Novel Writing Month certificate of completion'
   nanoPath: string = ImagePaths.nanowrimoImg
 
-  chooseVideo(videoType: string): void {
-    this.clearVideo()
-    this.isVideoShown[videoType] = true
+  chooseMedia(videoType: string): void {
+    const wasAlreadyShown: boolean = this.isMediaShown[videoType]
+    
+    this.clearMedia()
+    if (!wasAlreadyShown) this.isMediaShown[videoType] = true
   }
 
-  clearVideo(): void {
-    Object.keys(this.isVideoShown).forEach(key => this.isVideoShown[key] = false)
+  clearMedia(): void {
+    Object.keys(this.isMediaShown).forEach(key => this.isMediaShown[key] = false)
   }
 }
