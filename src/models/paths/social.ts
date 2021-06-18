@@ -8,6 +8,7 @@ export enum SocialLinkTypes {
   GITHUB = 'github',
   GOOGLE = 'google',
   LINKEDIN = 'linkedin',
+  NANO = 'nanowrimo',
   RESUME = 'resume',
   UMASS = 'umass'
 }
@@ -22,6 +23,7 @@ export const SocialPaths: ISocialPaths = {
   github: 'https://github.com/srsexton94',
   google: 'https://www.coursera.org/professional-certificates/google-ux-design',
   linkedin: 'https://www.linkedin.com/in/samantha-sexton/',
+  nanowrimo: 'https://nanowrimo.org/',
   resume: '../assets/documents/SamanthaSexton_SoftwareEngineer_Resume.pdf',
   umass: 'https://www.umass.edu/linguistics/node/2867'
 }
