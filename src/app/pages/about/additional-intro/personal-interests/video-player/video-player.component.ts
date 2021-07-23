@@ -8,7 +8,7 @@ import { IVideoPaths, VideoPaths } from '../../../../../../models'
   styleUrls: ['./video-player.component.scss'],
   template: `
     <button class="close-btn" (click)="close.emit()">
-      <fa-icon [icon]="closeIcon"></fa-icon>
+      <fa-icon aria-hidden="true" [icon]="closeIcon"></fa-icon>
     </button>
     <video controls>
       <source type="video/mp4" [src]="videoPaths[type]">

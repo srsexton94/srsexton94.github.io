@@ -8,23 +8,20 @@ import { ImagePaths, InterestsList, SocialLinkTypes } from '../../../../../model
     <div id="videos" class="personal-interests page-section">
       <h3 class="intro-header">In my free time...</h3>
       <div class="btn-container">
-        <button class="expand-btn large" (click)="chooseMedia('DANCE')">I dance 🕺</button>
-        <button class="expand-btn large" (click)="chooseMedia('BJJ')">I fight 🥊</button>
-        <button class="expand-btn large" (click)="chooseMedia('WRITE')">I write 📝</button>
-        <button class="expand-btn large" (click)="chooseMedia('LANG')">I... talk? 🙊</button>
+        <button class="expand-btn large" (click)="chooseMedia('DANCE')">
+          I dance <span aria-hidden="true">🕺</span>
+        </button>
+        <button class="expand-btn large" (click)="chooseMedia('BJJ')">
+          I fight <span aria-hidden="true">🥊</span>
+        </button>
+        <button class="expand-btn large" (click)="chooseMedia('WRITE')">
+          I write <span aria-hidden="true">📝</span>
+        </button>
       </div>
       <div class="display-container">
         <video-player *ngIf="isMediaShown.BJJ" type="BJJ" (close)="clearMedia()"></video-player>
         <video-player *ngIf="isMediaShown.DANCE" type="DANCE" (close)="clearMedia()"></video-player>
-        <video-player *ngIf="isMediaShown.LANG" type="LANG" (close)="clearMedia()"></video-player>
-        <social-link *ngIf="isMediaShown.WRITE" [excludeIcon]="true" [linkType]="nanoSitePath">
-          <div class="link-content-container">
-            <img class="nano" alt="{{ nanoAlt }}" [src]="nanoImgPath">
-            <div class="caption">
-              <p>Here I will write things about writing</p>
-            </div>
-          </div>
-        </social-link>
+        <nano-image-link *ngIf="isMediaShown.WRITE"></nano-image-link>
       </div>
     </div>
   `
@@ -32,9 +29,6 @@ import { ImagePaths, InterestsList, SocialLinkTypes } from '../../../../../model
 export class PersonalInterestsComponent {
   interestsList: string[] = InterestsList
   isMediaShown: { [key: string]: boolean } = { BJJ: false, DANCE: false, LANG: false, WRITE: false }
-  nanoAlt: string = 'National Novel Writing Month certificate of completion'
-  nanoImgPath: string = ImagePaths.nanowrimoImg
-  nanoSitePath: SocialLinkTypes = SocialLinkTypes.NANO
 
   chooseMedia(videoType: string): void {
     const wasAlreadyShown: boolean = this.isMediaShown[videoType]
@@ -47,3 +41,7 @@ export class PersonalInterestsComponent {
     Object.keys(this.isMediaShown).forEach(key => this.isMediaShown[key] = false)
   }
 }
+
+// TODO: add in 4th button/video for language learning interest
+// <button class="expand-btn large" (click)="chooseMedia('LANG')">I... talk? <span aria-hidden="true">🙊</span></button>
+// <video-player *ngIf="isMediaShown.LANG" type="LANG" (close)="clearMedia()"></video-player>
