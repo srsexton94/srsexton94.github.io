@@ -8,27 +8,17 @@ import { faBars, faLaptopHouse, faTimes } from '@fortawesome/free-solid-svg-icon
   template: `
     <nav class="navbar" [ngClass]="{ 'menu-open': isMenuOpen, 'past-breakpoint': isPastBreakpoint }">
       <div class="nav-header">
-        <a class="home-link" href="#" >
+        <a class="home-link" aria-label="Home" href="#" >
           {{ homeLinkText }}
         </a>
-        <button class="menu-btn" (click)="handleMenuClick(true)">
-          <fa-icon class="icon menu" [icon]="menuIcon"></fa-icon>
+        <button class="menu-btn" [attr.aria-label]="menuToggle.label" (click)="handleMenuClick(true)">
+          <fa-icon class="icon menu" aria-hidden="true" [icon]="menuToggle.icon"></fa-icon>
         </button>
       </div>
       <ul class="menu-list" [ngClass]="{ 'collapsed': !isMenuOpen }">
-        <li class="menu-item">
-          <a class="menu-link" href="#engineering-section" (click)="handleMenuClick()">
-            Engineering
-          </a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#design-section" (click)="handleMenuClick()">
-            Design
-          </a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#about-section" (click)="handleMenuClick()">
-            About me
+        <li *ngFor="let menuTab of menuTabs" class="menu-item">
+          <a class="menu-link" [attr.href]="getLinkId(menuTab)" (click)="handleMenuClick()">
+            {{ menuTab }}
           </a>
         </li>
       </ul>
@@ -36,16 +26,23 @@ import { faBars, faLaptopHouse, faTimes } from '@fortawesome/free-solid-svg-icon
   `
 })
 export class NavbarComponent {
-  isMenuOpen: boolean = false
   homeIcon: IconProp = faLaptopHouse
+  isMenuOpen: boolean = false
   isPastBreakpoint: boolean = false
+  menuTabs: string[] = ['Engineering', 'Design', 'About me']
 
-  get menuIcon(): IconProp {
-    return this.isMenuOpen ? faTimes : faBars
+  get menuToggle(): { icon: IconProp, label: string } {
+    return this.isMenuOpen 
+      ? { icon: faTimes, label: 'Close menu' } 
+      : { icon: faBars, label: 'Open menu' }
   }
 
   get homeLinkText(): string {
     return this.isPastBreakpoint ? 'Samantha Rose Sexton' : 'SRS'
+  }
+
+  getLinkId(tabText: string): string {
+    return `#${tabText.toLowerCase().split(' ').join('-')}-section`
   }
 
   handleMenuClick(isButton?: boolean): void {

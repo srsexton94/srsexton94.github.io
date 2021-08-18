@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   selector: 'about-page',
   styleUrls: ['./about.component.scss'],
   template: `
-    <section id="about-section" class="page-section">
+    <section id="about-me-section" class="page-section">
       <main-intro></main-intro>
       <additional-intro></additional-intro>
     </section>

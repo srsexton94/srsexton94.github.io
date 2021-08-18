@@ -46,6 +46,7 @@
       text-decoration: none;
 
       &:hover, &:focus {
+        font-weight: 400;
         text-decoration: underline;
       }
     }
