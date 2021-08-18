@@ -1,8 +1,10 @@
+@use '../../../../assets/scss/sizes' as *;
+
 .project-link {
   color: white;
   font-weight: 400;
   text-decoration: none;
-  outline-offset: 5rem;
+  outline-offset: $size80;
 
   &:visited {
     color: white;

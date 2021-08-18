@@ -1,5 +1,6 @@
-@use '../../assets/scss/variables' as *;
 @use '../../assets/scss/colors' as *;
+@use '../../assets/scss/sizes' as *;
+@use '../../assets/scss/variables' as *;
 
 .navbar {
   display: flex;
@@ -14,7 +15,7 @@
 
   &.menu-open,
   &.past-breakpoint {
-    box-shadow: 0px 3px 4px 1px lightgrey;
+    box-shadow: 0 $size6 $size24 $size6 $shadowBlack;
   }
 
   .nav-header {
@@ -23,9 +24,9 @@
       min-width: $navbarHeight / 2;
       height: $navbarHeight / 2;
       text-align: center;
-      padding-top: .5rem;
-      margin-left: 1rem;
-      font-size: 24px;
+      padding-top: $size8;
+      margin-left: $size16;
+      font-size: $size24;
       text-decoration: none;
     }
   
@@ -74,7 +75,7 @@
       width: 100%;
 
       .home-link {
-        font-size: 18px;
+        font-size: $size16;
       }
 
       .menu-btn {

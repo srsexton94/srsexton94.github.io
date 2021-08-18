@@ -1,10 +1,13 @@
+@use '../../../assets/scss/sizes' as *;
 @use '../../../assets/scss/variables' as *;
+
+$arrowAnimation: fadeMoveDown 2s ease-in-out infinite;
 
 .scroll-link-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 16rem;
+  width: $size256;
   margin: 4vw auto;
   overflow: hidden;
 
@@ -23,18 +26,18 @@
     width: 90%;
 
     .arrows {
-      height: 1rem;
-      width: 1rem;
-      margin-bottom: .5rem;
+      height: $size16;
+      width: $size16;
+      margin-bottom: $size8;
       border-left: 1px solid navy;
       border-bottom: 1px solid navy;
-      border-radius: 0 0 0 2px;
+      border-radius: 0 0 0 $size2;
       transform: rotate(-45deg);
 
       &.animated {
-        -webkit-animation: fadeMoveDown 2s ease-in-out infinite;
-        -moz-animation: fadeMoveDown 2s ease-in-out infinite;
-        animation: fadeMoveDown 2s ease-in-out infinite;
+        -webkit-animation: $arrowAnimation;
+        -moz-animation: $arrowAnimation;
+        animation: $arrowAnimation;
       }
     }
   }
@@ -43,9 +46,9 @@
     .pause-icon {
       display: inline-block;
       color: grey;
-      font-size: 1.5rem;
-      height: 2rem;
-      line-height: 1.5rem;
+      font-size: $size24;
+      height: $size32;
+      line-height: $size24;
       cursor: pointer;
     }
   }
@@ -53,18 +56,20 @@
 
 @keyframes fadeMoveDown {
   0%   { 
-    transform: translate(0, -.5rem) rotate(-45deg);
+    transform: translate(0, -$size8) rotate(-45deg);
     opacity: 0;
   }
-  50%  { opacity: 1;  }
+  50%  { 
+    opacity: 1;  
+  }
   100% {
-    transform: translate(0, .5rem) rotate(-45deg);
+    transform: translate(0, $size8) rotate(-45deg);
     opacity: 0;
   }
 }
 
 @media #{$mobileScreen} {
   .scroll-link-container {
-    margin: 4rem auto;
+    margin: $size64 auto;
   }
 }

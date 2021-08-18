@@ -1,14 +1,16 @@
+@use '../../../../../assets/scss/sizes' as *;
+
 .community-intro {
   display: block;
-  width: 42rem;
+  width: $size800;
   max-width: 75vw;
-  margin: 1rem auto;
+  margin: $size12 auto;
 
   .heading {
-    font-size: 2rem;
+    font-size: $size28;
   }
 
   .description {
-    margin: 1rem 0;
+    margin: $size16 0;
   }
 }

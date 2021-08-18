@@ -1,3 +1,5 @@
+@use '../../../assets/scss/sizes' as *;
+
 .carousel {
   display: flex;
   justify-content: center;
@@ -6,23 +8,23 @@
   .carousel-control {
     border: none;
     background-color: transparent;
-    height: 18rem;
-    width: 6rem;
+    height: $size256;
+    width: $size96;
     max-height: 35vw;
     z-index: 2;
     cursor: pointer;
 
     &.left {
-      margin-right: -6rem;
+      margin-right: -$size96;
     }
 
     &.right {
-      margin-left: -6rem;
+      margin-left: -$size96;
     }
 
     .icon {
       color: transparent;
-      font-size: 5rem;
+      font-size: $size80;
     }
 
     &:hover, &:focus {
@@ -43,8 +45,8 @@
       }
 
       img {
-        height: 18rem;
-        width: 50rem;
+        height: $size256;
+        width: $size800;
         max-height: 35vw;
         max-width: 80vw;
       }
@@ -60,14 +62,14 @@
         .caption {
           position: absolute;
           bottom: 0;
-          padding: 2rem;
+          padding: $size32;
           width: 90%;
           color: white;
           font-weight: 600;
-          text-shadow: -3px 3px 10px black;
+          text-shadow: -$size4 $size4 $size10 black;
 
           h3 {
-            font-size: 1.5rem;
+            font-size: $size24;
             font-weight: 400;
           }
         }
@@ -79,9 +81,9 @@
 
       input {
         display: block;
-        height: 1.25rem;
-        width: 1.25rem;
-        margin: .5rem 1rem;
+        height: $size20;
+        width: $size20;
+        margin: $size8 $size16;
       }
     }
   }

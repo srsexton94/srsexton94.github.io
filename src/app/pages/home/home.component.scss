@@ -1,5 +1,6 @@
 @use '../../../assets/scss/colors' as *;
 @use '../../../assets/scss/fonts' as *;
+@use '../../../assets/scss/sizes' as *;
 @use '../../../assets/scss/variables' as *;
 
 .section-body {
@@ -7,10 +8,10 @@
   margin-top: 18vh;
 
   .name-display {
-    font-size: 3rem;
+    font-size: $size48;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 1rem;
+    margin: $size16;
 
     span {
       font-weight: 400;
@@ -22,11 +23,11 @@
     display: flex;
     justify-content: space-evenly;
     width: 35%;
-    margin: 1.5rem auto;
+    margin: $size24 auto;
     overflow: hidden;
 
     .social-button {
-      padding: 1rem;
+      padding: $size16;
     }
   }
 }

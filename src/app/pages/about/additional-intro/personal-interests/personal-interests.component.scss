@@ -1,9 +1,13 @@
+@use '../../../../../assets/scss/sizes' as *;
+
+$lighterShadow: rgba(0,0,0,.25);
+
 .personal-interests {
   .intro-header {
-    font-size: 2rem;
-    width: 55rem;
+    font-size: $size32;
+    width: $size800;
     max-width: 80vw;
-    margin: 0 auto 1rem;
+    margin: 0 auto $size16;
     text-align: center;
   }
 
@@ -11,21 +15,21 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 55rem;
+    width: $size800;
     max-width: 80vw;
-    padding: 2rem;
+    padding: $size32;
     margin: auto;
     box-shadow: 
-      0 1rem 2rem rgba(0,0,0,0.25),
-      0 .75rem .75rem rgba(0,0,0,0.22);
+      0 $size16 $size32 $lighterShadow,
+      0 $size12 $size12 $lighterShadow;
   }
 
   .display-container {
     display: flex;
     justify-content: center;
-    height: 30rem;
-    width: 55rem;
+    height: $size480;
+    width: $size800;
     max-width: 80vw;
-    margin: 2rem auto;
+    margin: $size32 auto;
   }
 }

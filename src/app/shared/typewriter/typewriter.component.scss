@@ -1,13 +1,14 @@
 @use '../../../assets/scss/colors' as *;
+@use '../../../assets/scss/sizes' as *;
 @use '../../../assets/scss/variables' as *;
 
 .typewriter-text {
-  height: 2.5rem;
-  margin: 1rem 1rem 0;
-  font-size: 2rem;
+  height: $size40;
+  margin: $size16 $size16 0;
+  font-size: $size32;
 
   &.composite {
-    font-size: 1rem;
+    font-size: $size16;
   }
 }
 
@@ -16,14 +17,14 @@
   color: grey;
   background: transparent;
   text-transform: uppercase;
-  height: 1.5rem;
-  padding: .25rem;
-  font-size: .75rem;
+  height: $size24;
+  padding: $size4;
+  font-size: $size12;
   cursor: pointer;
 
   &:hover, &:focus {
     border: 1px solid $baseFontColor;
-    border-radius: 5px;
+    border-radius: $size6;
     color: $baseFontColor;
     font-weight: bold;
   }
@@ -31,12 +32,12 @@
 
 @media #{$mobileScreen} {
   .typewriter-text {
-    height: 1.75rem;
-    font-size: 1.25rem;
+    height: $size28;
+    font-size: $size20;
 
     &.composite {
-      height: 7rem;
-      font-size: 1.25rem;
+      height: $size112;
+      font-size: $size20;
     }
   }
 }

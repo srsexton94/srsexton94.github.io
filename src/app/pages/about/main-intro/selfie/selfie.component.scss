@@ -1,12 +1,14 @@
+@use '../../../../../assets/scss/colors' as *;
+@use '../../../../../assets/scss/sizes' as *;
 @use '../../../../../assets/scss/variables' as *;
 
 .photo-wrapper {
   background-color: white;
-  border-radius: 3px;
-  box-shadow: -1px 6px 8px black;
+  border-radius: $size4;
+  box-shadow: -1px $size10 $size16 $shadowBlack;
   width: $selfieSize;
   height: $selfieSize * 1.25;
-  margin: 1rem 2rem;
+  margin: $size16 $size32;
   transform: rotate(-5deg);
   overflow: hidden;
 
@@ -14,18 +16,18 @@
     width: $selfieSize * .8;
     height: $selfieSize;
     display: block;
-    margin: 1.5rem auto 0;
-    border: 2px inset lightgrey;
-    border-radius: 3px;
+    margin: $size24 auto 0;
+    border: $size2 inset $shadowBlack;
+    border-radius: $size4;
   }
 
   .pronoun-badge {
     position: relative;
     height: $selfieSize / 5;
-    top: -1rem;
+    top: -$size16;
     left: $selfieSize / 1.5;
-    border-radius: 10px;
-    box-shadow: -1px 1px 3px grey;
+    border-radius: $size10;
+    box-shadow: -1px 1px $size4 $shadowBlack;
     transform: rotate(-12deg);
   }
 }
@@ -34,7 +36,7 @@
   .photo-wrapper {
     width: $selfieSizeMobile;
     height: $selfieSizeMobile * 1.25;
-    margin: 1rem;
+    margin: $size16;
   
     .selfie {
       width: $selfieSizeMobile * .8;

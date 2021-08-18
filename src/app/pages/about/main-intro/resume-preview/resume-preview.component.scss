@@ -1,18 +1,20 @@
+@use '../../../../../assets/scss/colors' as *;
+@use '../../../../../assets/scss/sizes' as *;
 @use '../../../../../assets/scss/variables' as *;
 
-$imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow(2px 2px 4px grey);
+$imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow($size2 $size2 $size4 $shadowBlack);
 
 .resume-preview {
   float: right;
-  margin-left: 1rem;
+  margin-left: $size16;
   
   .resume-img {
-    height: 20rem;
+    height: $size320;
     border-radius: 5%;
   }
 
   #preview-instructions {
-    font-size: 10px;
+    font-size: $size10;
     font-style: italic;
     font-weight: 400;
     text-align: center;
@@ -25,7 +27,7 @@ $imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow(2px 2px 4px grey);
       filter: $imageHoverFilter;
     }
     #preview-instructions {
-      font-size: 12px;
+      font-size: $size12;
     }
   }
 }
@@ -35,7 +37,7 @@ $imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow(2px 2px 4px grey);
     float: none;
 
     #preview-instructions {
-      font-size: 12px;
+      font-size: $size12;
     }
   }
 }

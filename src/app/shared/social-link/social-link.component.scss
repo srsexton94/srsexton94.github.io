@@ -1,13 +1,14 @@
 @use '../../../assets/scss/colors' as *;
+@use '../../../assets/scss/sizes' as *;
 @use '../../../assets/scss/variables' as *;
 
 .social-link, .social-link:visited {
   color: navy;
 
   fa-icon {
-    font-size: 12px;
+    font-size: $size12;
     position: relative;
-    top: -.15rem;
+    top: -$size4;
   }
 
   &.social-btn {
@@ -18,7 +19,7 @@
       height: $socialButtonSize;
       width: $socialButtonSize;
       line-height: $socialButtonSize;
-      border: 2px solid $baseFontColor;
+      border: $size2 solid $baseFontColor;
       border-radius: 50%;
       transition: .3s ease;
       overflow: hidden;

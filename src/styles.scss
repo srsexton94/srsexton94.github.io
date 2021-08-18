@@ -1,6 +1,7 @@
-@use 'assets/scss/variables' as *;
-@use 'assets/scss/fonts' as *;
 @use 'assets/scss/colors' as *;
+@use 'assets/scss/fonts' as *;
+@use 'assets/scss/sizes' as *;
+@use 'assets/scss/variables' as *;
 
 * { 
   box-sizing: border-box;
@@ -20,7 +21,7 @@ body {
 .page-section {
   width: 100vw;
   min-height: 100vh;
-  padding: 1rem;
+  padding: $size16;
   padding-top: $navbarHeight + 1;
 }
 
@@ -30,8 +31,8 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 [tabindex]:not([tabindex="-1"]):focus-visible {
-  outline: 1.5px dashed $baseFontColor;
-  outline-offset: .5rem;
+  outline: $size2 dashed $baseFontColor;
+  outline-offset: $size8;
 }
 
 a.social-link, a.social-link:visited, button {
@@ -41,24 +42,24 @@ a.social-link, a.social-link:visited, button {
     color: white;
     background-color: $baseHighlightAlert;
     border: 0;
-    border-radius: 5px;
-    margin: 0 .5rem;
-    padding: .85rem;
+    border-radius: $size6;
+    margin: 0 $size8;
+    padding: $size14;
     text-decoration: none;
     text-align: center;
     transition: .5s;
     cursor: pointer;
 
     &.large {
-      font-size: 24px;
-      padding: 1.5rem;
-      margin: 1rem;
+      font-size: $size24;
+      padding: $size24;
+      margin: $size16;
     }
 
     &:hover, &:focus {
       box-shadow: 
-        .4rem .4rem darken($baseHighlightAlert, 20%), 
-        -.4rem -.4rem lighten($baseHighlightAlert, 20%);
+        $size6 $size6 darken($baseHighlightAlert, 20%), 
+        -$size6 -$size6 lighten($baseHighlightAlert, 20%);
     }
   }
 }
