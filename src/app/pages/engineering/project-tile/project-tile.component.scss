@@ -41,14 +41,15 @@
 
         .btn-container {
           display: flex;
+          justify-content: center;
           height: $size44;
 
           project-link {
-            font-style: $size12;
-            width: 50%;
             display: inline-block;
             border: 1px solid $baseFontColor;
-            border-radius: $size6;
+            border-radius: $size8;
+            height: $size40;
+            width: $size40;
             padding: $size6 $size4 $size2;
             margin: $size4;
 
@@ -89,13 +90,12 @@
 .flipcard-btn {
   background-color: $baseAppBackground;
   padding: $size4;
-  border: 1px solid $baseFontColor;
-  border-radius: $size6;
+  border: none;
   cursor: pointer;
   height: $size24;
 
-  &:hover, &:focus {
-    border: $size2 solid $baseFontColor;
+  &:hover {
+    border-bottom: 2px solid black;
     font-weight: bold;
   }
 }

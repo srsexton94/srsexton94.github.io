@@ -22,9 +22,8 @@
   font-size: $size12;
   cursor: pointer;
 
-  &:hover, &:focus {
-    border: 1px solid $baseFontColor;
-    border-radius: $size6;
+  &:hover {
+    border-bottom: 1px solid $baseFontColor;
     color: $baseFontColor;
     font-weight: bold;
   }

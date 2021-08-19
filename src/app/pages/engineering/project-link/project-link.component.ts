@@ -1,5 +1,8 @@
-import { Component, Input } from '@angular/core';
-import { IProject, ProjectData, ProjectTypes } from 'src/models';
+import { Component, Input } from '@angular/core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLaptop } from '@fortawesome/free-solid-svg-icons'
+import { IProject, ProjectData, ProjectTypes } from 'src/models'
 
 @Component({
   selector: 'project-link',
@@ -14,7 +17,7 @@ import { IProject, ProjectData, ProjectTypes } from 'src/models';
       [attr.aria-label]="ariaLabel"
       [href]="linkSrc"
     >
-      {{ linkText }}
+      <fa-icon size="lg" [icon]="linkIcon"></fa-icon>
     </a>
   `
 })
@@ -27,11 +30,13 @@ export class ProjectLinkComponent {
     return this.project[this.linkType]
   }
 
-  get linkText(): string {
-    return this.linkType === 'site' ? 'Live Site' : 'Codebase'
+  get linkIcon(): IconProp {
+    return this.linkType === 'site' ? faLaptop : faGithub
   }
 
   get ariaLabel(): string {
-    return `Open ${ this.linkText.toLocaleLowerCase() } in new tab`
+    const descriptor: string = this.linkType === 'site' ? 'website' : 'code'
+
+    return `Open ${ this.project.displayName } ${ descriptor } in new tab`
   }
 }
