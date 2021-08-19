@@ -4,11 +4,13 @@ import { Component } from '@angular/core'
   selector: 'app-root',
   styleUrls: ['./app.component.scss'],
   template: `
-    <under-construction *ngIf="isUnderConstruction"></under-construction>
-    <main-content *ngIf="!isUnderConstruction"></main-content>
+    <under-construction *ngIf="isUnderConstruction; else mainContent"></under-construction>
+    <ng-template #mainContent>
+      <main-content></main-content>
+    </ng-template>
     <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
-  isUnderConstruction: boolean = true
+  isUnderConstruction: boolean = false
 }
