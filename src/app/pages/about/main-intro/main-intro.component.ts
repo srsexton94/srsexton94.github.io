@@ -32,9 +32,8 @@ import { SocialLinkTypes } from '../../../../../src/models/index'
             I have long been fascinated by the nuances of the many complex systems that guide our lives.
           </p>
           <p class="description">
-            At the heart of those systems, however, is always people &ndash; and it is in
-            people that I find my passion. I am thrilled to play my part in the movements
-            towards Equity-centered Design and radical accesibility in tech.
+            At the heart of those systems is always people &ndash; and it is there that I find my passion. 
+            I am thrilled to play my part in the movements towards Equitable Design and radical accesibility in tech.
           </p>
           <resume-preview class="mobile-only"></resume-preview>
           <scroll-link linkSrc="#more-aboutme">

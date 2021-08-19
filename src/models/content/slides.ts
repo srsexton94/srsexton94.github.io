@@ -79,6 +79,16 @@ export const CommunitySlides: ISlide[] = [
     isActive: false
   },
   {
+    image: '../../assets/images/slides/craigs-place.jpeg',
+    altText: 'A white sign on brick wall displays housing shelter\'s operating hours',
+    heading: 'Craig\'s Place: A Home Association',
+    body: `
+      I worked as overnight staff at an emergency housing shelter; assisting guests with community resource access
+      and managing shelter operations.
+    `,
+    isActive: false
+  },
+  {
     image: '../../assets/images/slides/working-at-desk.jpg',
     altText: 'Three people seated at a table with laptops talking and laughing',
     heading: 'Design X Humanity',

@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
-import { ImagePaths } from '../../../../../../src/models/index'
+import { IImagePaths, ImagePaths } from '../../../../../../src/models/index'
 
 @Component({
   selector: 'selfie',
   styleUrls: ['./selfie.component.scss'],
   template: `
     <div class="photo-wrapper">
-      <img class="selfie" [src]="selfieSrc"/>
-      <img class="pronoun-badge" [src]="pronounSrc"/>
+      <img class="selfie" [src]="images.aboutMeImg"/>
+      <img class="pronoun-badge" [src]="images.pronounBadge"/>
+      <img class="aws-ccp" [src]="images.awsCCP"/>
     </div>
   `
 })
 export class SelfieComponent {
-  selfieSrc: string = ImagePaths.aboutMeImg
-  pronounSrc: string = ImagePaths.pronounBadge
+  images: IImagePaths = ImagePaths
 }

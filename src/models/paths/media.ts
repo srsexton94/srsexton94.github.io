@@ -7,6 +7,7 @@ export interface IVideoPaths {
 
 export interface IImagePaths extends IVideoPaths {
   aboutMeImg: string,
+  awsCCP: string,
   blushImg: string,
   lottieAnimation: string,
   nanowrimoImg: string,
@@ -17,6 +18,7 @@ export interface IImagePaths extends IVideoPaths {
 
 export const ImagePaths: IImagePaths = {
   aboutMeImg: '../../assets/images/about-me.jpeg',
+  awsCCP: '../../assets/images/aws-ccp.png',
   blushImg: '../../assets/images/the-little-things-kitchen.png',
   lottieAnimation: 'https://assets9.lottiefiles.com/packages/lf20_hucoqyyg.json',
   nanowrimoImg: '../../assets/images/NaNoWriMo_2020.png',
