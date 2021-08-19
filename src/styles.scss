@@ -58,8 +58,8 @@ a.social-link, a.social-link:visited, button {
 
     &:hover, &:focus {
       box-shadow: 
-        $size6 $size6 darken($baseHighlightAlert, 20%), 
-        -$size6 -$size6 lighten($baseHighlightAlert, 20%);
+        .375rem .375rem darken($baseHighlightAlert, 20%), 
+        -.375rem -.375rem lighten($baseHighlightAlert, 20%);
     }
   }
 }

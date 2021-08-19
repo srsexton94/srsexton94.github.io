@@ -19,8 +19,8 @@ import { ImagePaths, InterestsList, SocialLinkTypes } from '../../../../../model
         </button>
       </div>
       <div class="display-container">
-        <video-player *ngIf="isMediaShown.BJJ" type="BJJ" (close)="clearMedia()"></video-player>
-        <video-player *ngIf="isMediaShown.DANCE" type="DANCE" (close)="clearMedia()"></video-player>
+        <video-player *ngIf="isMediaShown.BJJ" type="BJJ"></video-player>
+        <video-player *ngIf="isMediaShown.DANCE" type="DANCE"></video-player>
         <nano-image-link *ngIf="isMediaShown.WRITE"></nano-image-link>
       </div>
     </div>

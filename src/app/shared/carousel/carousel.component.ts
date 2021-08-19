@@ -42,6 +42,7 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
   `
 })
 export class CarouselComponent implements OnInit {
+  currentTimer: ReturnType<typeof setTimeout> = setTimeout(()=>{},1000)
   leftArrow: IconProp = faAngleLeft
   rightArrow: IconProp = faAngleRight
   slides: ISlide[] = CommunitySlides
@@ -53,7 +54,7 @@ export class CarouselComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setInterval(() => { this.progressSlide(1) }, 8000)
+    this.startTimer()
   }
 
   progressSlide(change: number): void {
@@ -66,7 +67,18 @@ export class CarouselComponent implements OnInit {
   }
 
   changeSlide(newSlideIndex: number): void {
+    this.stopTimer()
     this.slides.forEach(slide => slide.isActive = false)
     this.slides[newSlideIndex].isActive = true
+    this.startTimer()
+  }
+
+  stopTimer(): void {
+    clearInterval(this.currentTimer)
+  }
+
+  startTimer(): void {
+    console.log(typeof this.currentTimer)
+    this.currentTimer = setInterval(() => { this.progressSlide(1) }, 8000)
   }
 }

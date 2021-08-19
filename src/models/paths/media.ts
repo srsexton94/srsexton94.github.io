@@ -1,4 +1,11 @@
-interface IImagePaths {
+export interface IVideoPaths {
+  BJJ: string,
+  DANCE: string,
+  LANG: string,
+  [key: string]: string;
+}
+
+export interface IImagePaths extends IVideoPaths {
   aboutMeImg: string,
   blushImg: string,
   lottieAnimation: string,
@@ -8,20 +15,16 @@ interface IImagePaths {
   [key: string]: string;
 }
 
-export interface IVideoPaths {
-  BJJ: string,
-  DANCE: string,
-  LANG: string,
-  [key: string]: string;
-}
-
 export const ImagePaths: IImagePaths = {
   aboutMeImg: '../../assets/images/about-me.jpeg',
   blushImg: '../../assets/images/the-little-things-kitchen.png',
   lottieAnimation: 'https://assets9.lottiefiles.com/packages/lf20_hucoqyyg.json',
   nanowrimoImg: '../../assets/images/NaNoWriMo_2020.png',
   pronounBadge: '../../assets/images/pronouns.png',
-  resumeImg: '../../assets/images/resume.png'
+  resumeImg: '../../assets/images/resume.png',
+  BJJ: '../../assets/images/jiujitsu.jpeg',
+  DANCE: '../../assets/images/dancing.jpeg',
+  LANG: '../../assets/images/dancing.jpeg'
 }
 
 export const VideoPaths: IVideoPaths = {
