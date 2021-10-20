@@ -9,11 +9,13 @@ import { IProject, ProjectData, ProjectTypes } from '../../../../models/index'
       <div class="project-tile">
         <div class="card" [ngClass]="{ 'flipped': isFlipped }">
           <div class="face front">
-            <img [src]="project.image" />
+            <img [src]="project.image" aria-hidden="true" />
           </div>
-          <div id="project-info" class="face back">
-            <h2 class="display-name">{{ project.displayName }}</h2>
-            <p class="description">{{ project.description  }}</p>
+          <div class="face back" [attr.aria-hidden]="!isFlipped">
+            <section [id]="projectName+'Description'">
+              <h2 class="display-name">{{ project.displayName }}</h2>
+              <p class="description">{{ project.description  }}</p>
+            </section>
             <div class="btn-container">
               <project-link 
                 linkType="site" 
@@ -31,8 +33,8 @@ import { IProject, ProjectData, ProjectTypes } from '../../../../models/index'
       </div>
       <button 
         class="flipcard-btn"
-        aria-label="Reveal project info" 
-        aria-describedby="project-info" 
+        [attr.aria-label]="'Reveal '+project.displayName+' project info'" 
+        [attr.aria-describedby]="projectName+'Description'" 
         (click)="flipCard()"
       >
         Flip Card
