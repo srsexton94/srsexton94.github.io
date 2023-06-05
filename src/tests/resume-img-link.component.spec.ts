@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResumeImgLinkComponent } from '../app/pages/about/main-intro/resume-preview/resume-preview.component';
+import { ResumeImgLinkComponent } from '../app/pages/about/resume-preview/resume-preview.component';
 
 describe('ResumeImgLinkComponent', () => {
   let component: ResumeImgLinkComponent;
@@ -8,9 +8,8 @@ describe('ResumeImgLinkComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ResumeImgLinkComponent ]
-    })
-    .compileComponents();
+      declarations: [ResumeImgLinkComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

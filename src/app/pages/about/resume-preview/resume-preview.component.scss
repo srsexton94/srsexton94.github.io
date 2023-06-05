@@ -1,8 +1,9 @@
-@use '../../../../../assets/scss/colors' as *;
-@use '../../../../../assets/scss/sizes' as *;
-@use '../../../../../assets/scss/variables' as *;
+@use "../../../../assets/scss/colors" as *;
+@use "../../../../assets/scss/sizes" as *;
+@use "../../../../assets/scss/variables" as *;
 
-$imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow($size2 $size2 $size4 $shadowBlack);
+$imageHoverFilter: brightness(0.6) grayscale(50%)
+  drop-shadow($size2 $size2 $size4 $shadowBlack);
 
 .resume-preview {
   float: right;
@@ -10,7 +11,7 @@ $imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow($size2 $size2 $size
   padding: $size6;
   border-radius: $size16;
   box-shadow: inset 0px 0px $size10 $size4 $shadowGrey;
-  
+
   .resume-img {
     height: $size320;
     border-radius: 5%;
@@ -23,7 +24,8 @@ $imageHoverFilter: brightness(.6) grayscale(50%) drop-shadow($size2 $size2 $size
     text-align: center;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     .resume-img {
       -webkit-filter: $imageHoverFilter;
       -o-filter: $imageHoverFilter;

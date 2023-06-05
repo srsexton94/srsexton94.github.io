@@ -1,4 +1,4 @@
-@use '../../../assets/scss/sizes' as *;
+@use "../../../../assets/scss/sizes" as *;
 
 .carousel {
   display: flex;
@@ -27,8 +27,11 @@
       font-size: $size80;
     }
 
-    &:hover, &:focus {
-      .icon { color: rgba(255, 255, 255, 0.75); }
+    &:hover,
+    &:focus {
+      .icon {
+        color: rgba(255, 255, 255, 0.75);
+      }
     }
   }
 

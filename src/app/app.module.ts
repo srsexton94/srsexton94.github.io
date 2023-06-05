@@ -6,45 +6,24 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppComponent } from './app.component'
 import { NavbarComponent } from './navbar/navbar.component'
-import { PageContainerComponent } from './page-container/page-container.component'
-import { 
-  CarouselComponent, 
-  ScrollLinkComponent,
-  SocialLinkComponent,
-  TypewriterComponent
-} from './shared'
-import {
-  AboutComponent,
-  AdditionalIntroComponent,
-  CommunitySlidesComponent,
-  NanoImageLinkComponent,
-  PersonalInterestsComponent,
-  ResumePreviewComponent,
-  SelfieComponent,
-  VideoPlayerComponent
-} from './pages/about'
-import {
-  HomeComponent
-} from './pages/home'
+import { ScrollLinkComponent, SocialLinkComponent } from './shared'
+import { AboutComponent, ResumePreviewComponent, SelfieComponent } from './pages/about'
+import { CarouselComponent, CommunityComponent } from './pages/community'
+import { HomeComponent, TypewriterComponent } from './pages/home'
 
 @NgModule({
   declarations: [
     AboutComponent,
-    AdditionalIntroComponent,
     AppComponent,
     CarouselComponent,
-    CommunitySlidesComponent,
+    CommunityComponent,
     HomeComponent,
-    NanoImageLinkComponent,
     NavbarComponent,
-    PageContainerComponent,
-    PersonalInterestsComponent,
     ResumePreviewComponent,
     ScrollLinkComponent,
     SelfieComponent,
     SocialLinkComponent,
-    TypewriterComponent,
-    VideoPlayerComponent
+    TypewriterComponent
   ],
   imports: [
     AppRoutingModule,

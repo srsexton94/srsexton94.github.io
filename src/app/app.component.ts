@@ -5,7 +5,9 @@ import { Component } from '@angular/core'
   styleUrls: ['./app.component.scss'],
   template: `
     <navbar></navbar>
-    <page-container></page-container>
+    <home-page></home-page>
+    <about-page></about-page>
+    <community-page></community-page>
     <router-outlet></router-outlet>
   `
 })

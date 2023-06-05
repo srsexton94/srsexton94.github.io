@@ -1,10 +1,10 @@
-@use '../../../../../assets/scss/sizes' as *;
+@use '../../../assets/scss/sizes' as *;
 
 .community-intro {
   display: block;
   width: $size800;
   max-width: 75vw;
-  margin: $size12 auto;
+  margin: $size24 auto;
 
   .heading {
     font-size: $size28;

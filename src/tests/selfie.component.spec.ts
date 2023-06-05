@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelfieComponent } from '../app/pages/about/main-intro/selfie/selfie.component';
+import { SelfieComponent } from '../app/pages/about/selfie/selfie.component';
 
 describe('SelfieComponent', () => {
   let component: SelfieComponent;
@@ -8,9 +8,8 @@ describe('SelfieComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SelfieComponent ]
-    })
-    .compileComponents();
+      declarations: [SelfieComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
