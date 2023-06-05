@@ -4,13 +4,9 @@ import { Component } from '@angular/core'
   selector: 'app-root',
   styleUrls: ['./app.component.scss'],
   template: `
-    <under-construction *ngIf="isUnderConstruction; else mainContent"></under-construction>
-    <ng-template #mainContent>
-      <main-content></main-content>
-    </ng-template>
+    <navbar></navbar>
+    <page-container></page-container>
     <router-outlet></router-outlet>
   `
 })
-export class AppComponent {
-  isUnderConstruction: boolean = false
-}
+export class AppComponent {}
