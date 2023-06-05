@@ -22,8 +22,8 @@ export const SocialPaths: ISocialPaths = {
   fidelity: 'https://www.linkedin.com/company/fidelity-investments/about/',
   github: 'https://github.com/srsexton94',
   google: 'https://www.coursera.org/professional-certificates/google-ux-design',
-  linkedin: 'https://www.linkedin.com/in/samantha-sexton/',
+  linkedin: 'https://www.linkedin.com/in/sam-sexton/',
   nanowrimo: 'https://nanowrimo.org/',
-  resume: '../assets/documents/SamanthaSexton_SoftwareEngineer_Resume.pdf',
+  resume: '../assets/documents/SamSexton_SoftwareEngineer_Resume.pdf',
   umass: 'https://www.umass.edu/linguistics/node/2867'
 }

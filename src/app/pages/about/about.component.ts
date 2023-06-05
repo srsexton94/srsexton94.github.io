@@ -6,7 +6,6 @@ import { Component } from '@angular/core'
   template: `
     <section id="about-me-section" class="page-section">
       <main-intro></main-intro>
-      <additional-intro></additional-intro>
     </section>
   `
 })

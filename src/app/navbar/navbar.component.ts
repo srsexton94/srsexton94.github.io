@@ -29,7 +29,7 @@ export class NavbarComponent {
   homeIcon: IconProp = faLaptopHouse
   isMenuOpen: boolean = false
   isPastBreakpoint: boolean = false
-  menuTabs: string[] = ['Engineering', 'Design', 'About me']
+  menuTabs: string[] = ['About me']
 
   get menuToggle(): { icon: IconProp, label: string } {
     return this.isMenuOpen 
@@ -38,7 +38,7 @@ export class NavbarComponent {
   }
 
   get homeLinkText(): string {
-    return this.isPastBreakpoint ? 'Samantha Rose Sexton' : 'SRS'
+    return this.isPastBreakpoint ? 'Sam Rose Sexton' : 'SRS'
   }
 
   getLinkId(tabText: string): string {

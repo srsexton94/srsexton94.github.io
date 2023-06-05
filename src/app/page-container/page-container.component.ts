@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   template: `
     <ng-container>
       <home-page></home-page>
-      <engineering-page></engineering-page>
-      <design-page></design-page>
       <about-page></about-page>
     </ng-container>
   `

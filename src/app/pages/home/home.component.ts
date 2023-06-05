@@ -7,7 +7,7 @@ import { DevTitleList, SocialLinkTypes } from '../../../models/index'
   template: `
     <section class="page-section">
       <div class="section-body">
-        <h1 class="name-display">Samantha <span>Rose</span> Sexton</h1>
+        <h1 class="name-display">Sam <span>Rose</span> Sexton</h1>
         <typewriter [typewriterTexts]="titleTexts"></typewriter>
         <ul class="socials">
           <li class="social-button">
