@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ImagePaths, SocialLinkTypes } from '../../../../models/index';
+import { SocialLinkTypes } from '../../../../models/index';
 
 @Component({
   selector: 'resume-preview',
@@ -17,6 +17,6 @@ import { ImagePaths, SocialLinkTypes } from '../../../../models/index';
   `,
 })
 export class ResumePreviewComponent {
-  resumeImg: string = ImagePaths.resumeImg;
+  resumeImg: string = '../../assets/images/resume.png';
   resumeSrc: SocialLinkTypes = SocialLinkTypes.RESUME;
 }

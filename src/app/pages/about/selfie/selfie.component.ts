@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IImagePaths, ImagePaths } from '../../../../models/index';
+import { ISelfieImageDetails, SelfieImageDetails } from '../../../../models';
 
 @Component({
   selector: 'selfie',
@@ -7,29 +7,23 @@ import { IImagePaths, ImagePaths } from '../../../../models/index';
   template: `
     <section class="photo-wrapper">
       <img
-        class="selfie"
-        [src]="images.aboutMeImg"
-        [attr.aria-label]="describeSelfie"
+        [class]="image.selfie.class"
+        [src]="image.selfie.src"
+        [attr.aria-label]="image.selfie.altText"
       />
       <img
-        class="pronoun-badge"
-        [src]="images.pronounBadge"
-        [attr.aria-label]="describePronouns"
+        [class]="image.pronounBadge.class"
+        [src]="image.pronounBadge.src"
+        [attr.aria-label]="image.pronounBadge.altText"
       />
       <img
-        class="aws-ccp"
-        [src]="images.awsCCP"
-        [attr.aria-label]="describeAWS"
+        [class]="image.awsCCP.class"
+        [src]="image.awsCCP.src"
+        [attr.aria-label]="image.awsCCP.altText"
       />
     </section>
   `,
 })
 export class SelfieComponent {
-  describeAWS: string =
-    'Amazon Web Services Certified Cloud Practitioner completion badge';
-  describePronouns: string =
-    "Name tag reading 'Hello! My Pronouns are They/Them'";
-  describeSelfie: string =
-    'Smiling photo of Sam, a white person with short dual tone hair, glasses, and a collared shirt';
-  images: IImagePaths = ImagePaths;
+  image: ISelfieImageDetails = SelfieImageDetails;
 }
