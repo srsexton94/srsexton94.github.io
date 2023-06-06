@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppComponent } from './app.component'
 import { NavbarComponent } from './navbar/navbar.component'
-import { ScrollLinkComponent, SocialLinkComponent } from './shared'
+import { SocialLinkComponent } from './shared'
 import { AboutComponent, ResumePreviewComponent, SelfieComponent } from './pages/about'
 import { CarouselComponent, CommunityComponent } from './pages/community'
 import { HomeComponent, TypewriterComponent } from './pages/home'
@@ -20,7 +20,6 @@ import { HomeComponent, TypewriterComponent } from './pages/home'
     HomeComponent,
     NavbarComponent,
     ResumePreviewComponent,
-    ScrollLinkComponent,
     SelfieComponent,
     SocialLinkComponent,
     TypewriterComponent
