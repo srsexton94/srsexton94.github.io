@@ -11,12 +11,11 @@ import { SocialLinkTypes } from '../../../../models/index';
       [excludeIcon]="true"
       [linkType]="resumeSrc"
     >
-      <img class="resume-img" aria-hidden="true" [src]="resumeImg" />
+      <img class="resume-img" aria-hidden="true" src="../../assets/images/resume.png" />
       <p id="preview-instructions">Opens Resume in new tab</p>
     </social-link>
   `,
 })
 export class ResumePreviewComponent {
-  resumeImg: string = '../../assets/images/resume.png';
   resumeSrc: SocialLinkTypes = SocialLinkTypes.RESUME;
 }

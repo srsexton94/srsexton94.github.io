@@ -40,9 +40,13 @@ $imageHoverFilter: brightness(0.6) grayscale(50%)
 @media #{$mobileScreen} {
   .resume-preview {
     float: none;
+    box-shadow: none;
+    margin-left: $size40;
 
     #preview-instructions {
       font-size: $size12;
+      text-align: left;
+      margin-left: $size80;
     }
   }
 }
