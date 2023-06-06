@@ -45,7 +45,7 @@
   .photo-wrapper {
     width: $selfieSizeMobile;
     height: $selfieSizeMobile * 1.3;
-    margin: $size16;
+    margin: $size16 $size40;
   
     .selfie {
       width: $selfieSizeMobile * .8;
