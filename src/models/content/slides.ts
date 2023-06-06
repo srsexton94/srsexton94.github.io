@@ -88,14 +88,4 @@ export const CommunitySlides: ISlide[] = [
     `,
     isActive: false
   },
-  {
-    image: '../../assets/images/slides/working-at-desk.jpg',
-    altText: 'Three people seated at a table with laptops talking and laughing',
-    heading: 'Design X Humanity',
-    body: `
-      I worked as a UX Engineer & Instructional Designer to help build educational software for K-12 students
-      on critical anti-racism and social equity.
-    `,
-    isActive: false
-  }
 ]
