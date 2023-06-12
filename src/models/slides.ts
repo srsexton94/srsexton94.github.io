@@ -11,10 +11,10 @@ export const CommunitySlides: ISlide[] = [
   {
     image: '../../assets/images/slides/boston-cityscape.jpeg',
     altText: 'Nighttime cityscape of boston over water with bright streetlamp',
-    heading: 'Police Misconduct Data Trust',
+    heading: 'National Police Data Coalition',
     body: `
-      I contribute as a Software Engineer and UX Designer to help build a national index of
-      police misconduct through Code for Boston & The Tubman Project.
+      I contribute as a User Experience Engineer to help build a national Data Visualization
+      index of police misconduct through Code for Boston & The Tubman Project.
     `,
     isActive: true
   },

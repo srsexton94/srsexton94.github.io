@@ -42,6 +42,7 @@
 
     .slide {
       position: relative;
+      border-radius: $size24;
 
       &:not(.active) {
         display: none;
@@ -87,6 +88,7 @@
         height: $size20;
         width: $size20;
         margin: $size8 $size16;
+        cursor: pointer;
       }
     }
   }
