@@ -93,7 +93,6 @@ export class CarouselComponent implements OnInit {
   }
 
   startTimer(): void {
-    console.log(typeof this.currentTimer);
     this.currentTimer = setInterval(() => {
       this.progressSlide(1);
     }, 8000);

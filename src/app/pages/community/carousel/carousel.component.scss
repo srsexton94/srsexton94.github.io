@@ -1,4 +1,5 @@
 @use "../../../../assets/scss/sizes" as *;
+@use "../../../../assets/scss/variables" as *;
 
 .carousel {
   display: flex;
@@ -90,6 +91,15 @@
         margin: $size8 $size16;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media #{$mobileScreen} {
+  .carousel {
+    .inner-carousel .slide img,
+    .carousel-control {
+      min-height: $size320;
     }
   }
 }
