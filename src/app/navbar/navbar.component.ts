@@ -29,7 +29,7 @@ export class NavbarComponent {
   homeIcon: IconProp = faLaptopHouse
   isMenuOpen: boolean = false
   isPastBreakpoint: boolean = false
-  menuTabs: string[] = ['About me', 'Community']
+  menuTabs: string[] = ['About me', 'Experience', 'Community']
 
   get menuToggle(): { icon: IconProp, label: string } {
     return this.isMenuOpen 

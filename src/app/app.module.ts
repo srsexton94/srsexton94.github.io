@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component'
 import { SocialLinkComponent } from './shared'
 import { AboutComponent, ResumePreviewComponent, SelfieComponent } from './pages/about'
 import { CarouselComponent, CommunityComponent } from './pages/community'
+import { ExperienceComponent } from './pages/experience'
 import { HomeComponent, TypewriterComponent } from './pages/home'
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HomeComponent, TypewriterComponent } from './pages/home'
     AppComponent,
     CarouselComponent,
     CommunityComponent,
+    ExperienceComponent,
     HomeComponent,
     NavbarComponent,
     ResumePreviewComponent,

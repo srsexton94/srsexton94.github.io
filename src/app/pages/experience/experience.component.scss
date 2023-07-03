@@ -1,0 +1,53 @@
+@use "../../../assets/scss/colors" as *;
+@use "../../../assets/scss/sizes" as *;
+
+.experience {
+  display: flex;
+  width: $size800;
+  max-width: 90vw;
+  margin: $size12 auto;
+
+
+  .dates {
+    color: $shadowGrey;
+    display: block;
+    min-width: fit-content;
+    font-size: $size14;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    .skill {
+      display: block;
+      margin: $size4;
+      padding: $size6;
+      border-radius: $size8;
+      font-size: $size12;
+      background-image: radial-gradient(circle, white, $baseHighlightAlert);
+      font-weight: 500;
+    }
+  }
+
+  .company {
+    font-weight: 500;
+    font-size: $size18;
+    text-decoration: none;
+    color: $baseFontColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .description {
+    font-size: $size14;
+    margin: $size8 0;
+  }
+
+  .content {
+    display: block;
+    margin-left: $size16;
+  }
+}
