@@ -2,6 +2,7 @@ enum Skills {
   AGILE = 'Agile',
   ANGULAR = 'Angular',
   A11Y = 'Web Accessibility',
+  CSS = 'CSS',
   CYPRESS = 'Cypress',
   D3 = 'D3',
   FIGMA = 'Figma',
@@ -10,12 +11,13 @@ enum Skills {
   JAVASCRIPT = 'JavaScript',
   JEST = 'Jest',
   NGRX = 'NgRx',
-  NODE = 'Node',
+  NODE = 'Node / NPM',
   REACT = 'React',
   REACT_TEST = 'React Testing',
   REDUX = 'Redux',
   SASS = 'Sass/SCSS',
   SCRUM = 'Scrum',
+  STORYBOOK = 'Storybook',
   TYPESCRIPT = 'TypeScript',
 }
 
@@ -25,22 +27,29 @@ export const Experiences = [
     titles: ['UI/UX Software Engineer'],
     startYear: 2023,
     description: `
-      Write Description
+      Design, develop, & maintain features and improvements on EcoStruxureIT Expert
+      platform with readable, optimized, and well-tested code. Collaborate and communicate
+      through design/code reviews and pull requests.
     `,
     skills: [
       Skills.ANGULAR,
       Skills.TYPESCRIPT,
       Skills.JAVASCRIPT,
       Skills.NGRX,
+      Skills.HTML,
+      Skills.CSS,
+      Skills.STORYBOOK,
+      Skills.NODE,
       Skills.FIGMA,
+      Skills.JEST,
       Skills.GIT,
       Skills.A11Y,
+      Skills.AGILE,
     ],
-    link: 'https://www.se.com/us/en/',
+    link: 'https://ecostruxureit.com/',
   },
   {
     company: 'Pluralsight',
-    team: 'Flow',
     titles: ['Software Engineer'],
     startYear: 2020,
     endYear: 2022,
@@ -68,7 +77,6 @@ export const Experiences = [
   },
   {
     company: 'Fidelity Investments',
-    team: 'Retirement Income',
     titles: ['Software Engineer', 'Associate Engineer'],
     startYear: 2020,
     endYear: 2022,
@@ -87,6 +95,7 @@ export const Experiences = [
       Skills.CYPRESS,
       Skills.HTML,
       Skills.SASS,
+      Skills.STORYBOOK,
       Skills.GIT,
       Skills.AGILE,
       Skills.SCRUM,

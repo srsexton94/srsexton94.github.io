@@ -11,7 +11,15 @@ import { Experiences } from '../../../models/index'
           <li class="experience">
             <span class="dates">{{ exp.startYear }} - {{ exp.endYear || 'Pres.' }}</span>
             <div class="content">
-              <a class="company" [attr.href]="exp.link">{{ exp.company }}</a>
+              <a 
+                class="company"
+                rel="noopener noreferrer"
+                target="_blank"
+                [attr.aria-label]="exp.company + ', opens new tab'"
+                [attr.href]="exp.link"
+              >
+                {{ exp.company }}
+              </a>
               <p *ngFor="let title of exp.titles" class="title">{{ title }}</p>
               <p class="description">{{ exp.description }}</p>
               <ul class="skills">
