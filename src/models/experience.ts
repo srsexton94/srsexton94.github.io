@@ -28,8 +28,8 @@ export const Experiences = [
     startYear: 2023,
     endYear: 2024,
     description: `
-      Design, develop, & maintain features and improvements on EcoStruxureIT Expert
-      platform with readable, optimized, and well-tested code. Collaborate and communicate
+      Designed, developed, & maintained features and improvements on EcoStruxureIT Expert
+      platform with readable, optimized, and well-tested code. Collaborated and communicated
       through design/code reviews and pull requests.
     `,
     skills: [
