@@ -26,6 +26,7 @@ export const Experiences = [
     company: 'Schneider Electric',
     titles: ['UI/UX Software Engineer'],
     startYear: 2023,
+    endYear: 2024,
     description: `
       Design, develop, & maintain features and improvements on EcoStruxureIT Expert
       platform with readable, optimized, and well-tested code. Collaborate and communicate
@@ -126,5 +127,5 @@ export const Experiences = [
       Skills.A11Y,
     ],
     link: 'https://www.nationalpolicedata.org/',
-  }
-]
+  },
+];
