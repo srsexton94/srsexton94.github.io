@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * `ng test` for unit tests via [Karma](https://karma-runner.github.io).
 * `ng e2e` for end-to-end tests via [Protractor](http://www.protractortest.org/).
 * `ng help` or [Angular CLI Overview and Command Reference](https://angular.io/cli) for help
-* `ng deploy --base-href=/` to deplay project via [angular-cli-ghpages](https://www.npmjs.com/package/angular-cli-ghpages)
+* `ng deploy --base-href=/` to deploy project via [angular-cli-ghpages](https://www.npmjs.com/package/angular-cli-ghpages)
 
 ## Dependencies
 * [Angular CLI](https://angular.io/cli)
