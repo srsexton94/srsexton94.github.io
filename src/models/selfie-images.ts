@@ -5,28 +5,28 @@ export enum SelfieImageTypes {
 }
 
 export type ISelfieImageDetails = {
-  class: SelfieImageTypes,
-  src: string,
-  altText: string,
-}
+  class: SelfieImageTypes;
+  src: string;
+  altText: string;
+};
 
 export const SelfieImageDetails: ISelfieImageDetails[] = [
-  { 
+  {
     class: SelfieImageTypes.SELFIE,
     src: '../../assets/images/about-me.jpeg',
     altText: `
-      Smiling photo of Sam, a white person with bright pink and orange hair,
-      in an open collared shirt against a brick background.
+      Smiling photo of Sam, a white person with short brown hair, 
+      round glasses, and an open jacket with a blue collar.
     `,
   },
-  { 
+  {
     class: SelfieImageTypes.PRONOUNS,
     src: '../../assets/images/pronouns.png',
     altText: `
       Name tag reading 'Hello! My Pronouns are They/Them'
     `,
   },
-  { 
+  {
     class: SelfieImageTypes.CCP,
     src: '../../assets/images/aws-ccp.png',
     altText: `
