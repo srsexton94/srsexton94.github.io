@@ -25,6 +25,33 @@ export const Experiences = [
   {
     company: 'Schneider Electric',
     titles: ['UI/UX Software Engineer'],
+    startYear: 2025,
+    description: `
+      Taking ownership of the 3Victors product suite, I help customers confidently make strategic
+      pricing decisions leveraging the power of AI.  I deliver innovative, engaging prototypes using
+      the latest in frontend technologies and drive the frontend development on key applications,
+      partnering closely with full-stack and backend engineering teams.
+    `,
+    skills: [
+      Skills.ANGULAR,
+      Skills.TYPESCRIPT,
+      Skills.JAVASCRIPT,
+      Skills.NGRX,
+      Skills.HTML,
+      Skills.CSS,
+      Skills.STORYBOOK,
+      Skills.NODE,
+      Skills.FIGMA,
+      Skills.JEST,
+      Skills.GIT,
+      Skills.A11Y,
+      Skills.AGILE,
+    ],
+    link: 'https://atpco.net/',
+  },
+  {
+    company: 'Schneider Electric',
+    titles: ['UI/UX Software Engineer'],
     startYear: 2023,
     endYear: 2024,
     description: `
@@ -108,7 +135,6 @@ export const Experiences = [
     company: 'Code for Boston',
     titles: ['Software Engineer', 'User Experience Designer'],
     startYear: 2020,
-    endYear: 2023,
     description: `
       Helped design & develop the National Police Data Coalition project -- a national
       Data Visualization app to help combat police violence. 
