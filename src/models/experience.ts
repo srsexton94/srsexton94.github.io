@@ -23,8 +23,8 @@ enum Skills {
 
 export const Experiences = [
   {
-    company: 'Schneider Electric',
-    titles: ['UI/UX Software Engineer'],
+    company: 'ATPCO',
+    titles: ['Senior UX Engineer'],
     startYear: 2025,
     description: `
       Taking ownership of the 3Victors product suite, I help customers confidently make strategic
