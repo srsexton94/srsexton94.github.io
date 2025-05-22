@@ -1,12 +1,27 @@
 import { Component } from '@angular/core';
+import { EngineeringProjects, IProject } from 'src/models/projects';
 
 @Component({
   selector: 'engineering-page',
   styleUrls: ['./engineering.component.scss'],
   template: `
     <section id="engineering-section" class="page-section">
-      <h2>Engineering</h2>
+      <div class="engineering">
+        <h2>Engineering Projects</h2>
+        <ul *ngFor="let project of projects">
+          <li>
+            <project-tile
+              [imgSrc]="project.image"
+              [title]="project.title"
+              [description]="project.description"
+              [links]="project.links"
+            ></project-tile> 
+          </li>
+        </ul>
+      </div>
     </section>
   `,
 })
-export class EngineeringComponent {}
+export class EngineeringComponent {
+  projects: IProject[] = EngineeringProjects;
+}

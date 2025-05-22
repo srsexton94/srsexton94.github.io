@@ -1,0 +1,53 @@
+@use "../../../assets/scss/colors" as *;
+@use "../../../assets/scss/sizes" as *;
+@use "../../../assets/scss/variables" as *;
+
+.tile {
+  border-radius: 1rem;
+  background-color: white;
+  width: 20rem;
+  height: 30rem;
+  box-shadow: -1px $size10 $size16 $shadowBlack;
+  margin: 1rem;
+
+  img {
+    width: 100%;
+  }
+  .content {
+    padding: 1rem;
+
+    h2 {
+      font-weight: 600;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &:hover {
+    animation: gentile-shake 0.35s;
+  }
+}
+
+@keyframes gentile-shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
