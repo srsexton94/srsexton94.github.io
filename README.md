@@ -2,6 +2,7 @@
 An online portfolio of my engineering work - currently being redesigned
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
+* Use Node v16.20.2, run `nvm use 16`
 * `ng serve` runs dev server, hosted at `http://localhost:4200/`
 * `ng generate component|directive|pipe|service|class|guard|interface|enum|module [name]` generates new
 * `ng build` to build project - artifacts stored in `dist/` (use `--prod` flag for production)
