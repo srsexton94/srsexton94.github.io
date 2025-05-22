@@ -11,6 +11,7 @@ import { AboutComponent, ResumePreviewComponent, SelfieComponent } from './pages
 import { CarouselComponent, CommunityComponent } from './pages/community'
 import { ExperienceComponent } from './pages/experience'
 import { HomeComponent, TypewriterComponent } from './pages/home'
+import { EngineeringComponent } from './pages/engineering/engineering.component'
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HomeComponent, TypewriterComponent } from './pages/home'
     AppComponent,
     CarouselComponent,
     CommunityComponent,
+    EngineeringComponent,
     ExperienceComponent,
     HomeComponent,
     NavbarComponent,
