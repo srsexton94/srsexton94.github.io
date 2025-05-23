@@ -8,8 +8,8 @@ import { EngineeringProjects, IProject } from 'src/models/projects';
     <section id="engineering-section" class="page-section">
       <div class="engineering">
         <h2>Engineering Projects</h2>
-        <ul *ngFor="let project of projects">
-          <li>
+        <ul>
+          <li *ngFor="let project of projects">
             <project-tile
               [imgSrc]="project.image"
               [title]="project.title"

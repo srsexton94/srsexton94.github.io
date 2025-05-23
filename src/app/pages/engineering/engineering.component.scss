@@ -2,10 +2,11 @@
 @use "../../../assets/scss/variables" as *;
 
 .engineering {
-  padding: 2rem 12rem; 
+  padding: 2rem 10rem; 
 
   ul {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 2rem;
   }
 }

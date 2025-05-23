@@ -6,18 +6,18 @@ import { IProjectLink } from 'src/models/projects';
   styleUrls: ['project-tile.component.scss'],
   template: `
     <div class="tile">
-      <img [src]="imgSrc" alt="A screenshot of {{ title }} project">
+      <img [src]="imgSrc" alt="A screenshot of {{ title }} project" />
       <div class="content">
-      <h2>{{ title }}</h2>
-      <p>{{ description }}</p>
-      <ul *ngFor="let link of links">
-        <li>
-          <a [href]="link.src">
-            <fa-icon aria-hidden [icon]="link.icon"></fa-icon>
-            {{ link.label }}
-          </a>
-        </li>
-      </ul>
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+        <ul>
+          <li *ngFor="let link of links">
+            <a [href]="link.src">
+              <fa-icon aria-hidden [icon]="link.icon"></fa-icon>
+              {{ link.label }}
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   `,
