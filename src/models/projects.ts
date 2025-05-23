@@ -1,6 +1,6 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faFilePdf, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 export interface IProjectLink {
   src: string;
@@ -126,6 +126,27 @@ export const EngineeringProjects: IProject[] = [
         src: 'https://github.com/srsexton94/tic-tac-toe',
         label: 'Source code',
         icon: faGithub,
+      },
+    ],
+  },
+  {
+    image: '../assets/images/projects/clean-code.png',
+    title: 'Clean Code',
+    description: `
+      This is an infographic I made as a new team-lead trying to lead a team of
+      12 junior developers to revamp the code quality of a calculator project.  It
+      details the main takeaways from Robert C. "Uncle Bob" Martin's book, Clean Code.
+    `,
+    links: [
+      {
+        src: '../assets/documents/CleanCode_Infographic.pdf',
+        label: 'Infographic',
+        icon: faFilePdf,
+      },
+      {
+        src: 'https://digital.fidelity.com/stgw/digital/planning/retirement/retirement-income-calculator/',
+        label: 'Final Product',
+        icon: faGlobe,
       },
     ],
   },
