@@ -1,0 +1,18 @@
+@use "../../../assets/scss/sizes" as *;
+@use "../../../assets/scss/variables" as *;
+
+.design {
+  padding: 2rem 10rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+}
+
+@media #{$mobileScreen} {
+  .design {
+    padding: 2rem;
+  }
+}

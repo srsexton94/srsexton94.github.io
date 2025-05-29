@@ -1,5 +1,5 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFilePdf, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 export interface IProjectLink {
@@ -146,6 +146,38 @@ export const EngineeringProjects: IProject[] = [
       {
         src: 'https://digital.fidelity.com/stgw/digital/planning/retirement/retirement-income-calculator/',
         label: 'Final Product',
+        icon: faGlobe,
+      },
+    ],
+  },
+];
+
+export const DesignProjects: IProject[] = [
+  {
+    image: '../assets/images/projects/npdc-design.png',
+    title: 'National Police Data Coalition (NPDC)',
+    description: `
+      The National Police Data Coalition is the first nationally integrated, independent
+      repository of police misconduct data. Volunteering as the lead UX Designer in the 
+      initial stages of the project, I crafted high-fidelity wireframes designing an MVP
+      version of the NPDC application. Informing that process I created a case study with
+      mission and problem statements, User Personas, a Competitive Analysis, and research
+      takeaways.
+    `,
+    links: [
+      {
+        src: '../assets/documents/NPDC_CaseStudy.pdf',
+        label: 'Case Study',
+        icon: faFilePdf,
+      },
+      {
+        src: 'https://www.figma.com/design/TM86P6ePUar5g24pk4h6Du/NPDC--2?node-id=0-1&t=qAiPtda1MLyp8zgF-1',
+        label: 'Figma designs',
+        icon: faFigma,
+      },
+      {
+        src: 'https://dev.nationalpolicedata.org/',
+        label: 'Deployed site',
         icon: faGlobe,
       },
     ],

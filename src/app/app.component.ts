@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
     <about-page></about-page>
     <experience-page></experience-page>
     <engineering-page></engineering-page>
+    <design-page></design-page>
     <community-page></community-page>
     <router-outlet></router-outlet>
   `,
