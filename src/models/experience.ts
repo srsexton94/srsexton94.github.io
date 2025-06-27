@@ -4,6 +4,7 @@ enum Skills {
   A11Y = 'Web Accessibility',
   CSS = 'CSS',
   CYPRESS = 'Cypress',
+  DESIGN = 'UI/UX Design',
   D3 = 'D3',
   FIGMA = 'Figma',
   GIT = 'Git',
@@ -18,7 +19,10 @@ enum Skills {
   SASS = 'Sass/SCSS',
   SCRUM = 'Scrum',
   STORYBOOK = 'Storybook',
+  TEAM_LEAD = 'Team Leadership',
+  TESTING = 'Usability Testing',
   TYPESCRIPT = 'TypeScript',
+  USER_RESEARCH = 'User Research',
 }
 
 export const Experiences = [
@@ -48,6 +52,50 @@ export const Experiences = [
       Skills.AGILE,
     ],
     link: 'https://atpco.net/',
+  },
+  {
+    company: 'MyWorkerAI',
+    titles: ['User Experience Designer'],
+    startYear: 2025,
+    description: `
+      I help complete the UX design process for a lifelike AI video sales agent that incorporates
+      conversational AI across websites, platforms, and apps; focused on scalability for founders,
+      startup leaders, and SMB owners.
+    `,
+    skills: [
+      Skills.DESIGN,
+      Skills.FIGMA,
+      Skills.USER_RESEARCH,
+      Skills.TESTING,
+      Skills.TEAM_LEAD,
+      Skills.A11Y,
+    ],
+    link: 'https://www.nationalpolicedata.org/',
+  },
+  {
+    company: 'Code for Boston',
+    titles: ['Software Engineer', 'User Experience Designer'],
+    startYear: 2020,
+    description: `
+      Helped design & develop the National Police Data Coalition project -- a national
+      Data Visualization app to help combat police violence. 
+      Lead UX Design efforts through user research & wireframing for developer handoff.
+    `,
+    skills: [
+      Skills.REACT,
+      Skills.TYPESCRIPT,
+      Skills.JAVASCRIPT,
+      Skills.D3,
+      Skills.REACT_TEST,
+      Skills.DESIGN,
+      Skills.FIGMA,
+      Skills.USER_RESEARCH,
+      Skills.HTML,
+      Skills.SASS,
+      Skills.GIT,
+      Skills.A11Y,
+    ],
+    link: 'https://www.nationalpolicedata.org/',
   },
   {
     company: 'Schneider Electric',
@@ -127,31 +175,9 @@ export const Experiences = [
       Skills.GIT,
       Skills.AGILE,
       Skills.SCRUM,
+      Skills.TEAM_LEAD,
       Skills.A11Y,
     ],
     link: 'https://digital.fidelity.com/stgw/digital/planning/retirement/retirement-income-calculator/',
-  },
-  {
-    company: 'Code for Boston',
-    titles: ['Software Engineer', 'User Experience Designer'],
-    startYear: 2020,
-    description: `
-      Helped design & develop the National Police Data Coalition project -- a national
-      Data Visualization app to help combat police violence. 
-      Lead UX Design efforts through user research & wireframing for developer handoff.
-    `,
-    skills: [
-      Skills.REACT,
-      Skills.TYPESCRIPT,
-      Skills.JAVASCRIPT,
-      Skills.D3,
-      Skills.REACT_TEST,
-      Skills.FIGMA,
-      Skills.HTML,
-      Skills.SASS,
-      Skills.GIT,
-      Skills.A11Y,
-    ],
-    link: 'https://www.nationalpolicedata.org/',
   },
 ];
