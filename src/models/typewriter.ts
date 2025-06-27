@@ -1,7 +1,7 @@
 enum DevTitles {
   ENGINEER = 'Frontend Software Engineer',
-  ACCESSIBILITY = 'Web Accessibility Enthusiast',
   DESIGNER = 'UX Designer',
+  ACCESSIBILITY = 'Web Accessibility Enthusiast',
   COMMUNITY = 'Community Advocate',
 }
 
