@@ -7,9 +7,7 @@
   max-width: 90vw;
   margin: $size12 auto;
 
-
   .dates {
-    color: $shadowGrey;
     display: block;
     min-width: fit-content;
     font-size: $size14;
@@ -25,8 +23,9 @@
       padding: $size6;
       border-radius: $size8;
       font-size: $size12;
-      background-image: radial-gradient(circle, white, $baseHighlightAlert);
+      background-image: radial-gradient(white, $baseHighlightAlert);
       font-weight: 500;
+      color: black;
     }
   }
 
