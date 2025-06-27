@@ -1,7 +1,6 @@
-@use '../../../../assets/scss/colors' as *;
-@use '../../../../assets/scss/sizes' as *;
-@use '../../../../assets/scss/variables' as *;
-
+@use "../../../../assets/scss/colors" as *;
+@use "../../../../assets/scss/sizes" as *;
+@use "../../../../assets/scss/variables" as *;
 
 .photo-wrapper {
   background-color: white;
@@ -14,7 +13,7 @@
   overflow: hidden;
 
   .selfie {
-    width: $selfieSize * .8;
+    width: $selfieSize * 0.8;
     height: $selfieSize;
     display: block;
     margin: $size24 auto 0;
@@ -25,18 +24,18 @@
   .pronoun-badge {
     position: relative;
     height: $selfieSize / 5;
-    top: -$selfieSize / 6;
+    top: -$selfieSize / 3.5;
     left: $selfieSize / 1.55;
     border-radius: $size10;
     box-shadow: -1px 1px $size4 $shadowBlack;
     transform: rotate(-12deg);
   }
 
-  .aws-ccp {
+  .general-assembly {
     position: relative;
-    height: $selfieSize / 3.5;
-    top: -$selfieSize / 8;
-    left: -$selfieSize / 3.5;
+    height: $selfieSize / 2.5;
+    top: -$selfieSize / 5;
+    left: -$selfieSize / 3;
     transform: rotate(12deg);
   }
 }
@@ -46,22 +45,22 @@
     width: $selfieSizeMobile;
     height: $selfieSizeMobile * 1.3;
     margin: $size16 $size40;
-  
+
     .selfie {
-      width: $selfieSizeMobile * .8;
+      width: $selfieSizeMobile * 0.8;
       height: $selfieSizeMobile;
     }
-  
+
     .pronoun-badge {
       height: $selfieSizeMobile / 5;
-      top: -$selfieSizeMobile / 6;
+      top: -$selfieSizeMobile / 3.5;
       left: $selfieSizeMobile / 1.55;
     }
 
-    .aws-ccp {
-      height: $selfieSizeMobile / 3.5;
-      top: -$selfieSizeMobile / 8;
-      left: -$selfieSizeMobile / 3.5;
+    .general-assembly {
+      height: $selfieSizeMobile / 2.5;
+      top: -$selfieSizeMobile / 5;
+      left: -$selfieSizeMobile / 2.5;
     }
   }
 }

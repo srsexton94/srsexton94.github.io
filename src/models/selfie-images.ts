@@ -1,6 +1,6 @@
 export enum SelfieImageTypes {
   SELFIE = 'selfie',
-  CCP = 'aws-ccp',
+  GA = 'general-assembly',
   PRONOUNS = 'pronoun-badge',
 }
 
@@ -27,10 +27,10 @@ export const SelfieImageDetails: ISelfieImageDetails[] = [
     `,
   },
   {
-    class: SelfieImageTypes.CCP,
-    src: '../../assets/images/aws-ccp.png',
+    class: SelfieImageTypes.GA,
+    src: '../../assets/images/GA.png',
     altText: `
-      Amazon Web Services Certified Cloud Practitioner completion badge
+      General Assembly coding school badge, a red cog with the letters GA
     `,
   },
 ];
