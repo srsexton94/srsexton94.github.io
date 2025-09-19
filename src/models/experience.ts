@@ -28,13 +28,13 @@ enum Skills {
 export const Experiences = [
   {
     company: 'ATPCO',
-    titles: ['Senior UX Engineer'],
+    titles: ['Senior Frontend Software Engineer'],
     startYear: 2025,
     description: `
-      Taking ownership of the 3Victors product suite, I help customers confidently make strategic
-      pricing decisions leveraging the power of AI.  I deliver innovative, engaging prototypes using
-      the latest in frontend technologies and drive the frontend development on key applications,
-      partnering closely with full-stack and backend engineering teams.
+      ATPCO is the foundation of modern airline retailing.  Taking ownership of the 3Victors product PriceEye,
+      I help customers confidently make strategic pricing decisions.  I deliver innovative, engaging prototypes
+      and user interfaces using the latest in frontend technologies and drive the frontend development on key
+      applications, partnering closely with designers, researchers, and engineers.
     `,
     skills: [
       Skills.ANGULAR,
@@ -53,59 +53,35 @@ export const Experiences = [
     ],
     link: 'https://atpco.net/',
   },
-  {
-    company: 'MyWorkerAI',
-    titles: ['User Experience Designer'],
-    startYear: 2025,
-    description: `
-      I help complete the UX design process for a lifelike AI video sales agent that incorporates
-      conversational AI across websites, platforms, and apps; focused on scalability for founders,
-      startup leaders, and SMB owners.
-    `,
-    skills: [
-      Skills.DESIGN,
-      Skills.FIGMA,
-      Skills.USER_RESEARCH,
-      Skills.TESTING,
-      Skills.TEAM_LEAD,
-      Skills.A11Y,
-    ],
-    link: 'https://www.nationalpolicedata.org/',
-  },
-  {
-    company: 'Code for Boston',
-    titles: ['Software Engineer', 'User Experience Designer'],
-    startYear: 2020,
-    description: `
-      Helped design & develop the National Police Data Coalition project -- a national
-      Data Visualization app to help combat police violence. 
-      Lead UX Design efforts through user research & wireframing for developer handoff.
-    `,
-    skills: [
-      Skills.REACT,
-      Skills.TYPESCRIPT,
-      Skills.JAVASCRIPT,
-      Skills.D3,
-      Skills.REACT_TEST,
-      Skills.DESIGN,
-      Skills.FIGMA,
-      Skills.USER_RESEARCH,
-      Skills.HTML,
-      Skills.SASS,
-      Skills.GIT,
-      Skills.A11Y,
-    ],
-    link: 'https://www.nationalpolicedata.org/',
-  },
+  // {
+  //   company: 'MyWorkerAI',
+  //   titles: ['User Experience Designer'],
+  //   startYear: 2025,
+  //   description: `
+  //     I help complete the UX design process for a lifelike AI video sales agent that incorporates
+  //     conversational AI across websites, platforms, and apps; focused on scalability for founders,
+  //     startup leaders, and SMB owners.
+  //   `,
+  //   skills: [
+  //     Skills.DESIGN,
+  //     Skills.FIGMA,
+  //     Skills.USER_RESEARCH,
+  //     Skills.TESTING,
+  //     Skills.TEAM_LEAD,
+  //     Skills.A11Y,
+  //   ],
+  //   link: 'https://www.nationalpolicedata.org/',
+  // },
   {
     company: 'Schneider Electric',
-    titles: ['UI/UX Software Engineer'],
+    titles: ['Frontend Software Engineer'],
     startYear: 2023,
     endYear: 2024,
     description: `
-      Designed, developed, & maintained features and improvements on EcoStruxureIT Expert
-      platform with readable, optimized, and well-tested code. Collaborated and communicated
-      through design/code reviews and pull requests.
+      Schneider offers products, software, and services to help businesses reduce energy consumption. 
+      I designed and built a mission-critical sustainability dashboard, turning business objectives into an
+      intuitive user interface that helps customers understand their performance, scalable for our largest data
+      center clients. Utilized Angular, HTML5, CSS3, JavaScript/TypeScript, Ngxs, Storybook, and Figma.
     `,
     skills: [
       Skills.ANGULAR,
@@ -130,11 +106,9 @@ export const Experiences = [
     startYear: 2020,
     endYear: 2022,
     description: `
-      Developed frontend Data Visualization tools in React with TypeScript and Redux
-      Contributed to a fully-integrated, cross-functional team. 
-      Greatly expanded front-end, unit & end-to-end, test coverage. 
-      Independently drove prioritization of Web Accessibility -- auditing software and
-      educating engineering teams across the company. 
+      Pluralsight is a leading workforce development company.  I took ownership of frontend development on the
+      engineering analytics platform, Flow, crafting intuitive user interfaces on a complex data visualization platform.
+      I also greatly expanded test coverage and drove the prioritization of web accessibility.
     `,
     skills: [
       Skills.REACT,
@@ -157,9 +131,11 @@ export const Experiences = [
     startYear: 2020,
     endYear: 2022,
     description: `
-      Developed personalized investment software in Angular with TypeScript and NgRx.
-      Served as Tech Lead overseeing 12+ technologists, from conception to production.
-      Maintained 100% testing coverage in a monorepo architecture in Jest and Cypress
+      Fidelity is an industry-renowned financial services institution. I led a team of 12 junior developers to build
+      a product from concept to release and took ownership of frontend features and tech debt for personalized
+      Retirement Investment software in Tax Smart withdrawals. Utilized Jest and Cypress to maintain 100% testing
+      coverage in monorepo architecture and drove prioritization of Web Accessibility - educating teams across the
+      company to improve the product for all.
     `,
     skills: [
       Skills.ANGULAR,
@@ -179,5 +155,31 @@ export const Experiences = [
       Skills.A11Y,
     ],
     link: 'https://digital.fidelity.com/stgw/digital/planning/retirement/retirement-income-calculator/',
+  },
+  {
+    company: 'Code for Boston',
+    titles: ['Software Engineer', 'User Experience Designer'],
+    startYear: 2020,
+    endYear: 2025,
+    description: `
+      Volunteering with Code for Boston’s National Police Data Coalition (NPDC) -- the first nationally integrated,
+      independent repository of police misconduct data -- I led the initial UX Design efforts through user research
+      & wireframing in Figma, and helped develop an internal design system.
+    `,
+    skills: [
+      Skills.REACT,
+      Skills.TYPESCRIPT,
+      Skills.JAVASCRIPT,
+      Skills.D3,
+      Skills.REACT_TEST,
+      Skills.DESIGN,
+      Skills.FIGMA,
+      Skills.USER_RESEARCH,
+      Skills.HTML,
+      Skills.SASS,
+      Skills.GIT,
+      Skills.A11Y,
+    ],
+    link: 'https://www.nationalpolicedata.org/',
   },
 ];

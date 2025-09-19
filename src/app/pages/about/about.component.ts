@@ -12,30 +12,30 @@ import { Component } from '@angular/core';
             <h2 class="header">Hi there! I'm Sam</h2>
             <selfie class="mobile-only"></selfie>
             <p class="description">
-              I'm a professional frontend Software Engineer, UX Designer, and
-              experienced Technical Lead who thrives off of architecting
-              human-centered digital experiences that are equal parts accessible
-              and exceptional.
+              I'm a Frontend Software Engineer passionate about building digital
+              experiences that are equal parts performant, scalable, and
+              accessible. With 5+ years of experience, I specialize in bridging
+              design intent with technical execution to deliver enterprise-grade
+              products that reach millions of users.
             </p>
             <resume-preview class="desktop-only"></resume-preview>
             <p class="description">
-              Over years of creating highly performant applications, I have
-              honed my skills in designing and building well-researched,
-              responsive, interactive, and empathetic user interfaces. I have a
-              considerable depth of knowledge in crafting scalable, maintainable
-              systems and a unique capacity to seamlessly build accessibility
-              into the product lifecycle.
+              I've led frontend development on platforms like PriceEye,
+              empowering airlines to make confident, data-informed pricing
+              decisions for 300M+ end users. I've engineered a sustainability
+              dashboard that reduced global data center energy consumption by
+              20%+. I also directed a 12-person engineering team to ship
+              Retirement Income Calculator software, while championing
+              accessibility practices that boosted adoption by up to 50%. I've
+              also designed AI-driven prototypes, a lifelike avatar sales agent,
+              and a national-scale data platform with modern component-based
+              systems and WCAG compliance baked in.
             </p>
             <p class="description">
-              At the heart of my work is always community &ndash; and I am
-              thrilled to play my part in the movements towards Equitable Design
-              and radical accesibility in tech.
-            </p>
-            <p class="description">
-              Overall, I know myself to be an analytical, driven, and
-              collaborative technologist who is always excited to learn
-              something new and unpacks even the most complex problem with
-              diligence and a laugh (or two!).
+              What drives me is engineering frontend solutions that are both
+              technically robust and human-centered, and I thrive when
+              collaborating with mission-driven teams committed to shipping
+              products that matter.
             </p>
             <resume-preview class="mobile-only"></resume-preview>
           </div>
