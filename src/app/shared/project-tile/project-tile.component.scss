@@ -7,7 +7,7 @@
   background-color: white;
   width: 20rem;
   height: 30rem;
-  box-shadow: -1px $size10 $size16 $shadowBlack;
+  box-shadow: -1px $size6 $size12 $shadowBlack;
   margin: 1rem;
 
   img {
@@ -30,6 +30,6 @@
   }
 
   &:hover {
-    box-shadow: -1px $size16 $size24 $shadowBlack;
+    box-shadow: -1px $size10 $size16 $shadowBlack;
   }
 }

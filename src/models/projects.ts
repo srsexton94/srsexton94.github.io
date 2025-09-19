@@ -17,6 +17,49 @@ export interface IProject {
 
 export const EngineeringProjects: IProject[] = [
   {
+    image: '../assets/images/projects/npdc.png',
+    title: 'NPDC',
+    description: `
+      The National Police Data Coalition is the first nationally integrated, independent
+      repository of police misconduct data. Through Code for Boston, I assist with the
+      frontend development of the NPDC web application and design system
+    `,
+    links: [
+      {
+        src: 'https://www.nationalpolicedata.org/',
+        label: 'Non-profit website',
+        icon: faGlobe,
+      },
+      {
+        src: 'https://github.com/codeforboston/police-data-trust',
+        label: 'Source code',
+        icon: faGithub,
+      },
+      {
+        src: 'https://github.com/National-Police-Data-Coalition/design-system',
+        label: 'Design System',
+        icon: faGithub,
+      },
+    ],
+  },
+  {
+    image: '../assets/images/projects/retirement-calculator.png',
+    title: 'Retirement Income Calculator',
+    description: `
+      The Retirement Income Calculator is a project that I oversaw as a technical lead
+      during my time at Fidelity Investments.  I provided mentorship
+      to 12 junior developers around clean code, maintainability, and my personal passion
+      project of accessibility.
+    `,
+    links: [
+      {
+        src: 'https://digital.fidelity.com/stgw/digital/planning/retirement/retirement-income-calculator/',
+        label: 'Deployed Site',
+        icon: faGlobe,
+      },
+    ],
+  },
+  {
     image: '../assets/images/projects/popcorn-pal.png',
     title: 'Popcorn Pal',
     description: `
@@ -60,27 +103,22 @@ export const EngineeringProjects: IProject[] = [
     ],
   },
   {
-    image: '../assets/images/projects/npdc.png',
-    title: 'NPDC',
+    image: '../assets/images/projects/definitely-not-dave.png',
+    title: 'Definitely Not Dave',
     description: `
-      The National Police Data Coalition is the first nationally integrated, independent
-      repository of police misconduct data. Through Code for Boston, I assist with the
-      frontend development of the NPDC web application and design system
+      This is a Guess Who clone application built in HTML, CSS, and JS, utilizing the
+      DiceBear Avatar library. I built this as my final project for General Assembly's
+      short course on JavaScript, brushing up on fundamentals.
     `,
     links: [
       {
-        src: 'https://www.nationalpolicedata.org/',
-        label: 'Non-profit website',
+        src: 'https://srsexton94.github.io/definitely-not-dave/',
+        label: 'Deployed Site',
         icon: faGlobe,
       },
       {
-        src: 'https://github.com/codeforboston/police-data-trust',
+        src: 'https://github.com/srsexton94/definitely-not-dave',
         label: 'Source code',
-        icon: faGithub,
-      },
-      {
-        src: 'https://github.com/National-Police-Data-Coalition/design-system',
-        label: 'Design System',
         icon: faGithub,
       },
     ],
