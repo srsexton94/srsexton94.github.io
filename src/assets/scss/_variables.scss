@@ -1,6 +1,6 @@
-$desktopOrTabletScreen: 'only screen and (min-width: 32em)';
-$tabletScreen: 'only screen and (max-width: 60em)';
-$mobileScreen: 'only screen and (max-width: 32em)';
+$desktopOrTabletScreen: "only screen and (min-width: 40em)";
+$tabletScreen: "only screen and (max-width: 60em)";
+$mobileScreen: "only screen and (max-width: 40em)";
 
 $selfieSizeMobile: 14rem;
 $navbarHeight: 6rem;
